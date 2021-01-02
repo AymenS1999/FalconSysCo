@@ -1,0 +1,720 @@
+body{
+	text-align: left;
+	font-family: 'Arvo', serif;
+	background-color: #fff;
+}
+
+
+/*Nav Bar*/
+.navbar{
+	padding: 0.3rem 3rem;
+	padding-left: 0.9rem;
+	background-color: #0a1122;
+	text-align: center;
+}
+
+.navbar-logo{
+	width: 9%;
+	margin-right: 1rem;  
+	border-radius: 100%
+}
+
+.nav-item{
+	padding: 0 18px;
+}
+
+/*To Make the CARAT Symbol INLINE with the LINK Besides it*/
+.navbar-dropdown-link{
+	display: inline;
+}
+
+.dropdown-item{
+	text-align: center;
+}
+
+.dropdown-item:hover{
+	color: #fff;
+	background-color: rgba(11,37,53,1);
+}
+
+/*Cover Section*/
+
+.container-fluid{
+	padding: 0;
+}
+
+.row{
+	margin : 0;
+	height: 100%;
+}
+
+#cover-section{
+	/*background-image: url("../images/cover_image.jpg");*/
+	height: 100vh;
+	padding: 0;
+	margin-top: 0px;
+	/*background-color: rgba(10,33,50,1);*/
+	/*background: linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,1));*/
+}
+
+#cover-section blank{
+	height: 0;
+}
+
+.intro-foreground{
+	position: relative;
+	height: 100vh;
+}
+
+.intro-tagline{
+	position: relative;
+	top: 54%;
+	transform: translateY(-50%);
+	/*z-index: 1;*/
+	font-size: 3rem;
+	padding: 3.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.intro-background{
+	position: absolute;
+	z-index: -1;
+	background-color: rgba(10,33,50,1);
+	height: 100vh;
+}
+
+.intro-background-heading{
+	position: relative;
+	top: 50%;
+	left: 10%;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	/*color: rgba(10,33,50,1);*/
+	color: #fafafa;
+}
+
+.intro-background .carousel-item{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+}
+
+.intro-background .carousel-item{
+	opacity: 0;
+	transition-duration: 2s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active, .carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right{
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-right{
+	opacity: 0;
+} 
+
+.carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-prev{
+	transform: translateX(0);
+	transform: translate3d(0,0,0);
+}
+.intro-background .col-lg-9{
+	padding: 0;
+}
+
+.intro-carousel-item-1{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industrial_procurement.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-2{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industry_automation.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-3{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/oil_and_gas.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-4{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/petrochemical.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-5{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/power_sector.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-6{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/communications_industry.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-7{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/infrastructure_development.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-8{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/fire_safety.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-9{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
+	background-size: cover;
+}
+
+
+
+
+
+/*About Us*/
+
+#about-us{
+	background-color: #fff;
+	padding: 5rem 3rem 0;
+}
+
+.owner-image{
+	width: 100%;
+	position: relative;
+	top: 40%;
+	transform: translateY(-50%);/*
+	padding-top: 1rem;
+	padding-bottom: 5rem;*/
+	text-align: center;
+}
+
+.owner-image-style{
+	border-radius: 3%;
+}
+
+.owner-image-text{
+	line-height: 2;
+	font-weight: 700;
+	color: #444;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.about-us-text{
+	padding-right: 4rem;
+	font-size: 1.2rem;
+	padding-bottom: 5rem;
+}
+
+
+
+
+
+/*Our Products*/
+#our-products{
+	background-color: #bbbbbb;
+	height: 52rem;
+}
+
+
+.carousel-item{
+	padding: 3rem 7rem;
+	height: 52rem;
+}
+
+
+.product-carousel-text{
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 900;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel .table{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 3%;
+}
+
+td{
+	font-size: 1rem;
+	text-align: center;
+
+}
+
+.table td.first-cell{
+	border-top: none;
+}
+
+th,td:hover{
+	cursor: default;
+}
+
+/*Electrical Products*/
+.item-1{
+	background: linear-gradient(to left, rgba(11,11,1,0), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
+	background-size: cover;
+	color: #fff; 
+}
+
+.item-1 table{
+	background: rgba(11,11,11,0.8);
+}
+
+/*Industrial Automation Products*/
+.item-2{
+	background: linear-gradient(to left, rgba(221,200,200,0), rgba(221,200,200,0.8)), url("../images/industrial_automation_product.jpg");
+	background-size: cover; 
+	color: #000;
+}
+.item-2-table{
+	background-color: rgba(221,200,200,0.7);
+}
+
+/*Industrial Automation Solution*/
+.item-3{
+	background: linear-gradient(to left, rgba(0,0,0,0.0), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.item-3-table{
+	background: rgba(0,0,0,0.6);
+}
+
+
+/*Instrumentation Products*/
+.item-4{
+	background: linear-gradient(to left, rgba(187,187,187,0), rgba(187,187,187,0.8)), url("../images/instrumentation_products.jpg");
+	background-size: cover;
+	color: #000;
+}
+.item-4-table{
+	background: rgba(187,187,187,0.85);
+}
+
+
+/*Mechanical Products*/
+.item-5{
+	/*background-color: #0b1b3f;*/
+	background: linear-gradient(to left, rgba(11,27,63,0.2), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.item-5-table{
+	background: rgba(11,27,63,0.7);
+}
+
+
+/*Fire and Safety*/
+.item-6{
+	background: linear-gradient(to left, rgba(210,210,210,0.2), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
+	background-size: cover; 
+	color: #000;
+}
+.item-6-table{
+	background: rgba(210,210,210,0.8);
+}
+
+
+/*Mechanical Services and Spares*/
+.item-7{
+	/*background-color: #483a48;*/
+	background: linear-gradient(to left, rgba(52,38,52,0.2) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.item-7-table{
+	background-color: rgba(52,38,52,0.9);
+}
+
+
+/*Electrical Services and Spares*/
+.item-8{
+	background: linear-gradient(to left, rgba(221,221,221,0.2), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
+	background-size: cover;
+	color: #000;
+}
+.item-8-table{
+	background-color: rgba(221,221,221,0.7);
+}
+
+/*Our Products and Services COLLAPSABLE Accordion*/
+/*NOTE - ".accordion" is a CLASS NAME because it has an ACCORDION LIKE EFFECT*/
+.accordion .card-header{
+	/*background: linear-gradient(to left, rgba(10,33,50,0.8), rgba(10,33,50,1) 50%);*/
+	background: rgba(10,33,50,1);
+	padding: 0;
+}
+.accordion button{
+	text-align: left;
+	color: #fff;
+	padding: 1rem 2rem;
+}
+
+.accordion button:hover{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	background: #1b5b9f;
+}
+.accordion button:focus{
+	text-decoration: none;
+}
+
+#our-products-accordion h1, #our-services-accordion h1{
+	padding-top: 2rem;
+	line-height: 2;
+}
+
+.accordion table{
+	margin: 0;
+}
+
+/*Our Products Accordion*/
+#our-products-accordion{
+	padding: 4rem;
+	padding-bottom: 2rem;
+	padding-top: 6rem;
+}
+
+.card-body{
+	padding: 0;
+}
+
+.accordion .item-1-table{
+	background: linear-gradient(to left, rgba(11,11,1,0.5), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff; 
+}
+
+.accordion .item-2-table{
+	background: linear-gradient(to left, rgba(221,200,200,0.5), rgba(221,200,200,1)), url("../images/industrial_automation_product.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+.accordion .item-3-table{
+	background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.accordion .item-4-table{
+	background: linear-gradient(to left, rgba(187,187,187,0.5), rgba(187,187,187,1)), url("../images/instrumentation_products.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+.accordion .item-5-table{
+	/*background-color: #0b1b3f;*/
+	background: linear-gradient(to left, rgba(11,27,63,0.5), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.accordion .item-6-table{
+	background: linear-gradient(to left, rgba(210,210,210,0.5), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+
+/*Our Services Accordion*/
+#our-services-accordion{
+	padding: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 8rem;
+}
+
+.accordion .item-7-table{
+	/*background-color: #483a48;*/
+	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.accordion .item-8-table{
+	background: linear-gradient(to left, rgba(221,221,221,0.5), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+.accordion .item-9-table{
+	background: linear-gradient(to left, rgba(22,42,111,0.5), rgba(22,42,111,1)), url("../images/power_and_fuel_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+
+
+/*Utilities (i.e Pipe Calculator and Pipe Chart)*/
+#utilities{
+	background-color: rgba(1,27,57,1);
+	padding: 5rem 2rem;
+}
+
+.utilities-text{
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+
+/*Note - Combining the Background PROPERTIES in these WON'T WORK*/
+.pipe-chart, .pipe-calculator{
+	border-radius: 3%;
+	margin: 0 1rem;
+	height: 30rem;
+	cursor: pointer;
+}
+
+.pipe-chart{
+	background: linear-gradient(to left, rgba(1,27,47, 0.4), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pipe-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.4), rgba(1,27,47,1)), url("../images/pipe_calculator.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pipe-chart:hover{
+	/*background: linear-gradient(to bottom, rgba(01, 10, 20, 0.6), rgba(07,10,20,1)), url("../images/pipe_chart.jpg");*/
+	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_chart.jpg");
+	background-size: cover;
+}
+
+.pipe-calculator:hover{
+	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_calculator.jpg");
+	background-size: cover;
+}
+
+/*The FORM where user enters details for Pipe-Calculator*/
+.pipe-calculator-form{
+	/*Initially We want the FORM to be HIDDEN*/
+	display: none;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+
+
+/*Contact Us*/
+#contact-us{
+	padding: 5rem 2rem;
+	background-color: #fff;
+}
+
+.contact-us-card{
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.contact-us-icon{
+	/*color:  #0a2132;*/
+	color: #0a1122;
+	font-size: 3rem;
+	padding-bottom: 1rem;
+}
+
+.contact-us-icon:hover{
+	color: #1b5b9f;
+	/*color: #1a3142;*/
+}
+
+.contact-us-headline{
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.contact-us-detail{
+	font-color: #8f8f8f;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+/*map*/
+#map{
+	height: 650px;
+	width: 100%;
+}
+
+
+
+/*cta (i.e the End Call To Action or "Request Quote" Form)*/
+#cta{
+	padding: 5% 4rem;
+	text-align: left;
+	font-size: 1rem;
+	background-color: #0a2132;
+	color: #fff;
+}
+
+#cta form{
+	padding-bottom: 1rem;
+	text-align: left;
+}
+
+#cta .form-note{
+	text-align: left;
+	padding: 1rem;
+}
+
+#cta form button{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+/*To ALIGN the FORM BUTTONS to CENTER (Both the Pipe Calculator as well as The Quote Form)*/
+.button-center{
+	text-align: center;
+	width: 100%;
+	margin-top: 1rem; 
+}
+
+
+/*Footer*/
+footer{
+	/*background-color: #0a1122;*/
+	background-color: #fff;
+	color: #555;
+	font-size: 0.9rem;
+	padding: 0.4rem;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+
+
+@media (max-width: 1023px){
+	*{
+		text-align: center;	
+	}
+	.body{
+		text-align: center;
+	}
+	.navbar-brand{
+		font-size: 1.2rem;
+	}
+	.navbar{
+		padding: 0.3rem 3rem;
+		padding-left: 0.2rem;
+		font-size: 2rem;
+	}
+	.navbar-toggler, .nav-link{
+		font-size: 2rem;
+	}
+	.dropdown-button{
+		padding-left: 1rem;
+		display: inline;
+	}
+	.btn-group{
+		display: inline;
+	}
+	.dropdown-item{
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.intro-tagline{
+		top: 35%;
+	}
+	#cover-section, .intro-background, .intro-foreground{
+		height: 60rem;
+	}
+	.intro-background .carousel-item{
+		height: 60rem;
+	}
+	.intro-background-heading{
+		top: 70%;
+		left: 0%;
+	}
+	#about-us{
+		padding: 4rem;
+		padding-top: 10rem;
+	}
+	.owner-image-style{
+		height: 25rem;
+	}
+	.owner-image-text{
+		font-size: 1.5rem;
+	}
+	.about-us-text{
+		font-size: 2rem;
+	}
+	.pipe-chart, .pipe-calculator{
+		height: 30rem;
+		margin: 2rem 0;
+		background-size: cover;
+		background-position: center;
+	}
+	.pipe-chart:hover, .pipe-calculator:hover{
+		background-size: cover;
+	}
+	#our-products, .carousel-item{
+		height: 100rem;
+	}
+	#our-products-accordion h1, #our-services-accordion h1{
+		font-size: 3rem;
+	}
+	.accordion button{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	td{
+		font-size: 1.5rem;
+	}
+	.contact-us-icon{
+		font-size: 8rem;
+	}
+	.contact-us-headline{
+		font-size: 3rem;
+	}
+	.contact-us-detail{
+		font-size: 2rem;
+	}
+	#cta form{
+		padding: 2rem;
+		font-size: 2rem;
+	}
+	#cta h2{
+		font-size: 2rem;
+	}
+	#cta .submit-button{
+		font-size: 2rem;
+	}
+	.form-note h6{
+		font-size: 1.5rem;
+	}
+}
+
