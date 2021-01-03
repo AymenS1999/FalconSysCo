@@ -682,7 +682,7 @@ footer{
 		background-size: cover;
 	}
 	#our-products, .carousel-item{
-		height: 100rem;
+		height: 80rem;
 	}
 	#our-products-accordion h1, #our-services-accordion h1{
 		font-size: 3rem;
@@ -695,7 +695,7 @@ footer{
 		font-size: 1.5rem;
 	}
 	.contact-us-icon{
-		font-size: 8rem;
+		font-size: 5rem;
 	}
 	.contact-us-headline{
 		font-size: 3rem;
