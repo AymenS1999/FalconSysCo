@@ -37,8 +37,8 @@ body{
 	background-color: rgba(11,37,53,1);
 }
 
-/*Cover Section*/
 
+/*Cover Section*/
 .container-fluid{
 	padding: 0;
 }
@@ -49,12 +49,9 @@ body{
 }
 
 #cover-section{
-	/*background-image: url("../images/cover_image.jpg");*/
 	height: 100vh;
 	padding: 0;
 	margin-top: 0px;
-	/*background-color: rgba(10,33,50,1);*/
-	/*background: linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,1));*/
 }
 
 #cover-section blank{
@@ -177,9 +174,6 @@ body{
 }
 
 
-
-
-
 /*About Us*/
 
 #about-us{
@@ -215,7 +209,15 @@ body{
 	padding-bottom: 5rem;
 }
 
+#brochure-download-button{
+	background-color: rgba(11,37,53,1);
+	color: #fff;
+}
 
+#brochure-download-button:hover{
+	background-color: rgba(27,91,159,1);
+	font-weight: bold;
+}
 
 
 
@@ -251,7 +253,6 @@ body{
 td{
 	font-size: 1rem;
 	text-align: center;
-
 }
 
 .table td.first-cell{
@@ -263,92 +264,102 @@ th,td:hover{
 }
 
 /*Electrical Products*/
-.item-1{
+.electrical-products{
 	background: linear-gradient(to left, rgba(11,11,1,0), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
 	background-size: cover;
 	color: #fff; 
 }
 
-.item-1 table{
+.electrical-products-table{
 	background: rgba(11,11,11,0.8);
 }
 
 /*Industrial Automation Products*/
-.item-2{
+.industrial-automation-products{
 	background: linear-gradient(to left, rgba(221,200,200,0), rgba(221,200,200,0.8)), url("../images/industrial_automation_product.jpg");
 	background-size: cover; 
 	color: #000;
 }
-.item-2-table{
+.industrial-automation-products-table{
 	background-color: rgba(221,200,200,0.7);
 }
 
 /*Industrial Automation Solution*/
-.item-3{
+.industrial-automation-solution{
 	background: linear-gradient(to left, rgba(0,0,0,0.0), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
 	background-size: cover;
 	color: #fff;
 }
-.item-3-table{
+.industrial-automation-solution-table{
 	background: rgba(0,0,0,0.6);
 }
 
 
 /*Instrumentation Products*/
-.item-4{
+.instrumentation-products{
 	background: linear-gradient(to left, rgba(187,187,187,0), rgba(187,187,187,0.8)), url("../images/instrumentation_products.jpg");
 	background-size: cover;
 	color: #000;
 }
-.item-4-table{
+.instrumentation-products-table{
 	background: rgba(187,187,187,0.85);
 }
 
 
 /*Mechanical Products*/
-.item-5{
+.mechanical-products{
 	/*background-color: #0b1b3f;*/
 	background: linear-gradient(to left, rgba(11,27,63,0.2), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
 	background-size: cover;
 	color: #fff;
 }
-.item-5-table{
+.mechanical-products-table{
 	background: rgba(11,27,63,0.7);
 }
 
 
 /*Fire and Safety*/
-.item-6{
+.fire-and-safety-products{
 	background: linear-gradient(to left, rgba(210,210,210,0.2), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
 	background-size: cover; 
 	color: #000;
 }
-.item-6-table{
+.fire-and-safety-products-table{
 	background: rgba(210,210,210,0.8);
 }
 
+/*IT and Networking*/
+.it-and-networking-solutions{
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.it-and-networking-solutions-table{
+	background: rgba(11,27,23,0.9);
+}
 
 /*Mechanical Services and Spares*/
-.item-7{
+.mechanical-services{
 	/*background-color: #483a48;*/
 	background: linear-gradient(to left, rgba(52,38,52,0.2) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
 	background-size: cover;
 	color: #fff;
 }
-.item-7-table{
+.mechanical-services-table{
 	background-color: rgba(52,38,52,0.9);
 }
 
 
 /*Electrical Services and Spares*/
-.item-8{
+.electrical-services{
 	background: linear-gradient(to left, rgba(221,221,221,0.2), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
 	background-size: cover;
 	color: #000;
 }
-.item-8-table{
+.electrical-services-table{
 	background-color: rgba(221,221,221,0.7);
 }
+
 
 /*Our Products and Services COLLAPSABLE Accordion*/
 /*NOTE - ".accordion" is a CLASS NAME because it has an ACCORDION LIKE EFFECT*/
@@ -382,6 +393,15 @@ th,td:hover{
 	margin: 0;
 }
 
+.accordion td{
+	padding-left: 4rem;
+	text-align: left;
+}
+
+.card-body{
+	padding: 0;
+}
+
 /*Our Products Accordion*/
 #our-products-accordion{
 	padding: 4rem;
@@ -389,39 +409,40 @@ th,td:hover{
 	padding-top: 6rem;
 }
 
-.card-body{
-	padding: 0;
-}
-
-.accordion .item-1-table{
+/*Electrical Products*/
+.accordion .electrical-products-table{
 	background: linear-gradient(to left, rgba(11,11,1,0.5), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #fff; 
 }
 
-.accordion .item-2-table{
+/*Industrial Automation Products*/
+.accordion .industrial-automation-products-table{
 	background: linear-gradient(to left, rgba(221,200,200,0.5), rgba(221,200,200,1)), url("../images/industrial_automation_product.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #000;
 }
 
-.accordion .item-3-table{
+/*Industrial Automation Solution*/
+.accordion .industrial-automation-solution-table{
 	background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #fff;
 }
 
-.accordion .item-4-table{
+/*Instrumentation Products*/
+.accordion .instrumentation-products-table{
 	background: linear-gradient(to left, rgba(187,187,187,0.5), rgba(187,187,187,1)), url("../images/instrumentation_products.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #000;
 }
 
-.accordion .item-5-table{
+/*Mechanical Products*/
+.accordion .mechanical-products-table{
 	/*background-color: #0b1b3f;*/
 	background: linear-gradient(to left, rgba(11,27,63,0.5), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
 	background-size: cover;
@@ -429,11 +450,20 @@ th,td:hover{
 	color: #fff;
 }
 
-.accordion .item-6-table{
+/*Fire and Safety Products*/
+.accordion .fire-and-safety-products-table{
 	background: linear-gradient(to left, rgba(210,210,210,0.5), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #000;
+}
+
+/*IT and Networking Solutions*/
+.accordion .it-and-networking-solutions-table{
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
 }
 
 
@@ -444,7 +474,8 @@ th,td:hover{
 	padding-bottom: 8rem;
 }
 
-.accordion .item-7-table{
+/*Electrical Services*/
+.accordion .electrical-services-table{
 	/*background-color: #483a48;*/
 	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
 	background-size: cover;
@@ -452,14 +483,16 @@ th,td:hover{
 	color: #fff;
 }
 
-.accordion .item-8-table{
+/*Mechanical Services*/
+.accordion .mechanical-services-table{
 	background: linear-gradient(to left, rgba(221,221,221,0.5), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #000;
 }
 
-.accordion .item-9-table{
+/*Power and Fuel Services*/
+.accordion .power-and-fuel-services-table{
 	background: linear-gradient(to left, rgba(22,42,111,0.5), rgba(22,42,111,1)), url("../images/power_and_fuel_services.jpg");
 	background-size: cover;
 	background-position: center;
@@ -489,31 +522,25 @@ th,td:hover{
 .pipe-chart, .pipe-calculator{
 	border-radius: 3%;
 	margin: 0 1rem;
-	height: 30rem;
+	height: 35rem;
 	cursor: pointer;
 }
 
 .pipe-chart{
-	background: linear-gradient(to left, rgba(1,27,47, 0.4), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
+	background: linear-gradient(to left, rgba(1,27,47, 0.6), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .pipe-calculator{
-	background: linear-gradient(to left, rgba(1, 27, 47, 0.4), rgba(1,27,47,1)), url("../images/pipe_calculator.jpg");
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,1)), url("../images/pipe_calculator.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.pipe-chart:hover{
-	/*background: linear-gradient(to bottom, rgba(01, 10, 20, 0.6), rgba(07,10,20,1)), url("../images/pipe_chart.jpg");*/
-	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_chart.jpg");
-	background-size: cover;
-}
-
-.pipe-calculator:hover{
-	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_calculator.jpg");
-	background-size: cover;
+#clickToPipeCalculator, #clickToPipeChart{
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 /*The FORM where user enters details for Pipe-Calculator*/
@@ -525,6 +552,15 @@ th,td:hover{
 	transform: translateY(-50%);
 	color: #fff;
 	font-size: 1.2rem;
+	text-align: center;
+}
+.pipe-calculator-form input{
+	text-align: center;
+}
+
+
+#metricSelector, #imperialSelector{
+	margin: 1rem;
 }
 
 
@@ -541,7 +577,6 @@ th,td:hover{
 }
 
 .contact-us-icon{
-	/*color:  #0a2132;*/
 	color: #0a1122;
 	font-size: 3rem;
 	padding-bottom: 1rem;
@@ -645,7 +680,6 @@ footer{
 		text-align: center;
 		font-size: 2rem;
 	}
-
 	.intro-tagline{
 		top: 35%;
 	}
@@ -672,20 +706,23 @@ footer{
 	.about-us-text{
 		font-size: 2rem;
 	}
+	#brochure-button{
+		font-size: 2rem;
+	}
 	.pipe-chart, .pipe-calculator{
-		height: 30rem;
 		margin: 2rem 0;
 		background-size: cover;
 		background-position: center;
 	}
-	.pipe-chart:hover, .pipe-calculator:hover{
-		background-size: cover;
-	}
 	#our-products, .carousel-item{
-		height: 80rem;
+		height: 100rem;
 	}
 	#our-products-accordion h1, #our-services-accordion h1{
 		font-size: 3rem;
+	}
+	.accordion td{
+		padding: 0.5rem 1rem;
+		text-align: center;
 	}
 	.accordion button{
 		font-size: 1.5rem;
@@ -695,7 +732,7 @@ footer{
 		font-size: 1.5rem;
 	}
 	.contact-us-icon{
-		font-size: 5rem;
+		font-size: 6rem;
 	}
 	.contact-us-headline{
 		font-size: 3rem;
