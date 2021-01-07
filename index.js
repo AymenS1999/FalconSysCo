@@ -19,8 +19,18 @@ $(window).scroll(function(){
 });
 
 
-/*NAVIGATING to the RESPECTIVE PRODUCT or SERVICE and ALSO TOGGLING the TABLE*/
+/*NAVIGATING to the respective PRODUCTs or SERVICEs section and ALSO TOGGLING the TABLE*/
 //PRODUCTS
+$("#goto-mechanical-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseMechanicalProducts").css("display")==="none")
+		$("#mechanical-products").trigger("click");
+});
+$("#goto-instrumentation-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseInstrumentationProducts").css("display")==="none")
+		$("#instrumentation-products").trigger("click");
+});
 $("#goto-electrical-products").click(function(event) {
 	/* Act on the event */
 	if($("#collapseElectricalProducts").css("display")==="none")
@@ -36,21 +46,15 @@ $("#goto-industrial-automation-solution").click(function(event) {
 	if($("#collapseIndustrialAutomationSolution").css("display")==="none")
 		$("#industrial-automation-solution").trigger("click");
 });
-$("#goto-instrumentation-products").click(function(event) {
-	/* Act on the event */
-	if($("#collapseInstrumentationProducts").css("display")==="none")
-		$("#instrumentation-products").trigger("click");
-});
-$("#goto-mechanical-products").click(function(event) {
-	/* Act on the event */
-	if($("#collapseMechanicalProducts").css("display")==="none")
-		$("#mechanical-products").trigger("click");
-});
-
 $("#goto-fire-and-safety").click(function(event) {
 	/* Act on the event */
 	if($("#collapseFireAndSafetyProducts").css("display")==="none")
 		$("#fire-and-safety").trigger("click");
+});
+$("#goto-it-and-networking").click(function(event) {
+	/* Act on the event */
+	if($("#collapseItNetworkingSolutions").css("display")==="none")
+		$("#it-and-networking").trigger("click");
 });
 
 // SERVICES
@@ -71,58 +75,84 @@ $("#goto-power-and-fuel-services").click(function(event) {
 });
 
 
-// //Enable NAVBAR dropdown when hovered but ONLY on LARGE SCREEN DEVICES else IT CRASHES 
-// $(window).on("load resize", function(){
-// 	if(this.matchMedia("(min-width: 768px)").matches){
-// 		$(".dropdown-toggle-split").mouseenter(function(){
-// 			$(".dropdown-toggle-split").trigger("click");
-// 		});
-// 		$(".dropdown-menu").mouseleave(function(){
-// 			$(".dropdown-toggle-split").trigger("click");
-// 		}); 
-// 	}
-// 	else {
-// 		$(".dropdown-toggle-split").off("mouseenter mouseleave");
-// 	}
-// });
-
-if((window).matchMedia("(max-width : 767px)").matches){
-	$(".pipe-chart .utilities-text").text("Download Pipe Chart");
-	$(".pipe-calculator .utilities-text").text("Use Pipe Calculator");
-}
-
-
-// When Pipe Chart and Pipe Calculator is Hovered
-$(".pipe-chart").hover(function() {
-	/* Stuff to do when the mouse enters the element */
-	$(".pipe-chart .utilities-text").text("Download Pipe Chart");
-}, function() {
-	/* Stuff to do when the mouse leaves the element */
-	$(".pipe-chart .utilities-text").text("Pipe Chart");
-});
-$(".pipe-calculator").hover(function() {
-	/* Stuff to do when the mouse enters the element */
-	$(".pipe-calculator .utilities-text").text("Use Pipe Calculator");
-}, function() {
-	/* Stuff to do when the mouse leaves the element */
-	$(".pipe-calculator .utilities-text").text("Pipe Calculator");
-});
-
-
 /*To Enable Disable Pipe-Calculator*/
 //To Enable Pipe Calculator
-$(".pipe-calculator").click(function(event) {
+$("#clickToPipeCalculator").click(function(event) {
 	/* Act on the event */
 	if($(".pipe-calculator-form").css("display")==="none"){
 		$(".pipe-calculator .utilities-text").slideToggle();
 		$(".pipe-calculator-form").slideToggle();
 	}
 });
+
+/* To TOGGLE Metric/Imperial Units */
+// When METRIC is ACTIVE
+$("#metricSelector").click(function(event) {
+	/* Act on the event */
+	$("#metricSelector").addClass('active');
+	$("#imperialSelector").removeClass('active');
+	$("#nps-label").text("Nominal Pipe Size (mm)");
+	$("#od-label").text("Outer Diameter (mm)*");
+	$("#ps-label").text("Schedule");
+	$("#wt-label").text("Wall Thickness (mm)*");
+	$("#pl-label").text("Length (meters)");
+	$("#weight-label").text("Weight (Kg/m)");
+	$(".pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated IMPERIAL VALUE (if any)
+});
+// When IMPERIAL is ACTIVE
+$("#imperialSelector").click(function(event) {
+	/* Act on the event */
+	$("#imperialSelector").addClass('active');
+	$("#metricSelector").removeClass('active');
+	$("#nps-label").text("Nominal Pipe Size (inches)");
+	$("#od-label").text("Outer Diameter (inches)*");
+	$("#ps-label").text("Schedule");
+	$("#wt-label").text("Wall Thickness (inches)*");
+	$("#pl-label").text("Length (ft)");
+	$("#weight-label").text("Weight (lb/ft)");
+	$(".pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated METRIC VALUE (if any)
+});
+
+
+
 // To go Toggle Back (Disable) Pipe Calculator
 $(".pipe-calculator-form .back-button").click(function(event) {
 	/* Act on the event */
 	$(".pipe-calculator .utilities-text").slideToggle();
 	$(".pipe-calculator-form").slideToggle();
+});
+
+
+//Pipe Calculator LOGIC
+const pi = 3.142;
+$(".pipe-calculator-form .calculate-button").click(function(){
+	var od = $("#outDiameter").val()/1000;
+	var wt = $("#wThickness").val()/1000;
+	// console.log(od + wt);
+	if(od != "" && wt != ""){
+		if(od > 2*wt){
+			// For METRIC CALCULATION
+			if($("#metricSelector").hasClass('active')){
+				var id = od - 2*wt;
+				var weight = ((pi/4)*(od*od - id*id)*7850).toFixed(6);
+			}
+			//For IMPERIAL CALCULATION 
+			else{
+				od = od*1000 ;
+				wt = wt*1000;
+				var id = od - 2*wt;
+				var weight = ((pi/4)*(od*od - id*id)*0.284*12).toFixed(6);
+			}
+			// console.log((weight/Math.pow(10, 6)).toFixed(6));
+			$(".pipe-calculator-form #weight").val(weight); 
+		}
+		else {
+			alert("\"Outer Diameter\" should be GREATER THAN twice (2 times) of \"Wall Thickness\"");
+		}
+	}
+	else {
+		alert("\"Outer Diameter\" and \"Wall Thickness\" cannot be Empty");
+	}	
 });
 
 
