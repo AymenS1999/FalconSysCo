@@ -10,15 +10,12 @@
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		
-		<!-- BOOTSTRAP 4 (No INTERNET Version) -->
-		<!-- <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3/dist/css/bootstrap.css"> -->
 		
 		<link rel="stylesheet" href="css/styles.css">
 		
+		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/07adc67c06.js" crossorigin="anonymous"></script>
-		
-		<!-- Font Awesome (No INTERNET Version)-->
-  		<!-- <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css"> -->
+
 	</head>
 	<body>
 		<section id="title">
@@ -44,12 +41,13 @@
 								<button type="button" class="nav-link btn dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
 								<div class="dropdown-menu">
 									<!-- NOTE - We are DELIBERATELY REFERENCING the PREVIOUS ELEMENT (in href="link_to_prev_element") because we want the CARD-HEADER to also be visible. Else the CARD-HEADER of the ACCORDION will GO BEHIND the FLOATING NAVBAR -->
-									<a id="goto-electrical-products" class="dropdown-item" href="#our-products-accordion">Electrical Products</a>
+									<a id="goto-mechanical-products" class="dropdown-item" href="#our-products-accordion">Mechanical Products</a>
+									<a id="goto-instrumentation-products" class="dropdown-item" href="#mechanical-products">Instrumentation Products</a>
+									<a id="goto-electrical-products" class="dropdown-item" href="#instrumentation-products">Electrical Products</a>
 									<a id="goto-industrial-automation-products" class="dropdown-item" href="#electrical-products">Industrial Automation Products</a>
 									<a id="goto-industrial-automation-solution" class="dropdown-item" href="#industrial-automation-products">Industrial Automation Solution</a>
-									<a id="goto-instrumentation-products" class="dropdown-item" href="#industrial-automation-solution">Instrumentation Products</a>
-									<a id="goto-mechanical-products" class="dropdown-item" href="#instrumentation-products">Mechanical Products</a>
-									<a id="goto-fire-and-safety" class="dropdown-item" href="#mechanical-products">Fire and Safety Products</a>
+									<a id="goto-fire-and-safety" class="dropdown-item" href="#industrial-automation-solution">Fire and Safety Products</a>
+									<a id="goto-it-and-networking" class="dropdown-item" href="#fire-and-safety">IT and Networking Solutions</a>
 								</div>
 							</li>
 
@@ -63,13 +61,6 @@
 								</div>
 							</li>
 
-
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="#our-products" title="">Products</a>
-							</li> -->
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="#our-services-accordion" title="">Services</a>
-							</li> -->
 							<li class="nav-item">
 								<a class="nav-link" href="#utilities" title="">Utilities</a>
 							</li>
@@ -148,8 +139,6 @@
 							AN ASSURED DEPENDABILITY IN SUPPLY AND SOURCING OF PRODUCTS FOR
 						</div>
 					</div>
-					<!-- <div class="col-lg-6">
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -163,6 +152,11 @@
 						<div class="owner-image">
 							<img src="images/sayeed_yahya.jpg" class="owner-image-style">
 							<p class="owner-image-text">Sayeed Yahya Alzahrani, Entrepreneur</p>
+							<div>
+								<form method="get" action="FALCON PROFILE_A.pdf">
+									<button id="brochure-download-button" type="submit" class="btn btn-outline-dark btn-lg">Download Product Brochure <i class="fas fa-download"></i></button>
+								</form>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 about-us-text">
@@ -173,15 +167,12 @@
 							<em>Falcon System</em> is a Global Partner to new, upcoming and existing business ventures.
 						</p>
 						<p>
-							Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient sales services thereafter	
+							Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient salses services thereafter	
 						</p>
 						<p>
 							Our inventory portfolio is largely complimented by a range of associated products, and hence a trading platform for procurement, sourcing and sales is further consolidated, visà-vis in creating a “One-Stop” Sales and Services at <em>Falcon System</em> for a gamut of high end products targeted at an entire industrial market sector
 						</p>
 
-						<!-- <p>
-							The range of goods sourced and supplied encompass the fields of Electrical, Mechanical & Instrumentation Engineering, other technical products from as diverse a field as Safety Equipments, Fire Fighting Products, Telecommunications, Industrial Automation, Building Materials (for Construction Industry) Medical Equipments & Logistic Support can also be sourced and supplied albeit on demand and request from clients
-						</p> -->
 					</div>
 					
 				</div>	
@@ -192,13 +183,65 @@
 		<section id="our-products">
 			<div id="product-carousel" class="carousel slide" data-ride="carousel" data-touch="true" data-interval="8000" data-pause="false">
 	      		<div class="carousel-inner">
-	        		<div class="carousel-item active item-1">
+	      			<div class="carousel-item active mechanical-products">
+	        			<div class="row">
+	        				<div class="col-lg-6">
+	        					<h2 class="product-carousel-text">Mechanical Products</h2>		
+	        				</div>
+	        				<div class="col-lg-6">
+	        					<table class="table table-dark table-hover table-sm mechanical-products-table">
+									<tr><td class="first-cell">Pipes</td></tr>
+									<tr><td>Hoses</td></tr>
+									<tr><td>Mechanical Seals</td></tr>
+									<tr><td>Couplings Strainers</td></tr>
+									<tr><td>Fittings (Flanges Tees Elbows,Reducers)</td></tr>
+									<tr><td>Pipe Closures Saddles</td></tr>
+									<tr><td>Pumps - Centrifugal & Rotary</td></tr>
+									<tr><td>Gaskets Seals & Belts</td></tr>
+									<tr><td>Valves - Gate Globe Check Plug including MOV’s</td></tr>
+									<tr><td>Butterfly Valves & Control Valves</td></tr>
+									<tr><td>Filters – Air & Oil</td></tr>
+									<tr><td>Workshop Machinery</td></tr>
+									<tr><td>Cutting Tools</td></tr>
+								</table>
+	        				</div>
+	        			</div>	
+	        		</div>
+	        		<div class="carousel-item instrumentation-products">
+	          			<div class="row">
+	        				<div class="col-lg-6">
+	        					<h2 class="product-carousel-text">Instrumentation Products</h2>
+	        				</div>
+	        				<div class="col-lg-6">
+	        					<table class="table table-hover table-sm instrumentation-products-table">
+									<tr><td class="first-cell">Stainless Steel Tubing & Quick connect fittings</td></tr>
+									<tr><td>Compression Fittings Manifolds</td></tr>
+									<tr><td>Flow – Indicators / Transmitters / Switches</td></tr>
+									<tr><td>RTD & Thermowells</td></tr>
+									<tr><td>Level–Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Thermostats</td></tr>
+									<tr><td>Analyzers</td></tr>
+									<tr><td>Pressure – Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Thermocouples</td></tr>
+									<tr><td>Temperature– Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Valves – Solenoid / Block & Bleed</td></tr>
+									<tr><td>Flow Meters Density Meters</td></tr>
+									<tr><td>Regulators</td></tr>
+									<tr><td>Junction Boxes (Control Instrumentation)</td></tr>
+									<tr><td>Test & Calibration Instruments</td></tr>
+								</table>
+	        							
+	        				</div>
+	        			</div>	          			  
+	        		</div>
+
+	        		<div class="carousel-item electrical-products">
 	        			<div class="row">
 	        				<div class="col-lg-6">
 	        					<h2 class="product-carousel-text">Electrical Products</h2>		
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-dark table-hover table-sm item-1-table">
+	        					<table class="table table-dark table-hover table-sm electrical-products-table">
 									<tr><td class="first-cell">Conduits (PVC Rigid PVC coated EMT & Aluminum)</td></tr>
 									<tr><td>Fittings (Hazardous & Explosion Proof)</td></tr>
 									<tr><td>Wires & cables (LV & MV) Wiring devices</td></tr>
@@ -225,13 +268,13 @@
 	        				</div>
 	        			</div>	
 	        		</div>
-	        		<div class="carousel-item item-2">
+	        		<div class="carousel-item industrial-automation-products">
 	          			<div class="row">
 	        				<div class="col-lg-6">
 	        					<h2 class="product-carousel-text">Industrial Automation Products</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm item-2-table">
+	        					<table class="table table-hover table-sm industrial-automation-products-table">
 									<tr><td class="first-cell">Industrial Signal Conditioners</td></tr>
 									<tr><td>HMIs</td></tr>
 									<tr><td>Data Loggers</td></tr>
@@ -257,142 +300,77 @@
 	        				</div>
 	        			</div>	          			  
 	        		</div>
-	        		<div class="carousel-item item-3">
+
+	        		<div class="carousel-item industrial-automation-solution">
 	          			<div class="row">
 	          				<div class="col-lg-6">
 	        					<h2 class="product-carousel-text">Industrial Automation Solution</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-dark table-sm item-3-table">
-									<tr><td class="first-cell">Vibration Monitoring</td></tr>
-									<tr><td>PC-Based Preventive Maintenance Systems</td></tr>
-									<tr><td>Customized Quality Control Reporting Systems</td></tr>
-									<tr><td>Environmental Monitoring Systems</td></tr>
-									<tr><td>Engine Monitoring</td></tr>
-									<tr><td>OEM/ODM Solutions</td></tr>
-									<tr><td>Compliance Certifications</td></tr>
-									<tr><td>Test & Measurement Consultations</td></tr>
-									<tr><td>TQM Systems Development</td></tr>
-									<tr><td>Machine to Machine (M2M)</td></tr>
-									<tr><td>Industrial Computers</td></tr>
-								</table>
+	        					<table class="table table-hover table-dark table-sm industrial-automation-solution-table">
+								<tr><td class="first-cell">Vibration Monitoring</td></tr>
+								<tr><td>PC-Based Preventive Maintenance Systems</td></tr>
+								<tr><td>Customized Quality Control Reporting Systems</td></tr>
+								<tr><td>Environmental Monitoring Systems</td></tr>
+								<tr><td>Engine Monitoring</td></tr>
+								<tr><td>OEM/ODM Solutions</td></tr>
+								<tr><td>Compliance Certifications</td></tr>
+								<tr><td>Test & Measurement Consultations</td></tr>
+								<tr><td>TQM Systems Development</td></tr>
+								<tr><td>Machine to Machine (M2M)</td></tr>
+								<tr><td>Industrial Computers</td></tr>
+							</table>
 	        				</div>
 	        				
 	        			</div>	          			  
 	        		</div>
-	        		<div class="carousel-item item-4">
-	          			<div class="row">
-	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Instrumentation Products</h2>
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm item-4-table">
-									<tr><td class="first-cell">Stainless Steel Tubing & Quick connect fittings</td></tr>
-									<tr><td>Compression Fittings Manifolds</td></tr>
-									<tr><td>Flow – Indicators / Transmitters / Switches</td></tr>
-									<tr><td>RTD & Thermowells</td></tr>
-									<tr><td>Level–Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermostats</td></tr>
-									<tr><td>Analyzers</td></tr>
-									<tr><td>Pressure – Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermocouples</td></tr>
-									<tr><td>Temperature– Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Valves – Solenoid / Block & Bleed</td></tr>
-									<tr><td>Flow Meters Density Meters</td></tr>
-									<tr><td>Regulators</td></tr>
-									<tr><td>Junction Boxes (Control Instrumentation)</td></tr>
-									<tr><td>Test & Calibration Instruments</td></tr>
-								</table>
-	        							
-	        				</div>
-	        			</div>	          			  
-	        		</div>
-	        		<div class="carousel-item item-5">
-	          			<div class="row">
-	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Mechanical Products</h2>
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-dark table-sm item-5-table">
-									<tr><td class="first-cell">Hoses</td></tr>
-									<tr><td>Mechanical Seals</td></tr>
-									<tr><td>Couplings Strainers</td></tr>
-									<tr><td>Fittings (Flanges Tees Elbows,Reducers)</td></tr>
-									<tr><td>Pipe Closures Saddles</td></tr>
-									<tr><td>Pumps - Centrifugal & Rotary</td></tr>
-									<tr><td>Gaskets Seals & Belts</td></tr>
-									<tr><td>Valves - Gate Globe Check Plug including MOV’s</td></tr>
-									<tr><td>Butterfly Valves & Control Valves</td></tr>
-									<tr><td>Filters – Air & Oil</td></tr>
-									<tr><td>Workshop Machinery</td></tr>
-									<tr><td>Cutting Tools</td></tr>
-								</table>		
-	        				</div>
-	        			</div>
-	        		</div>
-	        		<div class="carousel-item item-6">
+	        		
+	        		<div class="carousel-item fire-and-safety-products">
 	          			<div class="row">
 	          				<div class="col-lg-6">
 	        					<h2 class="product-carousel-text">Fire and Safety Products</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm item-6-table">
-									<tr><td class="first-cell">Gas & Flame Detectors</td></tr>
-									<tr><td>Environmental Control System</td></tr>
-									<tr><td>Industrial Systems</td></tr>
-									<tr><td>Shopping Centres</td></tr>
-									<tr><td>Electrical IT and Server Rooms</td></tr>
-									<tr><td>Parking Areas</td></tr>
-									<tr><td>Power Plants</td></tr>
-									<tr><td>Oil Tank Protection</td></tr>
-									<tr><td>Refuelling Stations</td></tr>
-									<tr><td>Repair / Modernisation</td></tr>
-									<tr><td>Office Buildings</td></tr>
-									<tr><td>Cable Tunnels</td></tr>
-									<tr><td>Warehouses</td></tr>
-									<tr><td>Transformer Protection</td></tr>
-									<tr><td>Archives & Museums</td></tr>
-									<tr><td>Hangars</td></tr>
-									<tr><td>Special Extinguishing Systems</td></tr>
-								</table>
+	        					<table class="table table-hover table-sm fire-and-safety-products-table">
+								<tr><td class="first-cell">Gas & Flame Detectors</td></tr>
+								<tr><td>Environmental Control System</td></tr>
+								<tr><td>Industrial Systems</td></tr>
+								<tr><td>Shopping Centres</td></tr>
+								<tr><td>Electrical IT and Server Rooms</td></tr>
+								<tr><td>Parking Areas</td></tr>
+								<tr><td>Power Plants</td></tr>
+								<tr><td>Oil Tank Protection</td></tr>
+								<tr><td>Refuelling Stations</td></tr>
+								<tr><td>Repair / Modernisation</td></tr>
+								<tr><td>Office Buildings</td></tr>
+								<tr><td>Cable Tunnels</td></tr>
+								<tr><td>Warehouses</td></tr>
+								<tr><td>Transformer Protection</td></tr>
+								<tr><td>Archives & Museums</td></tr>
+								<tr><td>Hangars</td></tr>
+								<tr><td>Special Extinguishing Systems</td></tr>
+							</table>
 	        				</div>
 	        			</div>
 	        		</div>
-	        		<div class="carousel-item item-7">
+	        		 <div class="carousel-item it-and-networking-solutions">
 	          			<div class="row">
 	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Mechanical Services and Spares</h2>
+	        					<h2 class="product-carousel-text">IT and Networking Solutions</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-dark table-sm item-7-table">
-									<tr><td class="first-cell">A/C Systems including Central Air Conditioning using Split Duct, Package Chillers and ALL related works such as Ducting, Grills, Attenuators, Piping, etc.</td></tr>
-									<tr><td>Fuel, Water Systems Including all Valves, Solenoid Valves, Float Switches, Level Sensors, Flow Meters </td></tr>
-									<tr><td>Compressors and All Accessories such as Receivers, Dryers, Separators.</td></tr>
-									<tr><td>Secondary Filters and Water Separators</td></tr> 
-									<tr><td>Sound Treatment Systems including Sound Attenuators, Acoustic Louvers, Acoustic Doors</td></tr>
-									<tr><td>Sound Treatment for the Power Houses and All Very Noisy Equipment including Installation of Sound Attenuators and Sound Treatment Linings for the Walls</td></tr>
-									<tr><td>Waste Water Treatment Plants</td></tr>
-									<tr><td>Power Houses including Diesel, Gas Generating Sets, Gas Turbines, Steam Turbines including All related Mechanical Works such as Boilers, Piping Work, Heat Insulations for the Exhaust Piping, Measuring Equipment</td></tr>
-									<tr><td>Production Lines for All Applications in Industrial, Petroleum Sectors including all Steel Frames.</td></tr>
-								</table>
-	        				</div>
-	        			</div>
-	        		</div>
-	        		<div class="carousel-item item-8">
-	          			<div class="row">
-	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Electrical Services and Spares</h2>
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm item-8-table">
-									<tr><td class="first-cell">Lighting Systems</td></tr>
-									<tr><td>UPS / Battery / Battery Charger</td></tr>
-									<tr><td>Power Factor Correction</td></tr>
-									<tr><td>Isolation Power System</td></tr>
-									<tr><td>Medium Voltage Equipment up to 33 KV such as Switchgears, Package Substations Transformers</td></tr>
-									<tr><td>All Low Voltage, Medium Voltage Cables Including all Cable Trays, Supports, Cable Ties, Cable Tagging, etc</td></tr>
-									<tr><td> Installation of the Power Houses using Diesel Generators High Speed, Medium Speed, Gas Turbine, Steam Turbine, M.V. work up to 33 KV</td></tr>
-								</table>	
+	        					<table class="table table-hover table-dark table-sm it-and-networking-solutions-table">
+								<tr><td class="first-cell">Networking Solutions</td></tr>
+								<tr><td>Structured Cabling</td></tr>
+								<tr><td>IT Management and Software Development</td></tr>
+								<tr><td>Security Systems</td></tr>
+								<tr><td>Data Centre Solutions</td></tr>
+								<tr><td>Audio Video Systems</td></tr>
+								<tr><td>Telephone Systems</td></tr>
+								<tr><td>Digitalization and Automation</td></tr>
+								<tr><td>Internet of Things (IoT)</td></tr>
+								<tr><td>Artificial Intelligence (AI) Products</td></tr>
+							</table>
 	        				</div>
 	        			</div>
 	        		</div>
@@ -416,6 +394,64 @@
 
 			<div class="accordion" id="products-accordion">
 				<div class="card">
+					<div class="card-header" id="mechanicalProducts">
+						<h2 class="mb-0">
+							<button id="mechanical-products" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseMechanicalProducts" aria-expanded="true" aria-controls="collapseMechanicalProducts">
+								Mechanical Products
+							</button>
+						</h2>
+					</div>
+					<div id="collapseMechanicalProducts" class="collapse" aria-labelledby="mechanicalProducts" data-parent="#products-accordion">
+						<div class="card-body">
+							<table class="table table-hover table-dark table-sm mechanical-products-table">
+									<tr><td class="first-cell">Pipes</td></tr>
+									<tr><td>Hoses</td></tr>
+									<tr><td>Mechanical Seals</td></tr>
+									<tr><td>Couplings Strainers</td></tr>
+									<tr><td>Fittings (Flanges Tees Elbows,Reducers)</td></tr>
+									<tr><td>Pipe Closures Saddles</td></tr>
+									<tr><td>Pumps - Centrifugal & Rotary</td></tr>
+									<tr><td>Gaskets Seals & Belts</td></tr>
+									<tr><td>Valves - Gate Globe Check Plug including MOV’s</td></tr>
+									<tr><td>Butterfly Valves & Control Valves</td></tr>
+									<tr><td>Filters – Air & Oil</td></tr>
+									<tr><td>Workshop Machinery</td></tr>
+									<tr><td>Cutting Tools</td></tr>
+								</table>
+						</div>
+					</div>	
+				</div>
+				<div class="card">
+					<div class="card-header" id="instrumentationProducts">
+						<h2 class="mb-0">
+							<button id="instrumentation-products" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseInstrumentationProducts" aria-expanded="true" aria-controls="collapseInstrumentationProducts">
+								Instrumentation Products
+							</button>
+						</h2>
+					</div>
+					<div id="collapseInstrumentationProducts" class="collapse" aria-labelledby="instrumentationProducts" data-parent="#products-accordion">
+						<div class="card-body">
+							<table class="table table-hover table-sm instrumentation-products-table">
+									<tr><td class="first-cell">Stainless Steel Tubing & Quick connect fittings</td></tr>
+									<tr><td>Compression Fittings Manifolds</td></tr>
+									<tr><td>Flow – Indicators / Transmitters / Switches</td></tr>
+									<tr><td>RTD & Thermowells</td></tr>
+									<tr><td>Level–Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Thermostats</td></tr>
+									<tr><td>Analyzers</td></tr>
+									<tr><td>Pressure – Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Thermocouples</td></tr>
+									<tr><td>Temperature– Gauges / Indicators / Transmitters / Switches</td></tr>
+									<tr><td>Valves – Solenoid / Block & Bleed</td></tr>
+									<tr><td>Flow Meters Density Meters</td></tr>
+									<tr><td>Regulators</td></tr>
+									<tr><td>Junction Boxes (Control Instrumentation)</td></tr>
+									<tr><td>Test & Calibration Instruments</td></tr>
+								</table>
+						</div>
+					</div>	
+				</div>
+				<div class="card">
 					<div class="card-header" id="electricalProducts">
 						<h2 class="mb-0">
 							<button id="electrical-products" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseElectricalProducts" aria-expanded="true" aria-controls="collapseElectricalProducts">
@@ -425,7 +461,7 @@
 					</div>
 					<div id="collapseElectricalProducts" class="collapse" aria-labelledby="electricalProducts" data-parent="#products-accordion">
 						<div class="card-body">
-							<table class="table table-dark table-hover table-sm item-1-table">
+							<table class="table table-dark table-hover table-sm electrical-products-table">
 								<tr><td class="first-cell">Conduits (PVC Rigid PVC coated EMT & Aluminum)</td></tr>
 								<tr><td>Fittings (Hazardous & Explosion Proof)</td></tr>
 								<tr><td>Wires & cables (LV & MV) Wiring devices</td></tr>
@@ -452,6 +488,7 @@
 						</div>
 					</div>	
 				</div>
+				
 				<div class="card">
 					<div class="card-header" id="industrialAutomationProducts">
 						<h2 class="mb-0">
@@ -462,7 +499,7 @@
 					</div>
 					<div id="collapseIndustrialAutomationProducts" class="collapse" aria-labelledby="industrialAutomationProducts" data-parent="#products-accordion">
 						<div class="card-body">
-							<table class="table table-hover table-sm item-2-table">
+							<table class="table table-hover table-sm industrial-automation-products-table">
 									<tr><td class="first-cell">Industrial Signal Conditioners</td></tr>
 									<tr><td>HMIs</td></tr>
 									<tr><td>Data Loggers</td></tr>
@@ -498,7 +535,7 @@
 					</div>
 					<div id="collapseIndustrialAutomationSolution" class="collapse" aria-labelledby="industrialAutomationSolution" data-parent="#products-accordion">
 						<div class="card-body">
-							<table class="table table-hover table-dark table-sm item-3-table">
+							<table class="table table-hover table-dark table-sm industrial-automation-solution-table">
 									<tr><td class="first-cell">Vibration Monitoring</td></tr>
 									<tr><td>PC-Based Preventive Maintenance Systems</td></tr>
 									<tr><td>Customized Quality Control Reporting Systems</td></tr>
@@ -514,63 +551,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="card">
-					<div class="card-header" id="instrumentationProducts">
-						<h2 class="mb-0">
-							<button id="instrumentation-products" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseInstrumentationProducts" aria-expanded="true" aria-controls="collapseInstrumentationProducts">
-								Instrumentation Products
-							</button>
-						</h2>
-					</div>
-					<div id="collapseInstrumentationProducts" class="collapse" aria-labelledby="instrumentationProducts" data-parent="#products-accordion">
-						<div class="card-body">
-							<table class="table table-hover table-sm item-4-table">
-									<tr><td class="first-cell">Stainless Steel Tubing & Quick connect fittings</td></tr>
-									<tr><td>Compression Fittings Manifolds</td></tr>
-									<tr><td>Flow – Indicators / Transmitters / Switches</td></tr>
-									<tr><td>RTD & Thermowells</td></tr>
-									<tr><td>Level–Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermostats</td></tr>
-									<tr><td>Analyzers</td></tr>
-									<tr><td>Pressure – Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermocouples</td></tr>
-									<tr><td>Temperature– Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Valves – Solenoid / Block & Bleed</td></tr>
-									<tr><td>Flow Meters Density Meters</td></tr>
-									<tr><td>Regulators</td></tr>
-									<tr><td>Junction Boxes (Control Instrumentation)</td></tr>
-									<tr><td>Test & Calibration Instruments</td></tr>
-								</table>
-						</div>
-					</div>	
-				</div>
-				<div class="card">
-					<div class="card-header" id="mechanicalProducts">
-						<h2 class="mb-0">
-							<button id="mechanical-products" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseMechanicalProducts" aria-expanded="true" aria-controls="collapseMechanicalProducts">
-								Mechanical Products
-							</button>
-						</h2>
-					</div>
-					<div id="collapseMechanicalProducts" class="collapse" aria-labelledby="mechanicalProducts" data-parent="#products-accordion">
-						<div class="card-body">
-							<table class="table table-hover table-dark table-sm item-5-table">
-									<tr><td class="first-cell">Hoses</td></tr>
-									<tr><td>Mechanical Seals</td></tr>
-									<tr><td>Couplings Strainers</td></tr>
-									<tr><td>Fittings (Flanges Tees Elbows,Reducers)</td></tr>
-									<tr><td>Pipe Closures Saddles</td></tr>
-									<tr><td>Pumps - Centrifugal & Rotary</td></tr>
-									<tr><td>Gaskets Seals & Belts</td></tr>
-									<tr><td>Valves - Gate Globe Check Plug including MOV’s</td></tr>
-									<tr><td>Butterfly Valves & Control Valves</td></tr>
-									<tr><td>Filters – Air & Oil</td></tr>
-									<tr><td>Workshop Machinery</td></tr>
-									<tr><td>Cutting Tools</td></tr>
-								</table>
-						</div>
-					</div>	
-				</div>
+				
 				<div class="card">
 					<div class="card-header" id="fireAndSafetyProducts">
 						<h2 class="mb-0">
@@ -581,25 +562,50 @@
 					</div>
 					<div id="collapseFireAndSafetyProducts" class="collapse" aria-labelledby="fireAndSafetyProducts" data-parent="#products-accordion">
 						<div class="card-body">
-							<table class="table table-hover table-sm item-6-table">
-									<tr><td class="first-cell">Gas & Flame Detectors</td></tr>
-									<tr><td>Environmental Control System</td></tr>
-									<tr><td>Industrial Systems</td></tr>
-									<tr><td>Shopping Centres</td></tr>
-									<tr><td>Electrical IT and Server Rooms</td></tr>
-									<tr><td>Parking Areas</td></tr>
-									<tr><td>Power Plants</td></tr>
-									<tr><td>Oil Tank Protection</td></tr>
-									<tr><td>Refuelling Stations</td></tr>
-									<tr><td>Repair / Modernisation</td></tr>
-									<tr><td>Office Buildings</td></tr>
-									<tr><td>Cable Tunnels</td></tr>
-									<tr><td>Warehouses</td></tr>
-									<tr><td>Transformer Protection</td></tr>
-									<tr><td>Archives & Museums</td></tr>
-									<tr><td>Hangars</td></tr>
-									<tr><td>Special Extinguishing Systems</td></tr>
-								</table>
+							<table class="table table-hover table-sm fire-and-safety-products-table">
+								<tr><td class="first-cell">Gas & Flame Detectors</td></tr>
+								<tr><td>Environmental Control System</td></tr>
+								<tr><td>Industrial Systems</td></tr>
+								<tr><td>Shopping Centres</td></tr>
+								<tr><td>Electrical IT and Server Rooms</td></tr>
+								<tr><td>Parking Areas</td></tr>
+								<tr><td>Power Plants</td></tr>
+								<tr><td>Oil Tank Protection</td></tr>
+								<tr><td>Refuelling Stations</td></tr>
+								<tr><td>Repair / Modernisation</td></tr>
+								<tr><td>Office Buildings</td></tr>
+								<tr><td>Cable Tunnels</td></tr>
+								<tr><td>Warehouses</td></tr>
+								<tr><td>Transformer Protection</td></tr>
+								<tr><td>Archives & Museums</td></tr>
+								<tr><td>Hangars</td></tr>
+								<tr><td>Special Extinguishing Systems</td></tr>
+							</table>
+						</div>
+					</div>	
+				</div>
+				<div class="card">
+					<div class="card-header" id="itNeworkingSolutions">
+						<h2 class="mb-0">
+							<button id="it-and-networking" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseItNetworkingSolutions" aria-expanded="true" aria-controls="collapseItNetworkingSolutions">
+								IT and Networking Solutions
+							</button>
+						</h2>
+					</div>
+					<div id="collapseItNetworkingSolutions" class="collapse" aria-labelledby="itNetworkingSolutions" data-parent="#products-accordion">
+						<div class="card-body">
+							<table class="table table-hover table-dark table-sm it-and-networking-solutions-table">
+								<tr><td class="first-cell">Networking Solutions</td></tr>
+								<tr><td>Structured Cabling</td></tr>
+								<tr><td>IT Management and Software Development</td></tr>
+								<tr><td>Security Systems</td></tr>
+								<tr><td>Data Centre Solutions</td></tr>
+								<tr><td>Audio Video Systems</td></tr>
+								<tr><td>Telephone Systems</td></tr>
+								<tr><td>Digitalization and Automation</td></tr>
+								<tr><td>Internet of Things (IoT)</td></tr>
+								<tr><td>Artificial Intelligence (AI) Products</td></tr>
+							</table>
 						</div>
 					</div>	
 				</div>
@@ -622,7 +628,7 @@
 					</div>
 					<div id="collapseElectricalServices" class="collapse" aria-labelledby="electricalServices" data-parent="#services-accordion">
 						<div class="card-body">
-							<table class="table table-hover table-sm item-8-table">
+							<table class="table table-hover table-dark table-sm electrical-services-table">
 									<tr><td class="first-cell">Lighting Systems</td></tr>
 									<tr><td>UPS / Battery / Battery Charger</td></tr>
 									<tr><td>Power Factor Correction</td></tr>
@@ -644,7 +650,7 @@
 					</div>
 					<div id="collapseMechanicalServices" class="collapse" aria-labelledby="mechanicalServices" data-parent="#services-accordion">
 						<div class="card-body">
-							<table class="table table-hover table-dark table-sm item-7-table">
+							<table class="table table-hover table-sm mechanical-services-table">
 									<tr><td class="first-cell">A/C Systems including Central Air Conditioning using Split Duct, Package Chillers and ALL related works such as Ducting, Grills, Attenuators, Piping, etc.</td></tr>
 									<tr><td>Fuel, Water Systems Including all Valves, Solenoid Valves, Float Switches, Level Sensors, Flow Meters </td></tr>
 									<tr><td>Compressors and All Accessories such as Receivers, Dryers, Separators.</td></tr>
@@ -668,7 +674,7 @@
 					</div>
 					<div id="collapsePowerAndFuelServices" class="collapse" aria-labelledby="powerAndFuelServices" data-parent="#services-accordion">
 						<div class="card-body">
-							<table id="fire-and-safety-table" class="table table-hover table-dark table-sm item-9-table">
+							<table id="fire-and-safety-table" class="table table-hover table-dark table-sm power-and-fuel-services-table">
 									<tr><td class="first-cell">Sound proof containerized diesel generating sets with a wide range of capacity up to 1.5 MW/ unit</td></tr> 
 									<tr><td>Our rental diesel generating sets fleet are selected to be very flexible for the voltage selections 220/110 V, 380 /220 V, 380 /220 V, 480/277 V</td></tr>
 									<tr><td>Also it is flexible for the frequency (speed) and it can be adjusted between 50HZ (1500 rpm) and 60 HZ (1800 rpm)</td></tr>
@@ -702,6 +708,11 @@
 					<div class="pipe-chart">
 						<div class="utilities-text">
 							Pipe Chart
+							<div class="utilities-button">
+								<form method="get" action="https://dacapo.com/assets/download/tech/nominal_pipe_sizes.pdf">
+									<button type="submit" class="btn btn-outline-light btn-lg" id="clickToPipeChart">Download <i class="fas fa-file-download"></i></button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -709,43 +720,38 @@
 					<div class="pipe-calculator">
 						<div class="utilities-text">
 							Pipe Calculator
+							<div class="utilities-button">
+								<button type="button" class="btn btn-outline-light btn-lg" id="clickToPipeCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
 						</div>
 						<div class="pipe-calculator-form">
 							<form>
 								<div class="row">
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label>Pipe Size (inches)*</label>
-											<input class="form-control" id="pipeSize" type="number" placeholder="Size" maxlength="10" required>
+									<div class="input-group">
+										<div class="col-sm-12" align="center">
+											<button type="button" class="btn btn-outline-light btn-lg active" id="metricSelector">Metric (Kg/m/mm)</button>
+										<button type="button" class="btn btn-outline-light btn-lg" id="imperialSelector">Imperial (lb/ft/in)</button>
 										</div>
+										
 									</div>
-									<div class="col-sm-6">
+						
+									<div class="col-sm-12">
 										<div class="form-group">
-											<label>Outer Diameter (inches)*</label>
+											<label id="od-label">Outer Diameter (mm)*</label>
 											<input class="form-control" id="outDiameter" type="number" placeholder="Outer Diameter" maxlength="10" required>
 										</div>
 									</div>
-									<div class="col-sm-6">
+									
+									<div class="col-sm-12">
 										<div class="form-group">
-											<label>Schedule (inches)*</label>
-											<input class="form-control" id="schedule" type="number" placeholder="Schedule" maxlength="10" required>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label>Wall Thickness (inches)*</label>
+											<label id="wt-label">Wall Thickness (mm)*</label>
 											<input class="form-control" id="wThickness" type="number" placeholder="Wall Thickness" maxlength="10" required>
 										</div>
 									</div>
-									<div class="col-sm-6">
+									
+									<div class="col-sm-12">
 										<div class="form-group">
-											<label>Length (meters)*</label>
-											<input class="form-control" id="length" type="number" placeholder="Length" maxlength="10" required>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label>Weight (Kg/m)</label>
+											<label id="weight-label">Weight (Kg/m)</label>
 											<input class="form-control" id="weight" type="number" placeholder="" maxlength="10" disabled="true">
 										</div>
 									</div>
@@ -841,13 +847,9 @@
 		</section>
 
 		<footer id="footer">
-			© Copyright Falconsys 2020 | Website Designer & Developer - Aymen Sheikh
+			Copyright © 2020 Falcon System Commercial Co | Website Designer & Developer - Aymen Sheikh
 		</footer>
 
-
-		<!-- <script type="text/javascript" src="jquery-3.5.1.js"></script>
-		<script type="text/javascript" src="bootstrap-4.5.3/dist/js/bootstrap.bundle.js"></script> -->		
-		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="index.js"></script>
