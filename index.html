@@ -55,10 +55,9 @@
 								<a class="nav-link navbar-dropdown-link" href="#our-services-accordion" title="">Services</a>
 								<button type="button" class="nav-link btn dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
 								<div class="dropdown-menu">
-									<a id="goto-electrical-services" class="dropdown-item" href="#our-services-accordion">Electrical Services</a>
-									<a id="goto-mechanical-services" class="dropdown-item" href="#electrical-services">Mechanical Services</a>
-									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#mechanical-services">Power and Fuel Services</a>
-								</div>
+									<a id="goto-mechanical-services" class="dropdown-item" href="#our-services-accordion">Mechanical Services</a>
+									<a id="goto-electrical-services" class="dropdown-item" href="#mechanical-services">Electrical Services</a>
+									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#electrical-services">Power and Fuel Services</a>								</div>
 							</li>
 
 							<li class="nav-item">
@@ -619,28 +618,6 @@
 			<h1>Our Services</h1>
 			<div class="accordion" id="services-accordion">
 				<div class="card">
-					<div class="card-header" id="electricalServices">
-						<h2 class="mb-0">
-							<button id="electrical-services" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseElectricalServices" aria-expanded="true" aria-controls="collapseElectricalServices">
-								Electrical Services & Spares
-							</button>
-						</h2>
-					</div>
-					<div id="collapseElectricalServices" class="collapse" aria-labelledby="electricalServices" data-parent="#services-accordion">
-						<div class="card-body">
-							<table class="table table-hover table-dark table-sm electrical-services-table">
-									<tr><td class="first-cell">Lighting Systems</td></tr>
-									<tr><td>UPS / Battery / Battery Charger</td></tr>
-									<tr><td>Power Factor Correction</td></tr>
-									<tr><td>Isolation Power System</td></tr>
-									<tr><td>Medium Voltage Equipment up to 33 KV such as Switchgears, Package Substations Transformers</td></tr>
-									<tr><td>All Low Voltage, Medium Voltage Cables Including all Cable Trays, Supports, Cable Ties, Cable Tagging, etc</td></tr>
-									<tr><td> Installation of the Power Houses using Diesel Generators High Speed, Medium Speed, Gas Turbine, Steam Turbine, M.V. work up to 33 KV</td></tr>
-								</table>
-						</div>
-					</div>	
-				</div>
-				<div class="card">
 					<div class="card-header" id="mechanicalServices">
 						<h2 class="mb-0">
 							<button id="mechanical-services" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseMechanicalServices" aria-expanded="true" aria-controls="collapseMechanicalServices">
@@ -651,16 +628,38 @@
 					<div id="collapseMechanicalServices" class="collapse" aria-labelledby="mechanicalServices" data-parent="#services-accordion">
 						<div class="card-body">
 							<table class="table table-hover table-sm mechanical-services-table">
-									<tr><td class="first-cell">A/C Systems including Central Air Conditioning using Split Duct, Package Chillers and ALL related works such as Ducting, Grills, Attenuators, Piping, etc.</td></tr>
-									<tr><td>Fuel, Water Systems Including all Valves, Solenoid Valves, Float Switches, Level Sensors, Flow Meters </td></tr>
-									<tr><td>Compressors and All Accessories such as Receivers, Dryers, Separators.</td></tr>
-									<tr><td>Secondary Filters and Water Separators</td></tr> 
-									<tr><td>Sound Treatment Systems including Sound Attenuators, Acoustic Louvers, Acoustic Doors</td></tr>
-									<tr><td>Sound Treatment for the Power Houses and All Very Noisy Equipment including Installation of Sound Attenuators and Sound Treatment Linings for the Walls</td></tr>
-									<tr><td>Waste Water Treatment Plants</td></tr>
-									<tr><td>Power Houses including Diesel, Gas Generating Sets, Gas Turbines, Steam Turbines including All related Mechanical Works such as Boilers, Piping Work, Heat Insulations for the Exhaust Piping, Measuring Equipment</td></tr>
-									<tr><td>Production Lines for All Applications in Industrial, Petroleum Sectors including all Steel Frames.</td></tr>
-								</table>
+								<tr><td class="first-cell">A/C Systems including Central Air Conditioning using Split Duct, Package Chillers and ALL related works such as Ducting, Grills, Attenuators, Piping, etc.</td></tr>
+								<tr><td>Fuel, Water Systems Including all Valves, Solenoid Valves, Float Switches, Level Sensors, Flow Meters </td></tr>
+								<tr><td>Compressors and All Accessories such as Receivers, Dryers, Separators.</td></tr>
+								<tr><td>Secondary Filters and Water Separators</td></tr> 
+								<tr><td>Sound Treatment Systems including Sound Attenuators, Acoustic Louvers, Acoustic Doors</td></tr>
+								<tr><td>Sound Treatment for the Power Houses and All Very Noisy Equipment including Installation of Sound Attenuators and Sound Treatment Linings for the Walls</td></tr>
+								<tr><td>Waste Water Treatment Plants</td></tr>
+								<tr><td>Power Houses including Diesel, Gas Generating Sets, Gas Turbines, Steam Turbines including All related Mechanical Works such as Boilers, Piping Work, Heat Insulations for the Exhaust Piping, Measuring Equipment</td></tr>
+								<tr><td>Production Lines for All Applications in Industrial, Petroleum Sectors including all Steel Frames.</td></tr>
+							</table>
+						</div>
+					</div>	
+				</div>
+				<div class="card">
+					<div class="card-header" id="electricalServices">
+						<h2 class="mb-0">
+							<button id="electrical-services" class="btn btn-link btn-block " type="button" data-toggle="collapse" data-target="#collapseElectricalServices" aria-expanded="true" aria-controls="collapseElectricalServices">
+								Electrical Services & Spares
+							</button>
+						</h2>
+					</div>
+					<div id="collapseElectricalServices" class="collapse" aria-labelledby="electricalServices" data-parent="#services-accordion">
+						<div class="card-body">
+							<table class="table table-hover table-dark table-sm electrical-services-table">
+								<tr><td class="first-cell">Lighting Systems</td></tr>
+								<tr><td>UPS / Battery / Battery Charger</td></tr>
+								<tr><td>Power Factor Correction</td></tr>
+								<tr><td>Isolation Power System</td></tr>
+								<tr><td>Medium Voltage Equipment up to 33 KV such as Switchgears, Package Substations Transformers</td></tr>
+								<tr><td>All Low Voltage, Medium Voltage Cables Including all Cable Trays, Supports, Cable Ties, Cable Tagging, etc</td></tr>
+								<tr><td> Installation of the Power Houses using Diesel Generators High Speed, Medium Speed, Gas Turbine, Steam Turbine, M.V. work up to 33 KV</td></tr>
+							</table>
 						</div>
 					</div>	
 				</div>
@@ -674,25 +673,25 @@
 					</div>
 					<div id="collapsePowerAndFuelServices" class="collapse" aria-labelledby="powerAndFuelServices" data-parent="#services-accordion">
 						<div class="card-body">
-							<table id="fire-and-safety-table" class="table table-hover table-dark table-sm power-and-fuel-services-table">
-									<tr><td class="first-cell">Sound proof containerized diesel generating sets with a wide range of capacity up to 1.5 MW/ unit</td></tr> 
-									<tr><td>Our rental diesel generating sets fleet are selected to be very flexible for the voltage selections 220/110 V, 380 /220 V, 380 /220 V, 480/277 V</td></tr>
-									<tr><td>Also it is flexible for the frequency (speed) and it can be adjusted between 50HZ (1500 rpm) and 60 HZ (1800 rpm)</td></tr>
-									<tr><td>All units are equipped to work in synchronizing together and it can be adjusted on either droop or ISO mode</td></tr>
-									<tr><td>Bus bar panels, Manual transfer switches, Automatic transfer switches, Distribution panels</td></tr>
-									<tr><td>Step–up transformers from 380 V to 11/13.8KV, 33 KV, 50/60Hz</td></tr>
-									<tr><td>M.V. Switchgears including KWHM. It is flexible to suit the different sites arrangement</td></tr>
-									<tr><td>Fuel tanks 5000, 30000, 40000, 50000 liters each fuel tank prepared to feed up to 10 generators also equipped for fuel return</td></tr>
-									<tr><td> Fuel hoses between the fuel tanks and each generators for fast and easy installation also unloading fuel pumps</td></tr>
-									<tr><td>Oil tanks for the new oil and waste oil</td></tr>
-									<tr><td>Water Tanks, Antifreeze</td></tr>
-									<tr><td>L.V. Power cables size 1x240mm², M.V. Cables size 3x185mm²</td></tr>
-									<tr><td>Maintenance for our units using genuine spare parts</td></tr>
-									<tr><td>Operators cover 24 Hrs, 365 Days/year</td></tr>
-									<tr><td>Mobilization and demobilization</td></tr>
-									<tr><td>Supply of diesel fuel as an option if required</td></tr>
-									<tr><td>Feeder cables from our switchgear up to your distribution panel as an optional if required</td></tr>
-								</table>
+							<table class="table table-hover table-dark table-sm power-and-fuel-services-table">
+								<tr><td class="first-cell">Sound proof containerized diesel generating sets with a wide range of capacity up to 1.5 MW/ unit</td></tr> 
+								<tr><td>Our rental diesel generating sets fleet are selected to be very flexible for the voltage selections 220/110 V, 380 /220 V, 380 /220 V, 480/277 V</td></tr>
+								<tr><td>Also it is flexible for the frequency (speed) and it can be adjusted between 50HZ (1500 rpm) and 60 HZ (1800 rpm)</td></tr>
+								<tr><td>All units are equipped to work in synchronizing together and it can be adjusted on either droop or ISO mode</td></tr>
+								<tr><td>Bus bar panels, Manual transfer switches, Automatic transfer switches, Distribution panels</td></tr>
+								<tr><td>Step–up transformers from 380 V to 11/13.8KV, 33 KV, 50/60Hz</td></tr>
+								<tr><td>M.V. Switchgears including KWHM. It is flexible to suit the different sites arrangement</td></tr>
+								<tr><td>Fuel tanks 5000, 30000, 40000, 50000 liters each fuel tank prepared to feed up to 10 generators also equipped for fuel return</td></tr>
+								<tr><td> Fuel hoses between the fuel tanks and each generators for fast and easy installation also unloading fuel pumps</td></tr>
+								<tr><td>Oil tanks for the new oil and waste oil</td></tr>
+								<tr><td>Water Tanks, Antifreeze</td></tr>
+								<tr><td>L.V. Power cables size 1x240mm², M.V. Cables size 3x185mm²</td></tr>
+								<tr><td>Maintenance for our units using genuine spare parts</td></tr>
+								<tr><td>Operators cover 24 Hrs, 365 Days/year</td></tr>
+								<tr><td>Mobilization and demobilization</td></tr>
+								<tr><td>Supply of diesel fuel as an option if required</td></tr>
+								<tr><td>Feeder cables from our switchgear up to your distribution panel as an optional if required</td></tr>
+							</table>
 						</div>
 					</div>	
 				</div>
