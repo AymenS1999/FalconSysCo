@@ -475,7 +475,7 @@ th,td:hover{
 }
 
 /*Electrical Services*/
-.accordion .electrical-services-table{
+.accordion .mechanical-services-table{
 	/*background-color: #483a48;*/
 	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
 	background-size: cover;
@@ -484,7 +484,7 @@ th,td:hover{
 }
 
 /*Mechanical Services*/
-.accordion .mechanical-services-table{
+.accordion .electrical-services-table{
 	background: linear-gradient(to left, rgba(221,221,221,0.5), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
 	background-size: cover;
 	background-position: center;
@@ -493,7 +493,7 @@ th,td:hover{
 
 /*Power and Fuel Services*/
 .accordion .power-and-fuel-services-table{
-	background: linear-gradient(to left, rgba(22,42,111,0.5), rgba(22,42,111,1)), url("../images/power_and_fuel_services.jpg");
+	background: linear-gradient(to left, rgba(22,42,81,0.5), rgba(22,42,81,1)), url("../images/power_and_fuel_services.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #fff;
