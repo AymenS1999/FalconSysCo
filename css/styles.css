@@ -704,10 +704,10 @@ footer{
 		font-size: 1.5rem;
 	}
 	.about-us-text{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
-	#brochure-button{
-		font-size: 2rem;
+	#brochure-download-button{
+		font-size: 1.8rem;
 	}
 	.pipe-chart, .pipe-calculator{
 		margin: 2rem 0;
