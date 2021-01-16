@@ -37,8 +37,8 @@ body{
 	background-color: rgba(11,37,53,1);
 }
 
-
 /*Cover Section*/
+
 .container-fluid{
 	padding: 0;
 }
@@ -49,9 +49,12 @@ body{
 }
 
 #cover-section{
+	/*background-image: url("../images/cover_image.jpg");*/
 	height: 100vh;
 	padding: 0;
 	margin-top: 0px;
+	/*background-color: rgba(10,33,50,1);*/
+	/*background: linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,1));*/
 }
 
 #cover-section blank{
@@ -174,6 +177,9 @@ body{
 }
 
 
+
+
+
 /*About Us*/
 
 #about-us{
@@ -250,9 +256,13 @@ body{
 	border-radius: 3%;
 }
 
+.carousel .table tr td{
+	padding-left: 1.5rem;
+}
+
 td{
 	font-size: 1rem;
-	text-align: center;
+	text-align: left;
 }
 
 .table td.first-cell{
@@ -330,7 +340,7 @@ th,td:hover{
 
 /*IT and Networking*/
 .it-and-networking-solutions{
-	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking.jpg");
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking_solution.jpg");
 	background-size: cover;
 	color: #fff;
 }
@@ -404,9 +414,7 @@ th,td:hover{
 
 /*Our Products Accordion*/
 #our-products-accordion{
-	padding: 4rem;
-	padding-bottom: 2rem;
-	padding-top: 6rem;
+	padding: 2rem 4rem 1rem;
 }
 
 /*Electrical Products*/
@@ -460,7 +468,7 @@ th,td:hover{
 
 /*IT and Networking Solutions*/
 .accordion .it-and-networking-solutions-table{
-	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking.jpg");
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking_solution.jpg");
 	background-size: cover;
 	background-position: center;
 	color: #fff;
@@ -469,9 +477,7 @@ th,td:hover{
 
 /*Our Services Accordion*/
 #our-services-accordion{
-	padding: 4rem;
-	padding-top: 2rem;
-	padding-bottom: 8rem;
+	padding: 1rem 4rem 4rem;
 }
 
 /*Electrical Services*/
@@ -499,12 +505,29 @@ th,td:hover{
 	color: #fff;
 }
 
-
+/*IT and Networking Services*/
+.accordion .it-and-networking-services-table{
+	background: linear-gradient(to left, rgba(181,181,211,0.8), rgba(181,181,211,1)), url("../images/it_and_networking_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
 
 /*Utilities (i.e Pipe Calculator and Pipe Chart)*/
 #utilities{
 	background-color: rgba(1,27,57,1);
 	padding: 5rem 2rem;
+}
+
+#utility-menu{
+	position: absolute;
+	z-index: 111;
+	left: 0px;
+}
+
+#utility-menu ul li{
+	width : 150px;
+	background : rgba(111,127,157,0.5);
 }
 
 .utilities-text{
@@ -533,7 +556,7 @@ th,td:hover{
 }
 
 .pipe-calculator{
-	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,1)), url("../images/pipe_calculator.jpg");
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/pipe_calculator.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -563,7 +586,125 @@ th,td:hover{
 	margin: 1rem;
 }
 
+/*NQSHA*/
+#nqsha{
+	background-color: #fff;
+	height: 40rem;
+	height: 100%;
+	width: 100%;
+}
 
+#nqsha-cover{
+	height: 100%;
+	padding: 2rem 2rem 4rem 4rem;
+}
+.nqsha-cover-text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.nqsha-cover-text p, .nqsha-cover-text h1{
+	margin-bottom: 0; 
+}
+
+.nqsha-cover-text h1{
+	font-size: 6.5rem;
+	color: #431e0c;
+	font-weight: 700;
+}
+
+.nqsha-cover-text .intro-text{
+	color: #f00;
+	font-style: italic;
+}
+
+.nqsha-cover-text .subheading{
+	text-align: right;
+	font-weight: bold;
+}
+
+/*The Click to  know more button*/
+#nqsha-button{
+	text-align: left;
+	padding-top: 1rem;
+}
+#nqsha-button .btn-outline-dark:hover{
+	background-color: #734e3c;
+}
+
+#nqsha-cover img{
+	height: 15rem;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+/*used to ENLARGE image when hovered*/
+.grow img{
+	transition: 1s ease;
+}
+
+.grow img:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	transition: 1s ease;
+	position: relative;
+	z-index: 2;
+}
+
+.nqsha-img-text-above{
+	padding-top: 1rem;
+	padding-bottom: 8px;
+}
+
+.nqsha-img-text-below{
+	padding-top: 8px;
+	padding-bottom: 1rem; 
+}
+
+.nqsha-img-text-left{
+	text-align: left;
+}
+
+.nqsha-img-text-right{
+	text-align: right;
+}
+
+
+
+#nqsha-body{
+	/*background-color: #633e2c;*/
+	/*background-color: #5f2e18;*/
+	background-color: #431e0c;
+	color: #fff;
+	padding: 2rem 4rem;
+	line-height: 1.8;
+}
+
+.about-nqsha{
+	padding: 2rem 4rem 2rem 1rem;
+}
+.nqsha-products{
+	padding: 2rem 1rem 2rem 8rem;
+}
+.nqsha-services{
+	padding: 2rem 5rem 2rem 2rem;
+}
+.nqsha-products ul, .nqsha-services ul{
+	list-style-type: none;
+	padding-left: 0.5rem;
+}
+
+.nqsha-products a, .nqsha-services a{
+	color: #aaa;
+	text-decoration: none;
+}
+
+.nqsha-products a:hover, .nqsha-services a:hover{
+	color: #fff;
+	font-weight: bold;
+}
 
 /*Contact Us*/
 #contact-us{
@@ -577,6 +718,7 @@ th,td:hover{
 }
 
 .contact-us-icon{
+	/*color:  #0a2132;*/
 	color: #0a1122;
 	font-size: 3rem;
 	padding-bottom: 1rem;
@@ -640,7 +782,6 @@ th,td:hover{
 
 /*Footer*/
 footer{
-	/*background-color: #0a1122;*/
 	background-color: #fff;
 	color: #555;
 	font-size: 0.9rem;
@@ -680,6 +821,7 @@ footer{
 		text-align: center;
 		font-size: 2rem;
 	}
+
 	.intro-tagline{
 		top: 35%;
 	}
@@ -704,7 +846,7 @@ footer{
 		font-size: 1.5rem;
 	}
 	.about-us-text{
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 	#brochure-download-button{
 		font-size: 2rem;
@@ -714,8 +856,11 @@ footer{
 		background-size: cover;
 		background-position: center;
 	}
+	/*.pipe-chart:hover, .pipe-calculator:hover{
+		background-size: cover;
+	}*/
 	#our-products, .carousel-item{
-		height: 80rem;
+		height: 100rem;
 	}
 	#our-products-accordion h1, #our-services-accordion h1{
 		font-size: 3rem;
@@ -729,6 +874,31 @@ footer{
 		text-align: center;
 	}
 	td{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.nqsha-cover-text .subheading, #nqsha-button, #nqsha-button a{
+		text-align: center;
+		font-size: 2rem
+	}
+	.nqsha-img-text-left, .nqsha-img-text-right {
+		text-align: left;
+		font-size: 2rem;
+	}
+	.nqsha-body{
+		text-align: center;
+	}
+	.about-nqsha{
+		font-size: 2rem;
+	}
+	.nqsha-products, .nqsha-services{
+		padding: 0;
+	}
+	.nqsha-products h2, .nqsha-services h2{
+		font-size: 3rem;
+	}
+	.nqsha-products ul, .nqsha-services ul{
+		padding-left: 0;
 		font-size: 1.5rem;
 	}
 	.contact-us-icon{
