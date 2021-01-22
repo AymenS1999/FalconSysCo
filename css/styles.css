@@ -1,0 +1,951 @@
+body{
+	text-align: left;
+	font-family: 'Arvo', serif;
+	background-color: #fff;
+}
+
+
+/*Nav Bar*/
+.navbar{
+	padding: 0.3rem 3rem;
+	padding-left: 0.9rem;
+	background-color: #0a1122;
+	text-align: center;
+}
+
+.navbar-logo{
+	width: 9%;
+	margin-right: 1rem;  
+	border-radius: 100%
+}
+
+.nav-item{
+	padding: 0 18px;
+}
+
+/*To Make the CARAT Symbol INLINE with the LINK Besides it*/
+.navbar-dropdown-link{
+	display: inline;
+}
+
+.dropdown-item{
+	text-align: center;
+}
+
+.dropdown-item:hover{
+	color: #fff;
+	background-color: rgba(11,37,53,1);
+}
+
+/*Cover Section*/
+
+.container-fluid{
+	padding: 0;
+}
+
+.row{
+	margin : 0;
+	height: 100%;
+}
+
+#cover-section{
+	height: 100vh;
+	padding: 0;
+	margin-top: 0px;
+}
+
+#cover-section .blank{
+	height: 0;
+}
+
+.intro-foreground{
+	position: relative;
+	height: 100vh;
+}
+
+.intro-tagline{
+	position: relative;
+	top: 54%;
+	transform: translateY(-50%);
+	font-size: 3rem;
+	padding: 3.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.intro-background{
+	position: absolute;
+	z-index: -1;
+	background-color: rgba(10,33,50,1);
+	height: 100vh;
+}
+
+.intro-background-heading{
+	position: relative;
+	top: 50%;
+	left: 10%;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	color: #fafafa;
+}
+
+.intro-background .carousel-item{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+}
+
+.intro-background .carousel-item{
+	opacity: 0;
+	transition-duration: 2s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active, .carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right{
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-right{
+	opacity: 0;
+} 
+
+.carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-prev{
+	transform: translateX(0);
+	transform: translate3d(0,0,0);
+}
+.intro-background .col-lg-9{
+	padding: 0;
+}
+
+.intro-carousel-item-1{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industrial_procurement.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-2{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industry_automation.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-3{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/oil_and_gas.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-4{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/petrochemical.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-5{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/power_sector.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-6{
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/communications_industry.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-7{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/infrastructure_development.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-8{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/fire_safety.jpg");
+	background-size: cover;
+}
+
+
+.intro-carousel-item-9{ 
+	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
+	background-size: cover;
+}
+
+
+
+
+
+/*About Us*/
+
+#about-us{
+	background-color: #fff;
+	padding: 5rem 3rem 0;
+}
+
+.owner-image{
+	width: 100%;
+	position: relative;
+	top: 40%;
+	transform: translateY(-50%);/*
+	padding-top: 1rem;
+	padding-bottom: 5rem;*/
+	text-align: center;
+}
+
+.owner-image-style{
+	border-radius: 3%;
+}
+
+.owner-image-text{
+	line-height: 2;
+	font-weight: 700;
+	color: #444;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.about-us-text{
+	padding-right: 4rem;
+	font-size: 1.2rem;
+	padding-bottom: 5rem;
+}
+
+#brochure-download-button{
+	background-color: rgba(11,37,53,1);
+	color: #fff;
+}
+
+#brochure-download-button:hover{
+	background-color: rgba(27,91,159,1);
+	font-weight: bold;
+}
+
+
+
+/*Our Products*/
+#our-products{
+	background-color: #bbbbbb;
+	height: 52rem;
+}
+
+
+.carousel-item{
+	padding: 3rem 7rem;
+	height: 52rem;
+}
+
+
+.product-carousel-text{
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 900;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel .table{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 3%;
+}
+
+.carousel .table tr td{
+	padding-left: 1.5rem;
+}
+
+td{
+	font-size: 1rem;
+	text-align: left;
+}
+
+.table td.first-cell{
+	border-top: none;
+}
+
+th,td:hover{
+	cursor: default;
+}
+
+/*Electrical Products*/
+.electrical-products{
+	background: linear-gradient(to left, rgba(11,11,1,0), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
+	background-size: cover;
+	color: #fff; 
+}
+
+.electrical-products-table{
+	background: rgba(11,11,11,0.8);
+}
+
+/*Industrial Automation Products*/
+.industrial-automation-products{
+	background: linear-gradient(to left, rgba(221,200,200,0), rgba(221,200,200,0.8)), url("../images/industrial_automation_product.jpg");
+	background-size: cover; 
+	color: #000;
+}
+.industrial-automation-products-table{
+	background-color: rgba(221,200,200,0.7);
+}
+
+/*Industrial Automation Solution*/
+.industrial-automation-solution{
+	background: linear-gradient(to left, rgba(0,0,0,0.0), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.industrial-automation-solution-table{
+	background: rgba(0,0,0,0.6);
+}
+
+
+/*Instrumentation Products*/
+.instrumentation-products{
+	background: linear-gradient(to left, rgba(187,187,187,0), rgba(187,187,187,0.8)), url("../images/instrumentation_products.jpg");
+	background-size: cover;
+	color: #000;
+}
+.instrumentation-products-table{
+	background: rgba(187,187,187,0.85);
+}
+
+
+/*Mechanical Products*/
+.mechanical-products{
+	/*background-color: #0b1b3f;*/
+	background: linear-gradient(to left, rgba(11,27,63,0.2), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.mechanical-products-table{
+	background: rgba(11,27,63,0.7);
+}
+
+
+/*Fire and Safety*/
+.fire-and-safety-products{
+	background: linear-gradient(to left, rgba(210,210,210,0.2), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
+	background-size: cover; 
+	color: #000;
+}
+.fire-and-safety-products-table{
+	background: rgba(210,210,210,0.8);
+}
+
+/*IT and Networking*/
+.it-and-networking-solutions{
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking_solution.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.it-and-networking-solutions-table{
+	background: rgba(11,27,23,0.9);
+}
+
+/*Mechanical Services and Spares*/
+.mechanical-services{
+	/*background-color: #483a48;*/
+	background: linear-gradient(to left, rgba(52,38,52,0.2) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.mechanical-services-table{
+	background-color: rgba(52,38,52,0.9);
+}
+
+
+/*Electrical Services and Spares*/
+.electrical-services{
+	background: linear-gradient(to left, rgba(221,221,221,0.2), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
+	background-size: cover;
+	color: #000;
+}
+.electrical-services-table{
+	background-color: rgba(221,221,221,0.7);
+}
+
+
+/*Our Products and Services COLLAPSABLE Accordion*/
+/*NOTE - ".accordion" is a CLASS NAME because it has an ACCORDION LIKE EFFECT*/
+.accordion .card-header{
+	/*background: linear-gradient(to left, rgba(10,33,50,0.8), rgba(10,33,50,1) 50%);*/
+	background: rgba(10,33,50,1);
+	padding: 0;
+}
+.accordion button{
+	text-align: left;
+	color: #fff;
+	padding: 1rem 2rem;
+}
+
+.accordion button:hover{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	background: #1b5b9f;
+}
+.accordion button:focus{
+	text-decoration: none;
+}
+
+#our-products-accordion h1, #our-services-accordion h1{
+	padding-top: 2rem;
+	line-height: 2;
+}
+
+.accordion table{
+	margin: 0;
+}
+
+.accordion td{
+	padding-left: 4rem;
+	text-align: left;
+}
+
+.card-body{
+	padding: 0;
+}
+
+/*Our Products Accordion*/
+#our-products-accordion{
+	padding: 2rem 4rem 1rem;
+}
+
+/*Electrical Products*/
+.accordion .electrical-products-table{
+	background: linear-gradient(to left, rgba(11,11,1,0.5), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff; 
+}
+
+/*Industrial Automation Products*/
+.accordion .industrial-automation-products-table{
+	background: linear-gradient(to left, rgba(221,200,200,0.5), rgba(221,200,200,1)), url("../images/industrial_automation_product.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+/*Industrial Automation Solution*/
+.accordion .industrial-automation-solution-table{
+	background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+/*Instrumentation Products*/
+.accordion .instrumentation-products-table{
+	background: linear-gradient(to left, rgba(187,187,187,0.5), rgba(187,187,187,1)), url("../images/instrumentation_products.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+/*Mechanical Products*/
+.accordion .mechanical-products-table{
+	/*background-color: #0b1b3f;*/
+	background: linear-gradient(to left, rgba(11,27,63,0.5), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+/*Fire and Safety Products*/
+.accordion .fire-and-safety-products-table{
+	background: linear-gradient(to left, rgba(210,210,210,0.5), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+/*IT and Networking Solutions*/
+.accordion .it-and-networking-solutions-table{
+	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking_solution.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+
+/*Our Services Accordion*/
+#our-services-accordion{
+	padding: 1rem 4rem 4rem;
+}
+
+/*Electrical Services*/
+.accordion .mechanical-services-table{
+	/*background-color: #483a48;*/
+	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+/*Mechanical Services*/
+.accordion .electrical-services-table{
+	background: linear-gradient(to left, rgba(221,221,221,0.5), rgba(221,221,221,1)), url("../images/electrical_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+/*Power and Fuel Services*/
+.accordion .power-and-fuel-services-table{
+	background: linear-gradient(to left, rgba(22,42,81,0.5), rgba(22,42,81,1)), url("../images/power_and_fuel_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+/*IT and Networking Services*/
+.accordion .it-and-networking-services-table{
+	background: linear-gradient(to left, rgba(181,181,211,0.8), rgba(181,181,211,1)), url("../images/it_and_networking_services.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #000;
+}
+
+/*Utilities (i.e Pipe Calculator and Pipe Chart)*/
+#utilities{
+	background-color: rgba(1,27,57,1);
+	padding: 4rem 2rem 5rem;
+}
+
+#utility-menu{
+	position: absolute;
+	z-index: 111;
+	left: 0px;
+}
+
+.utility-menu{
+	padding:0 2rem 2rem 0; 
+}
+
+.utility-menu-button-list{
+	display: inline;
+}
+
+.utility-menu-button{
+	margin: 0.2rem 1rem;
+	width: 100%;
+}
+
+.utilities-text{
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+
+/*Note - Combining the Background PROPERTIES in these WON'T WORK*/
+#pipe-chart, #pipe-calculator, #steel-sheet-calculator{
+	border-radius: 3%;
+	margin: 0 1rem;
+	height: 35rem;
+	cursor: pointer;
+}
+
+#pipe-chart{
+	background: linear-gradient(to left, rgba(1,27,47, 0.6), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+}
+
+#pipe-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/pipe_calculator.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#steel-sheet-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/steel-sheets.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+}
+
+#clickToPipeCalculator, #clickToPipeChart, #clickToSteelSheetCalculator{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/*#pipe-chart:hover{
+	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_chart.jpg");
+	background-size: cover;
+}*/
+
+/*#pipe-calculator:hover{
+	background: linear-gradient(to bottom, rgba(27, 91, 159, 0.6), rgba(27,91,159,1)), url("../images/pipe_calculator.jpg");
+	background-size: cover;
+}*/
+
+/*The FORM where user enters details for Pipe-Calculator*/
+#pipe-calculator-form, #steel-sheet-calculator-form{
+	/*Initially We want the FORM to be HIDDEN*/
+	display: none;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+
+#pipe-calculator-form input, #steel-sheet-calculator-form input{
+	text-align: center;
+}
+
+
+
+#metricSelector, #imperialSelector{
+	margin: 1rem;
+}
+
+/*NAQSH*/
+#naqsh{
+	background-color: #fff;
+	height: 40rem;
+	height: 100%;
+	width: 100%;
+	padding-top: 2rem; 
+}
+
+#naqsh-cover{
+	height: 100%;
+	padding: 2rem 2rem 4rem 4rem;
+}
+.naqsh-cover-text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.naqsh-cover-text p, .naqsh-cover-text h1{
+	margin-bottom: 0; 
+}
+
+.naqsh-cover-text h1{
+	font-size: 6.5rem;
+	color: #431e0c;
+	font-weight: 700;
+}
+
+.naqsh-cover-text .intro-text{
+	color: #f00;
+	font-style: italic;
+}
+
+.naqsh-cover-text .subheading{
+	text-align: right;
+	font-weight: bold;
+}
+
+#naqsh-button{
+	text-align: left;
+	padding-top: 1rem;
+}
+#naqsh-button .btn-outline-dark:hover{
+	background-color: #734e3c;
+}
+
+#naqsh-cover img{
+	height: 15rem;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+.grow img{
+	transition: 1s ease;
+}
+
+.grow img:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	transition: 1s ease;
+	position: relative;
+	z-index: 2;
+}
+
+.naqsh-img-text-above{
+	padding-top: 1rem;
+	padding-bottom: 8px;
+}
+
+.naqsh-img-text-below{
+	padding-top: 8px;
+	padding-bottom: 1rem; 
+}
+
+.naqsh-img-text-left{
+	text-align: left;
+}
+
+.naqsh-img-text-right{
+	text-align: right;
+}
+
+
+
+#naqsh-body{
+	/*background-color: #633e2c;*/
+	/*background-color: #5f2e18;*/
+	background-color: #431e0c;
+	color: #fff;
+	padding: 2rem 4rem;
+	line-height: 1.8;
+}
+
+.about-naqsh{
+	padding: 2rem 4rem 2rem 1rem;
+}
+.naqsh-products{
+	padding: 2rem 1rem 2rem 8rem;
+}
+.naqsh-services{
+	padding: 2rem 5rem 2rem 2rem;
+}
+.naqsh-products ul, .naqsh-services ul{
+	list-style-type: none;
+	padding-left: 0.5rem;
+}
+
+.naqsh-products a, .naqsh-services a{
+	color: #aaa;
+	text-decoration: none;
+}
+
+.naqsh-products a:hover, .naqsh-services a:hover{
+	color: #fff;
+	font-weight: bold;
+}
+
+/*Contact Us*/
+#contact-us{
+	padding: 5rem 2rem;
+	background-color: #fff;
+}
+
+.contact-us-card{
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.contact-us-icon{
+	/*color:  #0a2132;*/
+	color: #0a1122;
+	font-size: 3rem;
+	padding-bottom: 1rem;
+}
+
+.contact-us-icon:hover{
+	color: #1b5b9f;
+	/*color: #1a3142;*/
+}
+
+.contact-us-headline{
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.contact-us-detail{
+	font-color: #8f8f8f;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+/*map*/
+#map{
+	height: 650px;
+	width: 100%;
+}
+
+
+
+/*cta (i.e the End Call To Action or "Request Quote" Form)*/
+#cta{
+	padding: 5% 4rem;
+	text-align: left;
+	font-size: 1rem;
+	background-color: #0a2132;
+	color: #fff;
+}
+
+#cta form{
+	padding-bottom: 1rem;
+	text-align: left;
+}
+
+#cta .form-note{
+	text-align: left;
+	padding: 1rem;
+}
+
+#cta form button{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+/*To ALIGN the FORM BUTTONS to CENTER (Both the Pipe Calculator as well as The Quote Form)*/
+.button-center{
+	text-align: center;
+	width: 100%;
+	margin-top: 1rem; 
+}
+
+
+/*Footer*/
+footer{
+	/*background-color: #0a1122;*/
+	background-color: #fff;
+	color: #555;
+	font-size: 0.9rem;
+	padding: 0.4rem;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+
+
+@media (max-width: 1023px){
+	*{
+		text-align: center;	
+	}
+	.body{
+		text-align: center;
+	}
+	.navbar-brand{
+		font-size: 1.2rem;
+	}
+	.navbar{
+		padding: 0.3rem 3rem;
+		padding-left: 0.2rem;
+		font-size: 2rem;
+	}
+	.navbar-toggler, .nav-link{
+		font-size: 2rem;
+	}
+	.dropdown-button{
+		padding-left: 1rem;
+		display: inline;
+	}
+	.btn-group{
+		display: inline;
+	}
+	.dropdown-item{
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.intro-tagline{
+		top: 35%;
+	}
+	#cover-section, .intro-background, .intro-foreground{
+		height: 60rem;
+	}
+	.intro-background .carousel-item{
+		height: 60rem;
+	}
+	.intro-background-heading{
+		top: 70%;
+		left: 0%;
+	}
+	#about-us{
+		padding: 4rem;
+		padding-top: 10rem;
+	}
+	.owner-image-style{
+		height: 25rem;
+	}
+	.owner-image-text{
+		font-size: 1.5rem;
+	}
+	.about-us-text{
+		font-size: 2rem;
+	}
+	#brochure-download-button{
+		font-size: 2rem;
+	}
+	#pipe-chart, #pipe-calculator{
+		margin: 2rem 0;
+		background-size: cover;
+		background-position: center;
+	}
+	/*#pipe-chart:hover, #pipe-calculator:hover{
+		background-size: cover;
+	}*/
+	#our-products, .carousel-item{
+		height: 100rem;
+	}
+	#our-products-accordion h1, #our-services-accordion h1{
+		font-size: 3rem;
+	}
+	.accordion td{
+		padding: 0.5rem 1rem;
+		text-align: center;
+	}
+	.accordion button{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	td{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.naqsh-cover-text .subheading, #naqsh-button, #naqsh-button a{
+		text-align: center;
+		font-size: 2rem
+	}
+	.naqsh-img-text-left, .naqsh-img-text-right {
+		text-align: left;
+		font-size: 2rem;
+	}
+	.naqsh-body{
+		text-align: center;
+	}
+	.about-naqsh{
+		font-size: 2rem;
+	}
+	.naqsh-products, .naqsh-services{
+		padding: 0;
+	}
+	.naqsh-products h2, .naqsh-services h2{
+		font-size: 3rem;
+	}
+	.naqsh-products ul, .naqsh-services ul{
+		padding-left: 0;
+		font-size: 1.5rem;
+	}
+	.contact-us-icon{
+		font-size: 6rem;
+	}
+	.contact-us-headline{
+		font-size: 3rem;
+	}
+	.contact-us-detail{
+		font-size: 2rem;
+	}
+	#cta form{
+		padding: 2rem;
+		font-size: 2rem;
+	}
+	#cta h2{
+		font-size: 2rem;
+	}
+	#cta .submit-button{
+		font-size: 2rem;
+	}
+	.form-note h6{
+		font-size: 1.5rem;
+	}
+}
+

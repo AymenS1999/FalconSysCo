@@ -79,16 +79,65 @@ $("#goto-it-and-networking-services").click(function(event) {
 		$("#it-and-networking-services").trigger("click");
 });
 
+/*To SWITCH between the UTILITIES*/
+
+//For PIPE CALCULATOR
+$("#activate-pipe-calculator").click(function(event) {
+	/* Act on the event */
+	if($("#pipe-calculator").css("display") === "none"){
+		$("#activate-pipe-calculator").addClass('active');
+		$("#activate-pipe-chart").removeClass("active");
+		$("#activate-steel-sheet-calculator").removeClass('active');
+		$("#pipe-calculator").css("display","block");
+		$("#pipe-chart").css("display", "none");
+		$("#steel-sheet-calculator").css("display","none");
+	}
+});
+
+//For PIPE CHART
+$("#activate-pipe-chart").click(function(event) {
+	/* Act on the event */
+	if($("#pipe-chart").css("display") === "none"){
+		$("#activate-pipe-chart").addClass('active');
+		$("#activate-pipe-calculator").removeClass('active');
+		$("#activate-steel-sheet-calculator").removeClass('active');
+		
+		//The utility to show
+		$("#pipe-chart").css("display","block");
+		
+		//The utilities to be hidden
+		$("#pipe-calculator").css("display", "none");
+		$("#steel-sheet-calculator").css("display","none");
+	}
+});
+
+//For STEEL SHEETS and PLATES
+$("#activate-steel-sheet-calculator").click(function(event){
+	if($("#steel-sheet-calculator").css("display") === "none"){
+		$("#activate-steel-sheet-calculator").addClass('active');
+		$("#activate-pipe-calculator").removeClass('active');
+		$("#activate-pipe-chart").removeClass("active");
+		
+		//The utility to show
+		$("#steel-sheet-calculator").css("display","block");
+		
+		//The utilities to be hidden
+		$("#pipe-calculator").css("display", "none");
+		$("#pipe-chart").css("display","none");
+	}
+});
+
 
 /*To Enable Disable Pipe-Calculator*/
 //To Enable Pipe Calculator
 $("#clickToPipeCalculator").click(function(event) {
 	/* Act on the event */
-	if($(".pipe-calculator-form").css("display")==="none"){
-		$(".pipe-calculator .utilities-text").slideToggle();
-		$(".pipe-calculator-form").slideToggle();
+	if($("#pipe-calculator-form").css("display")==="none"){
+		$("#pipe-calculator .utilities-text").slideToggle();
+		$("#pipe-calculator-form").slideToggle();
 	}
 });
+
 
 /* To TOGGLE Metric/Imperial Units */
 // When METRIC is SELECTED
@@ -97,12 +146,10 @@ $("#metricSelector").click(function(event) {
 	$("#metricSelector").addClass('active');			//ACTIVATE "Metric Selector"
 	$("#imperialSelector").removeClass('active');		//DE-ACTIVATE "Imperial Selector"
 	
-	//We need to UPDATE/REPLACE the "onchange" EVENT FUNCTION when METRIC is SELECTED
-	// $("#nps-selector").attr("onchange","getOuterDiameterInMetric(event)")
-	$("#nps-selector").val("default");
+	$("#nps-selector").val("default");		//To RESET it back to DEFAULT
 	
 	$("#od-label").text("Outer Diameter (mm)*");
-	$("#outDiameter").val("");
+	$("#outDiameter").val("");			//To CLEAR Outer Diameter
 	
 	//To RESET Pipe Schedule
 	$("#ps-selector option").remove();
@@ -113,7 +160,7 @@ $("#metricSelector").click(function(event) {
 	$("#wThickness").val("");
 	$("#pl-label").text("Length (meters)");
 	$("#weight-label").text("Weight (Kg/m)");
-	$(".pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated IMPERIAL VALUE (if any)
+	$("#pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated IMPERIAL VALUE (if any)
 });
 
 
@@ -123,8 +170,6 @@ $("#imperialSelector").click(function(event) {
 	$("#imperialSelector").addClass('active');
 	$("#metricSelector").removeClass('active');
 	
-	//We need to UPDATE/REPLACE the "onchange" EVENT FUNCTION when IMPERIAL is SELECTED
-	// $("#nps-selector").attr("onchange","getOuterDiameterInImperial(event)");
 	$("#nps-selector").val("default");
 
 	$("#od-label").text("Outer Diameter (inches)*");
@@ -139,7 +184,7 @@ $("#imperialSelector").click(function(event) {
 	$("#wThickness").val("");
 	$("#pl-label").text("Length (ft)");
 	$("#weight-label").text("Weight (lb/ft)");
-	$(".pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated METRIC VALUE (if any)
+	$("#pipe-calculator-form #weight").val("");	//To CLEAR the PREVIOUSLY calculated METRIC VALUE (if any)
 });
 
 
@@ -237,7 +282,6 @@ function getOuterDiameter(e){
 // 	'20' : ['STD', 'XS'],
 // };
 
-//LAZY DATA MODEL for Pipe Chart
 var npsScheduleWallThickness = {
 	//For 1/8"
 	"1/8" : {
@@ -594,16 +638,16 @@ function getWallThickness(e){
 
 
 // To go Toggle Back (Disable) Pipe Calculator
-$(".pipe-calculator-form .back-button").click(function(event) {
+$("#pipe-calculator-form .back-button").click(function(event) {
 	/* Act on the event */
-	$(".pipe-calculator .utilities-text").slideToggle();
-	$(".pipe-calculator-form").slideToggle();
+	$("#pipe-calculator .utilities-text").slideToggle();
+	$("#pipe-calculator-form").slideToggle();
 });
 
 
 //Pipe Calculator LOGIC
 const pi = 3.142;
-$(".pipe-calculator-form .calculate-button").click(function(){
+$("#pipe-calculator-form .calculate-button").click(function(){
 	var od = $("#outDiameter").val()/1000;
 	var wt = $("#wThickness").val()/1000;
 	// console.log(od + wt);
@@ -622,7 +666,7 @@ $(".pipe-calculator-form .calculate-button").click(function(){
 				var weight = ((pi/4)*(od*od - id*id)*0.284*12).toFixed(6);
 			}
 			// console.log((weight/Math.pow(10, 6)).toFixed(6));
-			$(".pipe-calculator-form #weight").val(weight); 
+			$("#pipe-calculator-form #weight").val(weight); 
 		}
 		else {
 			alert("\"Outer Diameter\" should be GREATER THAN twice (2 times) of \"Wall Thickness\"");
@@ -633,6 +677,36 @@ $(".pipe-calculator-form .calculate-button").click(function(){
 	}	
 });
 
+
+//To Enable Steel Sheet Calculator
+$("#clickToSteelSheetCalculator").click(function(event) {
+	/* Act on the event */
+	if($("#steel-sheet-calculator-form").css("display")==="none"){
+		$("#steel-sheet-calculator .utilities-text").slideToggle();
+		$("#steel-sheet-calculator-form").slideToggle();
+	}
+});
+
+/*Steel Sheet calculator LOGIC*/
+$("#steel-sheet-calculator-form .calculate-button").click(function(event) {
+	/* Act on the event */
+	var thc = $("#steel-sheet-calculator-form #thickness").val()/1000;
+	var wth = $("#steel-sheet-calculator-form #width").val()/1000;
+	var len = $("#steel-sheet-calculator-form #len").val()/1000;
+	var qty = $("#steel-sheet-calculator-form #qty").val();
+	var wtPerItem = thc*wth*len*7850;
+	var totalWt = wtPerItem*qty;
+	console.log(wtPerItem +" "+ totalWt);
+	$("#steel-sheet-calculator-form #wt-per-item").val(wtPerItem.toFixed(2));
+	$("#steel-sheet-calculator-form #total-wt").val(totalWt.toFixed(2));
+});
+
+//To Disable Steel Sheet Calculator
+$("#steel-sheet-calculator-form .back-button").click(function(event) {
+	/* Act on the event */
+	$("#steel-sheet-calculator .utilities-text").slideToggle();
+	$("#steel-sheet-calculator-form").slideToggle();
+});
 
 
 /*To Validate Form*/
