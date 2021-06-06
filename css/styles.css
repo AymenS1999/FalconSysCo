@@ -1047,7 +1047,9 @@ footer{
 		text-align: center;
 		font-size: 2rem;
 	}
-
+	.dropdown-menu p{
+		font-size: 2rem;
+	}
 	.intro-tagline{
 		top: 35%;
 	}
@@ -1080,7 +1082,7 @@ footer{
 	#utilities form{
 		padding: 0;
 	}
-	#pipe-chart, #pipe-calculator{
+	#pipe-chart, #pipe-calculator, #steel-sheet-calculator{
 		margin: 2rem 0;
 		height: 44rem;
 		background-size: cover;
