@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Falcon System Commercial Co</title>
+		<!-- For Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;700;900&family=Rakkas&display=swap" rel="stylesheet">
+		
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		
+		<!-- BOOTSTRAP 4 (No INTERNET Version) -->
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.5.3/dist/css/bootstrap.css">
+		
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<!-- <script src="https://kit.fontawesome.com/07adc67c06.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+		
+		<!-- Font Awesome (No INTERNET Version)-->
+  		<link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+	</head>
+
+	<body>
+		<section id="title">
+			<div class="container-fluid">
+				<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+					<a class="navbar-brand" href="index.html" style="width: 20rem"><img src="images/falcon_sys_logo.png" class="navbar-logo"><it class="gold-text">Falcon System Commercial Co</it></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#title">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about_us.html" title="">About Us</a>
+							</li>
+							
+
+							<li class="nav-item btn-group">
+								<a class="nav-link navbar-dropdown-link" href="products_and_services.html" title="">Products & Services</a>
+								<button type="button" class="nav-link btn dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu">
+									<!-- NOTE - We are DELIBERATELY REFERENCING the PREVIOUS ELEMENT (in href="link_to_prev_element") because we want the CARD-HEADER to also be visible. Else the CARD-HEADER of the ACCORDION will GO BEHIND the FLOATING NAVBAR -->
+									<p>Products<p>
+									<a id="goto-mechanical-products" class="dropdown-item" href="#our-products-accordion">Mechanical Products</a>
+									<a id="goto-instrumentation-products" class="dropdown-item" href="#mechanical-products">Instrumentation Products</a>
+									<a id="goto-electrical-products" class="dropdown-item" href="#instrumentation-products">Electrical Products</a>
+									<a id="goto-industrial-automation-products" class="dropdown-item" href="#electrical-products">Industrial Automation Products</a>
+									<a id="goto-industrial-automation-solution" class="dropdown-item" href="#industrial-automation-products">Industrial Automation Solution</a>
+									<a id="goto-fire-and-safety" class="dropdown-item" href="#industrial-automation-solution">Fire and Safety Products</a>
+									<a id="goto-it-and-networking" class="dropdown-item" href="#fire-and-safety">IT and Networking Solutions</a>
+									<div class="dropdown-divider"></div>
+									<p>Services</p>
+									<a id="goto-mechanical-services" class="dropdown-item" href="#our-services-accordion">Mechanical Services</a>
+									<a id="goto-electrical-services" class="dropdown-item" href="#mechanical-services">Electrical Services</a>
+									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#electrical-services">Power and Fuel Services</a>
+									<a id="goto-it-and-networking-services" class="dropdown-item" href="#power-and-fuel-services">IT and Networking Services</a>
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#" title=""><it class="gold-text">Utilities</it></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#footer" title="">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</section>
+
+
+
+
+		<section id="utilities" class="fade">
+
+			<!-- <nav id="utility-menu">
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+				<ul>
+					<li><a href="" title=""></a>Pipe Calculator</li>
+				</ul>
+			</nav> -->
+			<!-- <div class="row utility-menu">
+				<div class="col-lg-3 utility-menu-button-list">
+					<button id="activate-pipe-calculator" type="button" id="pipe-calculator-button" class="btn btn-outline-light active utility-menu-button">Pipe Calculator</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-pipe-chart" type="button" id="pipe-chart-button" class="btn btn-outline-light utility-menu-button">Pipe Chart</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-steel-sheet-calculator" type="button" class="btn btn-outline-light utility-menu-button">Steel Sheets Calculator</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-round-bars-calculator" type="button" class="btn btn-outline-light utility-menu-button">Round Steel Bars</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-square-steel-bars-calculator" type="button" class="btn btn-outline-light utility-menu-button">Square Steel Bars</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-flat-bars-calculator" type="button" class="btn btn-outline-light utility-menu-button">Flat Bars</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-channels-gost-calculator" type="button" class="btn btn-outline-light utility-menu-button">Channels (GOST)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-channels-upn-calculator" type="button" class="btn btn-outline-light utility-menu-button">Channels (UPN)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-beams-ipn-calculator" type="button" class="btn btn-outline-light utility-menu-button">Beams (IPN)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-beams-ipe-calculator" type="button" class="btn btn-outline-light utility-menu-button">Beams (IPE)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-beams-ipbl-calculator" type="button" class="btn btn-outline-light utility-menu-button">Beams (IPBL/HEA)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-beams-ipb-calculator" type="button" class="btn btn-outline-light utility-menu-button">Beams (IPB/HEB)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-angles-equal-calculator" type="button" class="btn btn-outline-light utility-menu-button">Angles (Equal)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-angles-unequal-calculator" type="button" class="btn btn-outline-light utility-menu-button">Angles (Unequal)</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-hollow-circular-calculator" type="button" class="btn btn-outline-light utility-menu-button">Hollow Circular Structures</button>
+				</div>
+				<div class="col-lg-3 utility-button-list">
+					<button id="activate-hollow-square-calculator" type="button" class="btn btn-outline-light utility-menu-button">Hollow Square Structures</button>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="col-lg-4 utility-menu">
+					<div class="utility-menu-button-list">
+					<button id="activate-pipe-calculator" type="button" id="pipe-calculator-button" class="btn btn-dark active utility-menu-button">Pipe Calculator</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-pipe-chart" type="button" id="pipe-chart-button" class="btn btn-dark utility-menu-button">Pipe Chart</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-steel-sheet-calculator" type="button" class="btn btn-dark utility-menu-button">Steel Sheets Calculator</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-round-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Round Steel Bars</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-square-steel-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Square Steel Bars</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-flat-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Flat Bars</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-channels-gost-calculator" type="button" class="btn btn-dark utility-menu-button">Channels (GOST)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-channels-upn-calculator" type="button" class="btn btn-dark utility-menu-button">Channels (UPN)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-beams-ipn-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPN)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-beams-ipe-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPE)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-beams-ipbl-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPBL/HEA)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-beams-ipb-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPB/HEB)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-angles-equal-calculator" type="button" class="btn btn-dark utility-menu-button">Angles (Equal)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-angles-unequal-calculator" type="button" class="btn btn-dark utility-menu-button">Angles (Unequal)</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-hollow-circular-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Circular Structures</button>
+				</div>
+				<div class="utility-button-list">
+					<button id="activate-hollow-square-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Square Structures</button>
+				</div>
+				</div>
+				<div class="col-lg-8 utility-item">
+					<div id="pipe-chart">
+						<div class="utilities-text">
+							Pipe Chart
+							<div class="utilities-button">
+								<form method="get" action="https://dacapo.com/assets/download/tech/nominal_pipe_sizes.pdf">
+									<button type="submit" class="btn btn-outline-light btn-lg" id="clickToPipeChart">Download <i class="fas fa-file-download"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="pipe-calculator">
+						<div class="utilities-text">
+							Pipe Calculator
+							<div class="utilities-button">
+								<button type="button" class="btn btn-outline-light btn-lg" id="clickToPipeCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="pipe-calculator-form">
+							<form>
+								<div class="row">
+									<div class="input-group">
+										<div class="col-sm-12" align="center">
+											<button type="button" class="btn btn-outline-light active" id="metricSelector">Metric (Kg/m/mm)</button>
+											<button type="button" class="btn btn-outline-light" id="imperialSelector">Imperial (lb/ft/in)</button>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="nps-label">Nominal Pipe Size</label>
+											<!-- When the VALUE <option> is CHANGED we simultaneously UPDATE the VALUE in Outer Diameter using the FUNCTION "getOuterDiameter" -->
+											<select class="custom-select" id="nps-selector" onchange="getOuterDiameter(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">1/8</option>
+												<option value="2">1/4</option>
+												<option value="3">3/8</option>
+												<option value="4">1/2</option>
+												<option value="5">3/4</option>
+												<option value="6">1</option>
+												<option value="7">1-1/4</option>
+												<option value="8">1-1/2</option>
+												<option value="9">2</option>
+												<option value="10">2-1/2</option>
+												<option value="11">3</option>
+												<option value="12">3-1/2</option>
+												<option value="13">4</option>
+												<option value="14">5</option>
+												<option value="15">6</option>
+												<option value="16">8</option>
+												<option value="17">10</option>
+												<option value="18">12</option>
+												<option value="19">14</option>
+												<option value="20">16</option>
+												<option value="21">18</option>
+												<option value="22">20</option>
+												<option value="23">22</option>
+												<option value="24">24</option>
+												<option value="25">26</option>
+												<option value="26">28</option>
+												<option value="27">30</option>
+												<option value="28">32</option>
+												<option value="29">34</option>
+												<option value="30">36</option>
+												<option value="31">38</option>
+												<option value="32">40</option>
+												<option value="33">42</option>
+												<option value="34">44</option>
+												<option value="35">46</option>
+												<option value="36">48</option>
+												<!-- <option value="37">50</option>
+												<option value="38">52</option>
+												<option value="39">54</option>
+												<option value="40">56</option>
+												<option value="41">58</option>
+												<option value="42">60</option>
+												<option value="43">62</option>
+												<option value="44">64</option>
+												<option value="45">66</option>
+												<option value="46">68</option>
+												<option value="47">70</option>
+												<option value="48">72</option>
+												<option value="49">74</option>
+												<option value="50">76</option>
+												<option value="51">78</option>
+												<option value="52">80</option>
+												<option value="53">82</option>
+												<option value="54">84</option>
+												<option value="55">86</option>
+												<option value="56">88</option>
+												<option value="57">90</option>
+												<option value="58">92</option>
+												<option value="59">94</option>
+												<option value="60">96</option>
+												<option value="61">98</option>
+												<option value="62">100</option>
+												<option value="63">102</option>
+												<option value="64">104</option>
+												<option value="65">106</option>
+												<option value="66">108</option>
+												<option value="67">110</option> -->
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="od-label">Outer Diameter (mm)*</label>
+											<input class="form-control" id="outDiameter" type="number" placeholder="Outer Diameter" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="ps-label">Schedule</label>
+											<!-- <input class="form-control" id="schedule" type="number" placeholder="Schedule" maxlength="10" required> -->
+											<select class="custom-select" id="ps-selector" onchange="getWallThickness(event)">
+												<option value="default" selected>--Select--</option>
+												<!-- <option value="default" selected>--Select--</option>
+												<option value="1">10/10S</option>
+												<option value="2">STD/40/40S</option>
+												<option value="3">XS/80/80S</option> -->
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="wt-label">Wall Thickness (mm)*</label>
+											<input class="form-control" id="wThickness" type="number" placeholder="Wall Thickness" maxlength="10" required>
+										</div>
+									</div>
+									<!-- <div class="col-sm-6">
+										<div class="form-group">
+											<label id="pl-label">Length (meters)</label>
+											<input class="form-control" id="length" type="number" placeholder="Length" maxlength="10" required>
+										</div>
+									</div> -->
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label id="weight-label">Weight (Kg/m)</label>
+											<input class="form-control" id="weight" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div id="steel-sheet-calculator">
+						<div class="utilities-text">
+							Steel Sheets Calculator
+							<div class="utilities-button">
+								<button type="button" class="btn btn-outline-light btn-lg" id="clickToSteelSheetCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="steel-sheet-calculator-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="thickness-label">Thickness (mm)*</label>
+											<input class="form-control" id="thickness" type="number" placeholder="Sheet Thickness" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="Width" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="length-label">Length (mm)*</label>
+											<input class="form-control" id="len" type="number" placeholder="Length" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="quantity-label">Quantity*</label>
+											<input class="form-control" id="qty" type="number" placeholder="Number of Peices" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="wt-single-label">Weight Per Peice(Kg)</label>
+											<input class="form-control" id="wt-per-item" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="weight-total-label">Total Weight (Kg)</label>
+											<input class="form-control" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+
+
+		<footer id="footer">
+			<div class="footer-container">
+				<div class="sec about-us">
+					<h2>About Us</h2>
+					<p>
+						<em>Falcon System</em> is a Global Partner to new, upcoming and existing business ventures.
+						Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient salses services thereafter	
+					</p>
+					<ul class="sci">
+						<li><a href=""><i class="fab fa-facebook contact-us-icon"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram contact-us-icon"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter contact-us-icon"></i></a></li>
+						<li><a href=""><i class="fab fa-youtube contact-us-icon"></i></a></li>
+					</ul>					
+				</div>
+				<!-- <div class="sec quicklinks">
+					<h2>Quick Links</h2>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Utilities</a></li>
+
+					</ul>
+				</div> -->
+				<div class="sec contactus">
+					<h2>We're Available At</h2>
+					<ul class="info">
+						<li>
+							<span><i class="fas fa-map-marker-alt"></i></span>
+							<p><a href="index.html#map">P.O Box 31301, Al Khobar 31952, Saudi Arabia</a></p>
+						</li>
+						<li>
+							<span><i class="fas fa-phone"></i></span>
+							<p>Tel / Fax : <a href="">+966 013 8100094</a></p>
+						</li>
+						<li>
+							<span><i class="fas fa-envelope"></i></span>
+							<p><a href="">info@falconsysco.com</a><br>
+							<a href="">sales@falconsysco.com</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="sec contactus">
+					<form>
+						<h2>Contact Us</h2>
+						<input id="emailId" class="form-control cta-email" type="email" placeholder="Your Email" required>
+						<textarea id="queryMessage" class="cta-message" placeholder="Anything we could assist you with?"></textarea><br>
+						<button id="submit-button" type="submit" class="btn btn-primary cta-button">Send</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<div class="copyrightText">
+			<p>Copyright © 2020 Falcon System Commercial Co | Website Designer & Developer - Aymen Sheikh</p>
+		</div>
+
+
+		<script type="text/javascript" src="jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="bootstrap-4.5.3/dist/js/bootstrap.bundle.js"></script>		
+
+		<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+    	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+
+</html>
