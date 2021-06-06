@@ -1,23 +1,20 @@
-// Changing ACTIVE link when CLICKED
-$(".navbar-nav a").on("click",function(){
-	$(".navbar-nav").find("li.active").removeClass("active");
-	$(this).parent().addClass("active");
+// FADING EFFECTS
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).outerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top; //+ $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
 });
-
-
-/* Changing ACTIVE link when SCROLLED*/
-//Creating SCROLL SPY
-$(document).ready(function(){
-	$("body").scrollspy({
-		target : "#title",
-	});
-});
-//Listening to SCROLL SPY
-$(window).scroll(function(){
-	$(".navbar-nav").find("li.active").removeClass("active");
-	$(this).parent().addClass("active");
-});
-
 
 /*NAVIGATING to the respective PRODUCTs or SERVICEs section and ALSO TOGGLING the TABLE*/
 //PRODUCTS
@@ -710,15 +707,13 @@ $("#steel-sheet-calculator-form .back-button").click(function(event) {
 
 
 /*To Validate Form*/
-document.querySelector("form .submit-button").addEventListener("click", function(){
-	var name = document.querySelector("#fname").value +" "+ document.querySelector("#lname").value;
+document.querySelector("form #submit-button").addEventListener("click", function(){
 	var emailId = document.querySelector("#emailId").value;
-	if(name!="" && emailId!=""){
+	var queryMessage = document.querySelector("#queryMessage").value;
+	if(emailId!="" && queryMessage!=""){
 		alert("Form Submitted");
-		document.querySelector("#fname").value = "";
-		document.querySelector("#lname").value = "";
 		document.querySelector("#emailId").value = "";
-		document.querySelector("#mobileNo").value = "";
+		document.querySelector("#queryMessage").value= "";
 	}
 	else
 		alert("Please fill All the Required Fields");
