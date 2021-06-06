@@ -777,6 +777,7 @@ hr#about-us-divider{
 
 /*Partners*/
 #partners{
+	position: relative;
 	margin: 0;
 	padding: 5rem 3rem;
 	box-sizing: border-box;
