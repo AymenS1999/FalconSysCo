@@ -31,34 +31,46 @@
 							<li class="nav-item">
 								<a class="nav-link" href="index.html#title">Home</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#" title=""><it class="gold-text">About Us</it></a>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="about_us.html" title="">About Us</a>
+								<div id="about-us-menu" class="dropdown-menu">
+									<a class="dropdown-item" href="">Owner's Message</a>
+									<a class="dropdown-item" href="#values">Our Values</a>
+									<a class="dropdown-item" href="#vision">Our Vision & Mission</a>
+								</div>
 							</li>
-							
-
-							<li class="nav-item btn-group">
-								<a class="nav-link navbar-dropdown-link" href="products_and_services.html" title="">Products & Services</a>
-								<button type="button" class="nav-link btn dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="products_and_services.html" title="">Products</a>
 								<div class="dropdown-menu">
 									<!-- NOTE - We are DELIBERATELY REFERENCING the PREVIOUS ELEMENT (in href="link_to_prev_element") because we want the CARD-HEADER to also be visible. Else the CARD-HEADER of the ACCORDION will GO BEHIND the FLOATING NAVBAR -->
-									<p>Products</p>
-									<a id="goto-mechanical-products" class="dropdown-item" href="#our-products-accordion">Mechanical Products</a>
-									<a id="goto-instrumentation-products" class="dropdown-item" href="#mechanical-products">Instrumentation Products</a>
-									<a id="goto-electrical-products" class="dropdown-item" href="#instrumentation-products">Electrical Products</a>
-									<a id="goto-industrial-automation-products" class="dropdown-item" href="#electrical-products">Industrial Automation Products</a>
-									<a id="goto-industrial-automation-solution" class="dropdown-item" href="#industrial-automation-products">Industrial Automation Solution</a>
-									<a id="goto-fire-and-safety" class="dropdown-item" href="#industrial-automation-solution">Fire and Safety Products</a>
-									<a id="goto-it-and-networking" class="dropdown-item" href="#fire-and-safety">IT and Networking Solutions</a>
-									<div class="dropdown-divider"></div>
-									<p>Services</p>
-									<a id="goto-mechanical-services" class="dropdown-item" href="#our-services-accordion">Mechanical Services</a>
-									<a id="goto-electrical-services" class="dropdown-item" href="#mechanical-services">Electrical Services</a>
-									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#electrical-services">Power and Fuel Services</a>
-									<a id="goto-it-and-networking-services" class="dropdown-item" href="#power-and-fuel-services">IT and Networking Services</a>
+									<a id="goto-mechanical-products" class="dropdown-item" href="products_and_services.html#our-products-accordion">Mechanical Products</a>
+									<a id="goto-instrumentation-products" class="dropdown-item" href="products_and_services.html#mechanical-products">Instrumentation Products</a>
+									<a id="goto-electrical-products" class="dropdown-item" href="products_and_services.html#instrumentation-products">Electrical Products</a>
+									<a id="goto-industrial-automation-products" class="dropdown-item" href="products_and_services.html#electrical-products">Industrial Automation Products</a>
+									<a id="goto-industrial-automation-solution" class="dropdown-item" href="products_and_services.html#industrial-automation-products">Industrial Automation Solution</a>
+									<a id="goto-fire-and-safety" class="dropdown-item" href="products_and_services.html#industrial-automation-solution">Fire and Safety Products</a>
+									<a id="goto-it-and-networking" class="dropdown-item" href="products_and_services.html#fire-and-safety">IT and Networking Solutions</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="products_and_services.html" title="">Services</a>
+								<div class="dropdown-menu">
+									<a id="goto-mechanical-services" class="dropdown-item" href="products_and_services.html#our-services-accordion">Mechanical Services</a>
+									<a id="goto-electrical-services" class="dropdown-item" href="products_and_services.html#mechanical-services">Electrical Services</a>
+									<a id="goto-power-and-fuel-services" class="dropdown-item" href="products_and_services.html#electrical-services">Power and Fuel Services</a>
+									<a id="goto-it-and-networking-services" class="dropdown-item" href="products_and_services.html#power-and-fuel-services">IT and Networking Services</a>
 								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="utilities.html" title="">Utilities</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="#partners" title="">Partners</a>
+								<div id="partners-menu" class="dropdown-menu">
+									<a id="goto-partner-azemco" class="dropdown-item" href="#partners">AZEMCO</a>
+									<a id="goto-partner-afco" class="dropdown-item" href="#partners">AFCO</a>
+									<a id="goto-partner-naqsh" class="dropdown-item" href="#partners">NAQSH</a>
+								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#footer" title="">Contact Us</a>
@@ -80,29 +92,57 @@
 							<p class="owner-image-text">Sayeed Yahya Alzahrani, Entrepreneur</p>
 							<div>
 								<form method="get" action="FALCON PROFILE_A.pdf">
-									<button id="about-us-button" type="submit" class="btn btn-outline-dark btn-lg">Download Product Brochure <i class="fas fa-file-download"></i></button>
+									<button id="about-us-button" type="submit" class="btn btn-outline-dark btn-lg">Download Profile <i class="fas fa-file-download"></i></button>
 								</form>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 about-us-text">
 						<p class="fade">
-							<strong>"WHEN KNOWLEDGE & EXECUTION PARTAKES EXPERIENCE & STANDING"</strong>
+							<strong class="highlight">&ldquo; WHEN KNOWLEDGE & EXECUTION PARTAKES EXPERIENCE & STANDING&rdquo;</strong>
 						</p>
 						<p class="fade">
-							<span class="highlight"><strong>Falcon System Commercial Co</strong></span> is a Global Partner to new, upcoming and existing business ventures.
+							<span class="highlight" style="font-family: 'Rakkas', serif;"><strong>Falcon System Commercial Co</strong></span> is a Global Partner to new, upcoming and existing business ventures.
 						</p>
 						<p class="fade">
-							Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient salses services thereafter	
+							I express my grattitude towards being a part of an excellent team that strives on reaching this success and greatness. We are challenging the business world by creating a legacy for every work accomplished.
 						</p>
 						<p class="fade">
-							Our inventory portfolio is largely complimented by a range of associated products, and hence a trading platform for procurement, sourcing and sales is further consolidated, visà-vis in creating a “One-Stop” Sales and Services at <em>Falcon System</em> for a gamut of high end products targeted at an entire industrial market sector
+							We are committed to create new and progressive approaches in our operations and services, contributing to the satisfaction and progression of our clients as well. It all reflects in our <em class="gold-text">Mission, Vision</em> and <em class="gold-text">Values</em>.
 						</p>
 					</div>
 					
 				</div>	
 			</div>
 		</section>
+		
+		<section id="values" class="about fade">
+			<div class="content-box fade">
+				<h2 class="titleText" style="text-align: start">Our <span class="highlight">Values</span></h2>
+				<div class="row fade">
+					<ul class="text fade col-lg-6">
+						<li>Continuous Improvement</li>
+						<li>Acting with Integrity</li>
+						<li>Customer Satisfaction</li>
+						<li>Quality</li>
+						<li>Professionalism</li>
+					</ul>
+					<ul class="col-lg-6 text fade">
+						<li>Productivity</li>
+						<li>Ethics</li>
+						<li>Safety</li>
+						<li>Environment Protection</li>
+						<li>Building Relations</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo fade">
+				<div class="img-box fade">
+					<img src="images/our_values.jpg">
+				</div>			
+			</div>
+		</section>
+		
 
 		<hr id="about-us-divider" class="fade">
 
@@ -118,7 +158,7 @@
 				<p class="text fade" style="text-align: start">
 					<span class="highlight">Mission</span>
 					<ul class="text fade" style="text-align: start">
-						<li>Cater to all kinds of industrial requirements, upon request; whatever the type, size or peculiarity of the product or service may be</li>
+						<li>Supplier of all kinds of industrial procurements, upon request; whatever the type, size or peculiarity of the product or service may be</li>
 						<li>Compliance with environmental protection standards taking this responsibility with serious applicable actions</li>
 						<li>Spread our local Saudi industry in Middle East with pride as one of the best</li>
 					</ul>
@@ -158,7 +198,7 @@
 					<ul class="info">
 						<li>
 							<span><i class="fas fa-map-marker-alt"></i></span>
-							<p><a href="index.html#map">P.O Box 31301, Al Khobar 31952, Saudi Arabia</a></p>
+							<p><a href="index.html#map">SQ Towers 4<sup>th</sup> Floor Suite #406, Al Khobar 31952, Saudi Arabia</a></p>
 						</li>
 						<li>
 							<span><i class="fas fa-phone"></i></span>
