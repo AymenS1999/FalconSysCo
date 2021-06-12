@@ -843,19 +843,17 @@ hr#about-us-divider{
 	text-align: center;
 }
 
-#partner-img img{
+.partner-img img{
 	height: 350px;
 	width: 350px;
 	padding: 2rem;
 	opacity: 1;
 }
-
-
-#partner-img img:hover{
+.partner-img img:hover{
 	opacity: 0.8;
 }
 
-#partner-img p{
+.partner-img p{
 	text-align: center;
 }
 
@@ -875,13 +873,13 @@ hr#about-us-divider{
 	font-family: 'Rakkas', serif;
 }
 
-#certification-img img{
+.certification-img img{
 	height: 350px;
 	width: 350px;
 	padding: 2rem;
 	opacity: 1;
 }
-#certification-img img:hover{
+.certification-img img:hover{
 	opacity: 0.8;
 }
 
@@ -1178,7 +1176,12 @@ footer{
 		text-align: justify;
 		font-size: 2rem;
 	}
-
+	#partners h1, #certifications h1{
+		font-size: 4rem;
+	}
+	.partner-img p{
+		font-size: 2rem;
+	}
 	#utilities form{
 		padding: 0;
 	}
