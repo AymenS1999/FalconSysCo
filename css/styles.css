@@ -79,6 +79,7 @@ button.navbar-toggler:focus{
     padding-left: 4rem !important;
     padding-right: 4rem !important;
     min-height: 45px !important;
+    background-color: rgba(10, 17, 34, 0.9);
 }
 
  .shrink .nav-link {
