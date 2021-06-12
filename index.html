@@ -33,21 +33,23 @@
 							</li>
 							
 
-							<li class="nav-item btn-group">
-								<a class="nav-link navbar-dropdown-link" href="products_and_services.html" title="">Products & Services</a>
-								<button type="button" class="nav-link btn dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="products_and_services.html" title="">Products</a>
 								<div class="dropdown-menu">
 									<!-- NOTE - We are DELIBERATELY REFERENCING the PREVIOUS ELEMENT (in href="link_to_prev_element") because we want the CARD-HEADER to also be visible. Else the CARD-HEADER of the ACCORDION will GO BEHIND the FLOATING NAVBAR -->
-									<p>Products<p>
-									<a id="goto-mechanical-products" class="dropdown-item" href="#our-products-accordion">Mechanical Products</a>
-									<a id="goto-instrumentation-products" class="dropdown-item" href="#mechanical-products">Instrumentation Products</a>
-									<a id="goto-electrical-products" class="dropdown-item" href="#instrumentation-products">Electrical Products</a>
-									<a id="goto-industrial-automation-products" class="dropdown-item" href="#electrical-products">Industrial Automation Products</a>
-									<a id="goto-industrial-automation-solution" class="dropdown-item" href="#industrial-automation-products">Industrial Automation Solution</a>
-									<a id="goto-fire-and-safety" class="dropdown-item" href="#industrial-automation-solution">Fire and Safety Products</a>
-									<a id="goto-it-and-networking" class="dropdown-item" href="#fire-and-safety">IT and Networking Solutions</a>
-									<div class="dropdown-divider"></div>
-									<p>Services</p>
+									<a id="goto-mechanical-products" class="dropdown-item" href="products_and_services.html#our-products-accordion">Mechanical Products</a>
+									<a id="goto-instrumentation-products" class="dropdown-item" href="products_and_services.html#mechanical-products">Instrumentation Products</a>
+									<a id="goto-electrical-products" class="dropdown-item" href="products_and_services.html#instrumentation-products">Electrical Products</a>
+									<a id="goto-industrial-automation-products" class="dropdown-item" href="products_and_services.html#electrical-products">Industrial Automation Products</a>
+									<a id="goto-industrial-automation-solution" class="dropdown-item" href="products_and_services.html#industrial-automation-products">Industrial Automation Solution</a>
+									<a id="goto-fire-and-safety" class="dropdown-item" href="products_and_services.html#industrial-automation-solution">Fire and Safety Products</a>
+									<a id="goto-it-and-networking" class="dropdown-item" href="products_and_services.html#fire-and-safety">IT and Networking Solutions</a>
+								</div>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="products_and_services.html" title="">Services</a>
+								<div class="dropdown-menu">
 									<a id="goto-mechanical-services" class="dropdown-item" href="#our-services-accordion">Mechanical Services</a>
 									<a id="goto-electrical-services" class="dropdown-item" href="#mechanical-services">Electrical Services</a>
 									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#electrical-services">Power and Fuel Services</a>
@@ -56,6 +58,14 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="utilities.html" title="">Utilities</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="#partners" title="">Partners</a>
+								<div id="partners-menu" class="dropdown-menu">
+									<a id="goto-partner-azemco" class="dropdown-item" href="#partners">AZEMCO</a>
+									<a id="goto-partner-afco" class="dropdown-item" href="#partners">AFCO</a>
+									<a id="goto-partner-naqsh" class="dropdown-item" href="#partners">NAQSH</a>
+								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#footer" title="">Contact Us</a>
@@ -362,19 +372,19 @@
 									<tr><td>Internet of Things (IoT)</td></tr>
 									<tr><td>Artificial Intelligence (AI) Products</td></tr>
 								</table>
+	        					</div>
 	        				</div>
 	        			</div>
-	        		</div>
-	      		</div>	
-	      		<a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
-	        		<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
-	        		<span class="sr-only">Previous</span>
-	      		</a>
-	      		<a class="carousel-control-next" href="#product-carousel" data-slide="next">
-	        		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	        		<span class="sr-only">Next</span>
-	      		</a>
-	    	</div>
+	      			</div>	
+	      			<a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+	        			<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
+	        			<span class="sr-only">Previous</span>
+	      			</a>
+	      			<a class="carousel-control-next" href="#product-carousel" data-slide="next">
+	        			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        			<span class="sr-only">Next</span>
+	      			</a>
+	    		</div>
 		</section>
 
 		<section id="partners" class="fade">
@@ -398,8 +408,27 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
+		
+		
+		<section id="certifications" class="fade">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Our <span style="color: #bb8c00; font-weight: bold;">Certifications</span></h1>
+				</div>
+				<div class="col-lg-6 fade">
+					<div id="certification-img">
+						<a href=""><img src="images/maaden.png"></a>
+					</div>
+				</div>
+				<div class="col-lg-6 fade">
+					<div id="certification-img">
+						<a href=""><img src="images/sadara.png"></a>
+					</div>
+				</div>			
+			</div>
+		</section>
+		
 
 		<section id="map" class="fade">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.392442810317!2d50.190645614533!3d26.216435196028197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49c3b6940445e9%3A0x281f0b679516daf3!2z2KfYqNix2KfYrCDYs9i52K8g2KfZhNmC2K3Yt9in2YbZiiBTUSBUT1dFUlM!5e0!3m2!1sen!2sin!4v1622621042163!5m2!1sen!2sin" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="map-here"></iframe>
@@ -426,7 +455,7 @@
 					<ul class="info">
 						<li>
 							<span><i class="fas fa-map-marker-alt"></i></span>
-							<p><a href="#map">SQ Towers 4<sup>th</sup> Floor Suite - 406, Al Khobar 31952, Saudi Arabia</a></p>
+							<p><a href="#map">SQ Towers 4<sup>th</sup> Floor Suite #406, Al Khobar 31952, Saudi Arabia</a></p>
 						</li>
 						<li>
 							<span><i class="fas fa-phone"></i></span>
