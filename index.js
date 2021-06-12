@@ -1,3 +1,14 @@
+//To SHRINK NAVBAR on SCROLL
+ $(document).on("scroll", function(){
+ 	if ($(document).scrollTop() > 100){
+ 		$(".primary-nav").addClass("shrink");
+ 	} 
+ 	else {
+ 		$(".primary-nav").removeClass("shrink");
+ 	}
+});
+
+
 // FADING EFFECTS
 $(window).on("load",function() {
   $(window).scroll(function() {
