@@ -8,8 +8,8 @@ body{
 	font-family: 'Poppins', serif;
 	background-color: #fff;
 	animation: fadeInAnimation ease 3s;
-    	animation-iteration-count: 1;
-    	animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -50,11 +50,46 @@ body{
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #ffd700;
+    color: #ffcc00;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #ffcc00;
+}
+.navbar-toggler{
+	border-left-width: 0px;
+   	border-top-width: 0px;
+    	border-right-width: 0px;
+    	border-bottom-width: 0px;
+}
+button.navbar-toggler:focus{
+	outline: none;
+}
+
+/*To Shrink the navbar on scroll*/
+.primary-nav {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+ }
+
+.shrink {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    min-height: 45px !important;
+}
+
+ .shrink .nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;       
+}
+
+
+
 .gold-text{
-	color: #FFD700;
+	color: #ddaa00;
 }
 
 
@@ -63,8 +98,12 @@ body{
 	display: inline;
 }
 
-.dropdown-menu p{
-	padding-left: 1rem;
+.dropdown-menu{
+	background-color: rgba(240, 240, 240, 0.9);
+	transition: 2s;
+	margin-left: -4.5rem;
+	border-radius: 0;
+	padding: 0;
 }
 
 .dropdown-item{
@@ -73,11 +112,39 @@ body{
 
 .dropdown-item:hover{
 	color: #fff;
-	background-color: rgba(11,37,53,1);
+	background-color: #dd9900;
 }
 
-/*Cover Section*/
+.dropdown-item:active{
+	background-color: #dd9900;	
+}
 
+#about-us-menu.dropdown-menu{
+	margin-left: -2.5rem;
+}
+
+
+#partners-menu.dropdown-menu{
+	margin-left: -1.5rem;
+}
+
+/*To TRIIGER DROPDOWN on HOVER (ONLY ON DESKTOPS)*/
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ 
+		display: none; 
+	}
+	.navbar .nav-item:hover .nav-link{   
+	}
+	.navbar .nav-item:hover .dropdown-menu{ 
+		display: block; 
+	}
+	.navbar .nav-item .dropdown-menu{ 
+		margin-top:0; 
+	}
+}
+
+
+/*Cover Section*/
 .container-fluid{
 	padding: 0;
 }
@@ -211,18 +278,13 @@ body{
 	background-size: cover;
 }
 
-
 .intro-carousel-item-9{ 
 	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
 	background-size: cover;
 }
 
 
-
-
-
 /*About Us*/
-
 #about-us{
 	background-color: #fff;
 	padding: 5rem 3rem 0;
@@ -261,10 +323,11 @@ body{
 	color: #fff;
 	transition: 0.5s;
 	border-radius: 0;
+	font-size: 1rem;
 }
 
 #about-us-button:hover{
-	background-color: #0a2655;
+	background-color: #dd9900;
 	letter-spacing: 2px;
 	transition: .5s;
 }
@@ -418,7 +481,6 @@ th,td:hover{
 /*Our Products and Services COLLAPSABLE Accordion*/
 /*NOTE - ".accordion" is a CLASS NAME because it has an ACCORDION LIKE EFFECT*/
 .accordion .card-header{
-	/*background: linear-gradient(to left, rgba(10,33,50,0.8), rgba(10,33,50,1) 50%);*/
 	background: rgba(10,33,50,1);
 	padding: 0;
 }
@@ -432,7 +494,7 @@ th,td:hover{
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-	background: #1b5b9f;
+	background: #dd9900;
 }
 .accordion button:focus{
 	text-decoration: none;
@@ -495,7 +557,6 @@ th,td:hover{
 
 /*Mechanical Products*/
 .accordion .mechanical-products-table{
-	/*background-color: #0b1b3f;*/
 	background: linear-gradient(to left, rgba(11,27,63,0.5), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
 	background-size: cover;
 	background-position: center;
@@ -526,7 +587,6 @@ th,td:hover{
 
 /*Electrical Services*/
 .accordion .mechanical-services-table{
-	/*background-color: #483a48;*/
 	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
 	background-size: cover;
 	background-position: center;
@@ -595,6 +655,7 @@ hr#about-us-divider{
 	color: #000;
 	font-size: 1.2rem;
 	text-align: justify;
+	text-align: start
 }
 
 .about .img-box{
@@ -627,8 +688,6 @@ hr#about-us-divider{
 	position: relative;
 	top: 50%;
 	transform: translateY(35%);
-	/*justify-content: center;*/
-	/*align-items: center;*/
 }
 
 .logo .img-box img{
@@ -643,15 +702,15 @@ hr#about-us-divider{
 	letter-spacing: 2px;
 }
 
-/*Vision*/
+/*Values and Vision list*/
 .text li{
 	margin-left: 2rem;
+	color: #777;
 }
 
-
-
-
-
+.text li::marker{
+	color: #ddaa00;
+}
 
 
 /*Utilities Page(i.e Pipe Calculator and Pipe Chart)*/
@@ -672,7 +731,6 @@ hr#about-us-divider{
 }
 
 .utility-menu{
-	/*background-color: rgba(1,27,57,1);*/
 	padding:0 2rem;
 	padding-right: 4rem;
 }
@@ -695,12 +753,6 @@ hr#about-us-divider{
     color: #fff;
     background-color: #bb8c00;
     border-color: #bb8c00;
-}
-
-
-.utility-item{
-	/*margin-top: 1rem;*/
-	/*padding-top: 2rem;*/
 }
 
 .utilities-text{
@@ -730,13 +782,13 @@ hr#about-us-divider{
 	background: linear-gradient(to left, rgba(1,27,47, 0.6), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
 	background-size: cover;
 	background-attachment: fixed;
-	display: none;
 }
 
 #pipe-calculator{
 	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/pipe_calculator.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+	display: none;
 }
 
 #steel-sheet-calculator{
@@ -750,6 +802,7 @@ hr#about-us-divider{
 	font-size: 2rem;
 	font-weight: bold;
 }
+
 
 /*The FORM where user enters details for Pipe-Calculator*/
 #pipe-calculator-form, #steel-sheet-calculator-form{
@@ -768,8 +821,6 @@ hr#about-us-divider{
 	text-align: center;
 }
 
-
-
 #metricSelector, #imperialSelector{
 	margin: 1rem;
 }
@@ -783,24 +834,57 @@ hr#about-us-divider{
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	font-family: 'Rakkas', serif;
+	font-size: 1.2rem;
 }
 
 #partners h1{
 	text-align: center;
-	font-family: 'Rakkas', serif;;
 }
 
-#partner-afco img{
+#partner-img img{
 	height: 350px;
 	width: 350px;
 	padding: 2rem;
-	opacity: 0.7;
-}
-
-
-#partner-afco img:hover{
 	opacity: 1;
 }
+
+
+#partner-img img:hover{
+	opacity: 0.8;
+}
+
+#partner-img p{
+	text-align: center;
+}
+
+
+/*Certifications*/
+#certifications{
+	position: relative;
+	margin: 0;
+	padding: 5rem 3rem;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#certifications h1{
+	text-align: center;
+	font-family: 'Rakkas', serif;
+}
+
+#certification-img img{
+	height: 350px;
+	width: 350px;
+	padding: 2rem;
+	opacity: 1;
+}
+#certification-img img:hover{
+	opacity: 0.8;
+}
+
 
 
 /*Contact Us*/
@@ -815,7 +899,6 @@ hr#about-us-divider{
 }
 
 .contact-us-icon{
-	/*color:  #0a2132;*/
 	color: #0a1122;
 	font-size: 3rem;
 	padding-bottom: 1rem;
@@ -1018,7 +1101,7 @@ footer{
 
 
 
-@media (max-width: 1023px){
+@media (max-width: 992px){
 	*{
 		text-align: center;	
 	}
@@ -1026,11 +1109,11 @@ footer{
 		text-align: center;
 	}
 	.navbar-brand{
-		font-size: 1.2rem;
+		font-size: 2rem;
 	}
 	.navbar{
 		padding: 0.3rem 3rem;
-		padding-left: 0.2rem;
+		padding-left: 2rem;
 		font-size: 2rem;
 	}
 	.navbar-toggler, .nav-link{
@@ -1040,6 +1123,9 @@ footer{
 		padding-left: 1rem;
 		display: inline;
 	}
+	.dropdown-menu p{
+		font-size: 2rem;
+	}
 	.btn-group{
 		display: inline;
 	}
@@ -1047,9 +1133,7 @@ footer{
 		text-align: center;
 		font-size: 2rem;
 	}
-	.dropdown-menu p{
-		font-size: 2rem;
-	}
+
 	.intro-tagline{
 		top: 35%;
 	}
@@ -1075,10 +1159,26 @@ footer{
 	}
 	.about-us-text{
 		font-size: 2rem;
+		text-align: justify;
 	}
-	#brochure-download-button{
+	#about-us-button{
 		font-size: 2rem;
 	}
+	.about .content-box{
+		width: 100%;
+		min-width: 100%;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		padding-bottom: 4rem;
+	}
+	.about h2, .about p{
+		font-size: 3rem;
+	}
+	.text{
+		text-align: justify;
+		font-size: 2rem;
+	}
+
 	#utilities form{
 		padding: 0;
 	}
@@ -1090,9 +1190,6 @@ footer{
 		position: static;
 		background-attachment: fixed;
 	}
-	/*#pipe-chart:hover, #pipe-calculator:hover{
-		background-size: cover;
-	}*/
 	#our-products, .carousel-item{
 		height: 100rem;
 	}
@@ -1164,6 +1261,14 @@ footer{
 		display: block;
 		list-style: none;
 	}
+	#footer .form-control{
+		font-size: 1.8rem;
+	}
+	#footer textarea{
+		font-size: 1.8rem;
+	}
 
 }
+
+
 
