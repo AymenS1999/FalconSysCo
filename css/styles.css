@@ -836,11 +836,11 @@ hr#about-us-divider{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-family: 'Rakkas', serif;
 	font-size: 1.2rem;
 }
 
 #partners h1{
+	font-family: 'Rakkas', serif;
 	text-align: center;
 }
 
@@ -856,6 +856,7 @@ hr#about-us-divider{
 
 .partner-img p{
 	text-align: center;
+	color: #666;
 }
 
 
