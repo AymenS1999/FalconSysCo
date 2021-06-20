@@ -29,8 +29,8 @@ body{
 
 /*Nav Bar*/
 .navbar{
-	padding: 0.3rem 3rem;
-	padding-left: 3rem;
+	padding: 0.3rem 1rem;
+	padding-left: 2rem;
 	background-color: #0a1122;
 	text-align: left;
 }
@@ -105,6 +105,12 @@ button.navbar-toggler:focus{
 	margin-left: -4.5rem;
 	border-radius: 0;
 	padding: 0;
+}
+.products_dropdown{
+	margin-left: -8rem;
+}
+.services_dropdown{
+	margin-left: -4.5rem;
 }
 
 .dropdown-item{
