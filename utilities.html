@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Falcon System Commercial Co</title>
+		<link rel="shortcut icon" href="favicon.ico" />
 		<!-- For Google Fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;700;900&family=Rakkas&display=swap" rel="stylesheet">
@@ -94,10 +95,9 @@
 					<div class="utility-button-list">
 						<button id="activate-pipe-chart" type="button" id="pipe-chart-button" class="btn btn-dark active utility-menu-button">Pipe Chart</button>
 					</div>
-					<div class="utility-menu-button-list">
-						<button id="activate-pipe-calculator" type="button" id="pipe-calculator-button" class="btn btn-dark utility-menu-button">Pipe Calculator</button>
+					<div class="utility-button-list">
+						<button id="activate-pipe-calculator" type="button" class="btn btn-dark utility-menu-button">Pipe Calculator</button>
 					</div>
-					
 					<div class="utility-button-list">
 						<button id="activate-steel-sheet-calculator" type="button" class="btn btn-dark utility-menu-button">Steel Sheets Calculator</button>
 					</div>
@@ -105,7 +105,7 @@
 						<button id="activate-round-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Round Steel Bars</button>
 					</div>
 					<div class="utility-button-list">
-						<button id="activate-square-steel-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Square Steel Bars</button>
+						<button id="activate-square-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Square Steel Bars</button>
 					</div>
 					<div class="utility-button-list">
 						<button id="activate-flat-bars-calculator" type="button" class="btn btn-dark utility-menu-button">Flat Bars</button>
@@ -123,22 +123,16 @@
 						<button id="activate-beams-ipe-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPE)</button>
 					</div>
 					<div class="utility-button-list">
-						<button id="activate-beams-ipbl-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPBL/HEA)</button>
+						<button id="activate-beams-hea-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPBL/HEA)</button>
 					</div>
 					<div class="utility-button-list">
-						<button id="activate-beams-ipb-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPB/HEB)</button>
+						<button id="activate-beams-heb-calculator" type="button" class="btn btn-dark utility-menu-button">Beams (IPB/HEB)</button>
 					</div>
 					<div class="utility-button-list">
-						<button id="activate-angles-equal-calculator" type="button" class="btn btn-dark utility-menu-button">Angles (Equal)</button>
+						<button id="activate-hollow-circle-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Circular Structures</button>
 					</div>
 					<div class="utility-button-list">
-						<button id="activate-angles-unequal-calculator" type="button" class="btn btn-dark utility-menu-button">Angles (Unequal)</button>
-					</div>
-					<div class="utility-button-list">
-						<button id="activate-hollow-circular-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Circular Structures</button>
-					</div>
-					<div class="utility-button-list">
-						<button id="activate-hollow-square-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Square Structures</button>
+						<button id="activate-hollow-rect-calculator" type="button" class="btn btn-dark utility-menu-button">Hollow Square/Rectagular Structures</button>
 					</div>
 				</div>
 				<div class="col-lg-8 utility-item">
@@ -254,14 +248,15 @@
 							</form>
 						</div>
 					</div>
-					<div id="steel-sheet-calculator">
+					
+					<div id="steel-sheet-calculator" class="utility">
 						<div class="utilities-text">
 							Steel Sheets Calculator
-							<div class="utilities-button">
-								<button type="button" class="btn btn-outline-light btn-lg" id="clickToSteelSheetCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToSteelSheetCalculator">Calculate <i class="fas fa-calculator"></i></button>
 							</div>
 						</div>
-						<div id="steel-sheet-calculator-form">
+						<div id="steel-sheet-calculator-form" class="utilities-form">
 							<form>
 								<div class="row">
 									<div class="col-sm-6">
@@ -278,7 +273,7 @@
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label id="length-label">Length (mm)*</label>
+											<label id="length-label">Length (m)*</label>
 											<input class="form-control" id="len" type="number" placeholder="Length" maxlength="10" required>
 										</div>
 									</div>
@@ -291,13 +286,13 @@
 									<div class="col-sm-6">
 										<div class="form-group">
 											<label id="wt-single-label">Weight Per Peice(Kg)</label>
-											<input class="form-control" id="wt-per-item" type="number" placeholder="" maxlength="10" disabled="true">
+											<input class="form-control utility-result-val" id="wt-per-item" type="number" placeholder="" maxlength="10" disabled="true">
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
 											<label id="weight-total-label">Total Weight (Kg)</label>
-											<input class="form-control" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
 										</div>
 									</div>
 									<div class="col-sm-12 button-center">
@@ -310,6 +305,815 @@
 							</form>
 						</div>
 					</div>
+					
+
+					<div id="round-bars-calculator" class="utility">
+						<div class="utilities-text">
+							Round Steel Bar Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToRoundBarCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="round-bars-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="round-bar-diameter-label">Diameter (mm)*</label>
+											<input class="form-control" id="dia" type="number" placeholder="Diameter" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="round-bar-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" placeholder="Length" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="round-bar-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="round-bar-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+
+					<div id="square-bars-calculator" class="utility">
+						<div class="utilities-text">
+							Square Steel Bar Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToSquareBarCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="square-bars-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="square-bar-side-label">Side Width (mm)*</label>
+											<input class="form-control" id="side" type="number" placeholder="Width" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="square-bar-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" placeholder="Length" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="square-bar-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="square-bar-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+					
+					<div id="flat-bars-calculator" class="utility">
+						<div class="utilities-text">
+							Flat Bar Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToFlatBarCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="flat-bars-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="flat-bar-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="Width" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="flat-bar-thickness-label">Thickness (mm)*</label>
+											<input class="form-control" id="thickness" type="number" placeholder="Thickness" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="flat-bar-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" placeholder="Length" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="flat-bar-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="flat-bar-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div id="channels-gost-calculator" class="utility">
+						<div class="utilities-text">
+							Channels GOST Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToChannelsGostCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="channels-gost-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-profile-label">Profile*</label>
+											<select class="custom-select" id="channels-gost-profile-selector" onchange="getGostChannelValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">&numero; 6.5</option>
+												<option value="2">&numero; 8</option>
+												<option value="3">&numero; 10</option>
+												<option value="4">&numero; 12</option>
+												<option value="5">&numero; 14</option>
+												<option value="6">&numero; 16</option>
+												<option value="7">&numero; 18</option>
+												<option value="8">&numero; 20</option>
+												<option value="9">&numero; 22</option>
+												<option value="10">&numero; 24</option>
+												<option value="11">&numero; 27</option>
+												<option value="12">&numero; 30</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-gost-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="channels-gost-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="channels-gost-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="channels-upn-calculator" class="utility">
+						<div class="utilities-text">
+							Channels UPN Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToChannelsUpnCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="channels-upn-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-profile-label">Profile*</label>
+											<select class="custom-select" id="channels-upn-profile-selector" onchange="getUpnChannelValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">UPN 50x25</option>
+												<option value="2">UPN 50</option>
+												<option value="3">UPN 60</option>
+												<option value="4">UPN 65</option>
+												<option value="5">UPN 80</option>
+												<option value="6">UPN 100</option>
+												<option value="7">UPN 120</option>
+												<option value="8">UPN 140</option>
+												<option value="9">UPN 160</option>
+												<option value="10">UPN 180</option>
+												<option value="11">UPN 200</option>
+												<option value="12">UPN 220</option>
+												<option value="13">UPN 240</option>
+												<option value="14">UPN 260</option>
+												<option value="15">UPN 280</option>
+												<option value="16">UPN 300</option>
+												<option value="17">UPN 320</option>
+												<option value="18">UPN 350</option>
+												<option value="19">UPN 380</option>
+												<option value="20">UPN 400</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="channels-upn-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="channels-upn-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="channels-upn-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="beams-ipn-calculator" class="utility">
+						<div class="utilities-text">
+							Beams IPN Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToBeamsIpnCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="beams-ipn-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-profile-label">Profile*</label>
+											<select class="custom-select" id="beams-ipn-profile-selector" onchange="getIpnBeamsValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">IPN 80</option>
+												<option value="2">IPN 100</option>
+												<option value="3">IPN 120</option>
+												<option value="4">IPN 140</option>
+												<option value="5">IPN 160</option>
+												<option value="6">IPN 180</option>
+												<option value="7">IPN 200</option>
+												<option value="8">IPN 220</option>
+												<option value="9">IPN 240</option>
+												<option value="10">IPN 260</option>
+												<option value="11">IPN 280</option>
+												<option value="12">IPN 300</option>
+												<option value="13">IPN 320</option>
+												<option value="14">IPN 340</option>
+												<option value="15">IPN 360</option>
+												<option value="16">IPN 380</option>
+												<option value="17">IPN 400</option>
+												<option value="18">IPN 450</option>
+												<option value="19">IPN 500</option>
+												<option value="20">IPN 550</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipn-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-ipn-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-ipn-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="beams-ipe-calculator" class="utility">
+						<div class="utilities-text">
+							Beams IPE Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToBeamsIpeCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="beams-ipe-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-profile-label">Profile*</label>
+											<select class="custom-select" id="beams-ipe-profile-selector" onchange="getIpeBeamsValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">IPE 80</option>
+												<option value="2">IPE 100</option>
+												<option value="3">IPE 120</option>
+												<option value="4">IPE 140</option>
+												<option value="5">IPE 160</option>
+												<option value="6">IPE 180</option>
+												<option value="7">IPE 200</option>
+												<option value="8">IPE 220</option>
+												<option value="9">IPE 240</option>
+												<option value="10">IPE 270</option>
+												<option value="11">IPE 300</option>
+												<option value="12">IPE 330</option>
+												<option value="13">IPE 360</option>
+												<option value="14">IPE 400</option>
+												<option value="15">IPE 450</option>
+												<option value="16">IPE 500</option>
+												<option value="17">IPE 550</option>
+												<option value="18">IPE 600</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-ipe-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-ipe-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-ipe-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="beams-hea-calculator" class="utility">
+						<div class="utilities-text">
+							Beams IPBL/HEA Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToBeamsHeaCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="beams-hea-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-profile-label">Profile*</label>
+											<select class="custom-select" id="beams-hea-profile-selector" onchange="getHeaBeamsValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">HEA 100</option>
+												<option value="2">HEA 120</option>
+												<option value="3">HEA 140</option>
+												<option value="4">HEA 160</option>
+												<option value="5">HEA 180</option>
+												<option value="6">HEA 200</option>
+												<option value="7">HEA 220</option>
+												<option value="8">HEA 240</option>
+												<option value="9">HEA 260</option>
+												<option value="10">HEA 280</option>
+												<option value="11">HEA 300</option>
+												<option value="12">HEA 320</option>
+												<option value="13">HEA 340</option>
+												<option value="14">HEA 360</option>
+												<option value="15">HEA 400</option>
+												<option value="16">HEA 450</option>
+												<option value="17">HEA 500</option>
+												<option value="18">HEA 550</option>
+												<option value="19">HEA 600</option>
+												<option value="20">HEA 650</option>
+												<option value="21">HEA 700</option>
+												<option value="22">HEA 800</option>
+												<option value="23">HEA 900</option>
+												<option value="24">HEA 1000</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-hea-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-hea-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-hea-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="beams-heb-calculator" class="utility">
+						<div class="utilities-text">
+							Beams IPB/HEB Calculator
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToBeamsHebCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="beams-heb-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-profile-label">Profile*</label>
+											<select class="custom-select" id="beams-heb-profile-selector" onchange="getHebBeamsValues(event)">
+												<option value="default" selected>--Select--</option>
+												<option value="1">HEB 100</option>
+												<option value="2">HEB 120</option>
+												<option value="3">HEB 140</option>
+												<option value="4">HEB 160</option>
+												<option value="5">HEB 180</option>
+												<option value="6">HEB 200</option>
+												<option value="7">HEB 220</option>
+												<option value="8">HEB 240</option>
+												<option value="9">HEB 260</option>
+												<option value="10">HEB 280</option>
+												<option value="11">HEB 300</option>
+												<option value="12">HEB 320</option>
+												<option value="13">HEB 340</option>
+												<option value="14">HEB 360</option>
+												<option value="15">HEB 400</option>
+												<option value="16">HEB 450</option>
+												<option value="17">HEB 500</option>
+												<option value="18">HEB 550</option>
+												<option value="19">HEB 600</option>
+												<option value="20">HEB 650</option>
+												<option value="21">HEB 700</option>
+												<option value="22">HEB 800</option>
+												<option value="23">HEB 900</option>
+												<option value="24">HEB 1000</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-height-label">Height (mm)*</label>
+											<input class="form-control" id="height" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-width-label">Width (mm)*</label>
+											<input class="form-control" id="width" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-s_thickness-label">Thickness S (mm)*</label>
+											<input class="form-control" id="sThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-t_thickness-label">Thickness T (mm)*</label>
+											<input class="form-control" id="tThickness" type="number" placeholder="--Select Profile--" maxlength="10" required disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="beams-heb-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-heb-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="beams-heb-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+								<!-- Angles Remaining -->
+
+
+
+					<div id="hollow-circle-calculator" class="utility">
+						<div class="utilities-text">
+							Hollow Structural Sections (Circular)
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToHollowCircleCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="hollow-circle-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-circle-diameter-label">Diameter (mm)*</label>
+											<input class="form-control" id="diameter" type="number" value="21.3" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-circle-thickness-label">Thickness (mm)*</label>
+											<input class="form-control" id="thickness" type="number" value="2" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-circle-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="hollow-circle-wt-meter-label" class="utility-result-text">Weight Per Meter(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label id="hollow-circle-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div id="hollow-rect-calculator" class="utility">
+						<div class="utilities-text">
+							Hollow Structural Sections (Square/Rectangle)
+							<div class="">
+								<button type="button" class="btn btn-outline-light btn-lg utilities-button" id="clickToHollowRectCalculator">Calculate <i class="fas fa-calculator"></i></button>
+							</div>
+						</div>
+						<div id="hollow-rect-calculator-form" class="utilities-form">
+							<form>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-side1-label">Side 1 (mm)*</label>
+											<input class="form-control" id="side1" type="number" value="20" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-side2-label">Side 2 (mm)*</label>
+											<input class="form-control" id="side2" type="number" value="20" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-thickness-label">Thickness (mm)*</label>
+											<input class="form-control" id="thickness" type="number" value="2" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-length-label">Length (m)*</label>
+											<input class="form-control" id="len" type="number" value="1" maxlength="10" required>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-wt-meter-label" class="utility-result-text">Weight(Kg/m)</label>
+											<input class="form-control utility-result-val" id="wt-per-mtr" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label id="hollow-rect-wt-total-label">Total Weight (Kg)</label>
+											<input class="form-control utility-result-val" id="total-wt" type="number" placeholder="" maxlength="10" disabled="true">
+										</div>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg calculate-button">Calculate Weight</button>
+									</div>
+									<div class="col-sm-12 button-center">
+										<button type="button" class="btn btn-outline-light btn-lg back-button">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+					
 				</div>
 			</div>	
 		</section>
@@ -321,7 +1125,7 @@
 					<h2>About Us</h2>
 					<p>
 						<em>Falcon System</em> is a Global Partner to new, upcoming and existing business ventures.
-						Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient salses services thereafter	
+						Our bench-mark trading evolves around the principal of <em>Quick Response, Worldwide Sourcing, Prompt Deliveries with Supervisory Services for Installation and Commissioning;</em> and an ever efficient sales services thereafter	
 					</p>
 					<ul class="sci">
 						<li><a href=""><i class="fab fa-facebook contact-us-icon"></i></a></li>
