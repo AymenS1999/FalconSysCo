@@ -8,8 +8,8 @@ body{
 	font-family: 'Poppins', serif;
 	background-color: #fff;
 	animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    	animation-iteration-count: 1;
+    	animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -37,8 +37,8 @@ body{
 
 .navbar-logo{
 	width: 12%;
-	margin-right: 1rem;  
-	border-radius: 100%
+	margin-right: .5rem;  
+	border-radius: 100%;
 }
 
 .navbar-brand{
@@ -58,9 +58,9 @@ body{
 }
 .navbar-toggler{
 	border-left-width: 0px;
-   	border-top-width: 0px;
-    	border-right-width: 0px;
-    	border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
 }
 button.navbar-toggler:focus{
 	outline: none;
@@ -106,9 +106,11 @@ button.navbar-toggler:focus{
 	border-radius: 0;
 	padding: 0;
 }
+
 .products_dropdown{
 	margin-left: -8rem;
 }
+
 .services_dropdown{
 	margin-left: -4.5rem;
 }
@@ -135,23 +137,10 @@ button.navbar-toggler:focus{
 	margin-left: -1.5rem;
 }
 
-/*To TRIIGER DROPDOWN on HOVER (ONLY ON DESKTOPS)*/
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ 
-		display: none; 
-	}
-	.navbar .nav-item:hover .nav-link{   
-	}
-	.navbar .nav-item:hover .dropdown-menu{ 
-		display: block; 
-	}
-	.navbar .nav-item .dropdown-menu{ 
-		margin-top:0; 
-	}
-}
 
 
 /*Cover Section*/
+
 .container-fluid{
 	padding: 0;
 }
@@ -285,13 +274,18 @@ button.navbar-toggler:focus{
 	background-size: cover;
 }
 
+
 .intro-carousel-item-9{ 
 	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
 	background-size: cover;
 }
 
 
+
+
+
 /*About Us*/
+
 #about-us{
 	background-color: #fff;
 	padding: 5rem 3rem 0;
@@ -301,9 +295,7 @@ button.navbar-toggler:focus{
 	width: 100%;
 	position: relative;
 	top: 40%;
-	transform: translateY(-50%);/*
-	padding-top: 1rem;
-	padding-bottom: 5rem;*/
+	transform: translateY(-50%);
 	text-align: center;
 }
 
@@ -501,6 +493,7 @@ th,td:hover{
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
+	/*background: #1b5b9f;*/
 	background: #dd9900;
 }
 .accordion button:focus{
@@ -564,6 +557,7 @@ th,td:hover{
 
 /*Mechanical Products*/
 .accordion .mechanical-products-table{
+	/*background-color: #0b1b3f;*/
 	background: linear-gradient(to left, rgba(11,27,63,0.5), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
 	background-size: cover;
 	background-position: center;
@@ -594,6 +588,7 @@ th,td:hover{
 
 /*Electrical Services*/
 .accordion .mechanical-services-table{
+	/*background-color: #483a48;*/
 	background: linear-gradient(to left, rgba(52,38,52,0.5) 20%, rgba(52,38,52,1)), url("../images/mechanical_services.jpg");
 	background-size: cover;
 	background-position: center;
@@ -695,6 +690,8 @@ hr#about-us-divider{
 	position: relative;
 	top: 50%;
 	transform: translateY(35%);
+	/*justify-content: center;*/
+	/*align-items: center;*/
 }
 
 .logo .img-box img{
@@ -720,9 +717,15 @@ hr#about-us-divider{
 }
 
 
-/*Utilities Page(i.e Pipe Calculator and Pipe Chart)*/
+
+
+
+
+/*Utilities Page*/
 #utilities{
 	margin-top: 3rem;
+	/*background-color: rgba(1,27,57,1);*/
+	/*background-color: #021d3c7a;*/
 	background-color: #ddd;
 	padding: 2rem 2rem 3rem;
 }
@@ -738,6 +741,7 @@ hr#about-us-divider{
 }
 
 .utility-menu{
+	/*background-color: rgba(1,27,57,1);*/
 	padding:0 2rem;
 	padding-right: 4rem;
 }
@@ -762,6 +766,12 @@ hr#about-us-divider{
     border-color: #bb8c00;
 }
 
+
+.utility-item{
+	/*margin-top: 1rem;*/
+	/*padding-top: 2rem;*/
+}
+
 .utilities-text{
 	position: relative;
 	color: #fff;
@@ -774,9 +784,9 @@ hr#about-us-divider{
 
 
 /*Note - Combining the Background PROPERTIES in these WON'T WORK*/
-#pipe-chart, #pipe-calculator, #steel-sheet-calculator{
+.utility{
 	/*margin: 0 1rem;*/
-	height: 100%;
+	/*height: 100%;*/
 	cursor: pointer;
 	padding-bottom: 4rem;
 }
@@ -789,6 +799,7 @@ hr#about-us-divider{
 	background: linear-gradient(to left, rgba(1,27,47, 0.6), rgba(1,27,47,0.7)), url("../images/pipe_chart.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+	height: 100%;
 }
 
 #pipe-calculator{
@@ -796,6 +807,7 @@ hr#about-us-divider{
 	background-size: cover;
 	background-attachment: fixed;
 	display: none;
+	height: 100%;
 }
 
 #steel-sheet-calculator{
@@ -803,16 +815,110 @@ hr#about-us-divider{
 	background-size: cover;
 	background-attachment: fixed;
 	display: none;
+	height: 100%;
 }
 
-#clickToPipeCalculator, #clickToPipeChart, #clickToSteelSheetCalculator{
+#round-bars-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/round_steel_bars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#square-bars-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/square_steel_bars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#flat-bars-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/flat_steel_bars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#channels-gost-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/channels_gost.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#channels-upn-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/channels_upn.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#beams-ipn-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/beams_ipn.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#beams-ipe-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/beams_ipe.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#beams-hea-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/beams_hea.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+#beams-heb-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/beams_heb.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+
+#hollow-circle-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/hollow_circular_sections.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+
+#hollow-rect-calculator{
+	background: linear-gradient(to left, rgba(1, 27, 47, 0.6), rgba(1,27,47,0.8)), url("../images/hollow_rect_sections.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: none;
+	height: 100%;
+}
+
+
+
+.utilities-button{
 	font-size: 2rem;
 	font-weight: bold;
 }
 
 
-/*The FORM where user enters details for Pipe-Calculator*/
-#pipe-calculator-form, #steel-sheet-calculator-form{
+
+/*The FORM where user enters details for Calculators*/
+.utilities-form{
 	/*Initially We want the FORM to be HIDDEN*/
 	display: none;
 	position: relative;
@@ -824,9 +930,16 @@ hr#about-us-divider{
 }
 
 
-#pipe-calculator-form input, #steel-sheet-calculator-form input{
+.utilities-form input{
 	text-align: center;
 }
+
+
+.form-control.utility-result-val{
+	background-color: rgba(100,100,100,0.5);
+	color: #fff;
+}
+
 
 #metricSelector, #imperialSelector{
 	margin: 1rem;
@@ -842,6 +955,8 @@ hr#about-us-divider{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	/*font-family: 'Rakkas', serif;*/
+	font-size: 1rem;
 }
 
 #partners h1{
@@ -855,13 +970,14 @@ hr#about-us-divider{
 	padding: 2rem;
 	opacity: 1;
 }
+
+
 .partner-img img:hover{
 	opacity: 0.8;
 }
 
 .partner-img p{
 	text-align: center;
-	font-size: 1rem;
 	color: #666;
 }
 
@@ -905,6 +1021,7 @@ hr#about-us-divider{
 }
 
 .contact-us-icon{
+	/*color:  #0a2132;*/
 	color: #0a1122;
 	font-size: 3rem;
 	padding-bottom: 1rem;
@@ -912,6 +1029,7 @@ hr#about-us-divider{
 
 .contact-us-icon:hover{
 	color: #1b5b9f;
+	/*color: #1a3142;*/
 }
 
 .contact-us-headline{
@@ -1035,6 +1153,7 @@ footer{
 
 
 .contactus{
+	/*width: calc(35% - 60px);*/
 	width: 30%;
 	padding: 0.5rem;
 	margin-right: 0 !important;
@@ -1193,14 +1312,21 @@ footer{
 	#utilities form{
 		padding: 0;
 	}
-	#pipe-chart, #pipe-calculator, #steel-sheet-calculator{
+	#pipe-chart, #pipe-calculator, #steel-sheet-calculator, 
+	#round-bars-calculator, #square-bars-calculator, #flat-bars-calculator, 
+	#channels-gost-calculator, #channels-upn-calculator, #beams-ipn-calculator,
+	#beams-ipe-calculator, #beams-hea-calculator, #beams-heb-calculator, 
+	#hollow-circle-calculator, #hollow-rect-calculator{
 		margin: 2rem 0;
-		height: 44rem;
+		min-height: 44rem;
 		background-size: cover;
 		background-position: center;
 		position: static;
 		background-attachment: fixed;
 	}
+	/*#pipe-chart:hover, #pipe-calculator:hover{
+		background-size: cover;
+	}*/
 	#our-products, .carousel-item{
 		height: 100rem;
 	}
@@ -1281,5 +1407,18 @@ footer{
 
 }
 
-
+/*To TRIIGER DROPDOWN on HOVER (ONLY ON DESKTOPS)*/
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ 
+		display: none; 
+	}
+	.navbar .nav-item:hover .nav-link{   
+	}
+	.navbar .nav-item:hover .dropdown-menu{ 
+		display: block; 
+	}
+	.navbar .nav-item .dropdown-menu{ 
+		margin-top:0; 
+	}
+}
 
