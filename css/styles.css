@@ -116,7 +116,7 @@ button.navbar-toggler:focus{
 }
 
 .dropdown-item{
-	text-align: center;
+	text-align: left;
 }
 
 .dropdown-item:hover{
