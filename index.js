@@ -93,7 +93,7 @@ $("#goto-it-and-networking-services").click(function(event) {
 
 /*To SWITCH between the UTILITIES*/
 let utilities = {
-	"activate-pipe-chart" : "pipe-chart",
+// 	"activate-pipe-chart" : "pipe-chart",
 	"activate-pipe-calculator" : "pipe-calculator",
 	"activate-steel-sheet-calculator" : "steel-sheet-calculator",
 	"activate-round-bars-calculator" : "round-bars-calculator",
@@ -110,18 +110,6 @@ let utilities = {
 }
 
 
-//For PIPE CALCULATOR
-$("#activate-pipe-calculator").click(function(event) {
-	/* Act on the event */
-	if($("#pipe-calculator").css("display") === "none"){
-		$("#activate-pipe-calculator").addClass('active');
-		$("#activate-pipe-chart").removeClass("active");
-		$("#activate-steel-sheet-calculator").removeClass('active');
-		$("#pipe-calculator").css("display","block");
-		$("#pipe-chart").css("display", "none");
-		$("#steel-sheet-calculator").css("display","none");
-	}
-});
 
 //For PIPE CHART
 $("#activate-pipe-chart").click(function(event) {
