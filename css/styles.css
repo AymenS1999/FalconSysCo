@@ -31,14 +31,17 @@ body{
 .navbar{
 	padding: 0.3rem 1rem;
 	padding-left: 2rem;
-	background-color: #0a1122;
+	background-color:  rgba(10,17,34, 1);
 	text-align: left;
 }
 
 .navbar-logo{
-	width: 12%;
+	width: 25%;
 	margin-right: .5rem;  
 	border-radius: 100%;
+	transition: all 0.4s ease-in-out;
+    	-webkit-transition: all 0.4s ease-in-out;
+    	-moz-transition: all 0.4s ease-in-out;
 }
 
 .navbar-brand{
@@ -47,6 +50,10 @@ body{
 
 .nav-item{
 	padding: 0 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -79,7 +86,7 @@ button.navbar-toggler:focus{
     padding-left: 4rem !important;
     padding-right: 4rem !important;
     min-height: 45px !important;
-    background-color: rgba(10, 17, 34, 0.9);
+    background-color: rgba(10, 17, 34, 0.8);
 }
 
  .shrink .nav-link {
@@ -87,7 +94,12 @@ button.navbar-toggler:focus{
     padding-bottom: 0 !important;       
 }
 
-
+.shrink .navbar-logo{
+	width: 18%;
+	transition: all 0.4s ease-in-out;
+    	-webkit-transition: all 0.4s ease-in-out;
+    	-moz-transition: all 0.4s ease-in-out;
+}
 
 .gold-text{
 	color: #ddaa00;
@@ -190,6 +202,7 @@ button.navbar-toggler:focus{
 	font-family: 'Rakkas', serif;
 	font-weight: 300;
 	text-align: center;
+	text-shadow: 0 0 3px #000;
 	color: #dadada;
 }
 
@@ -228,55 +241,55 @@ button.navbar-toggler:focus{
 }
 
 .intro-carousel-item-1{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industrial_procurement.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/industrial_procurement.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-2{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/industry_automation.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/industry_automation.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-3{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/oil_and_gas.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/oil_and_gas.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-4{
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/petrochemical.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/petrochemical.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-5{
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/power_sector.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/power_sector.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-6{
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/communications_industry.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/communications_industry.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-7{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/infrastructure_development.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/infrastructure_development.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-8{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/fire_safety.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/fire_safety.jpg");
 	background-size: cover;
 }
 
 
 .intro-carousel-item-9{ 
-	background: linear-gradient(to left, rgba(10,33,50,0.4), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
+	background: linear-gradient(to left, rgba(10,33,50,0), rgba(10,33,50,1)), url("../images/mechanical_electrical_and_civil.jpg");
 	background-size: cover;
 }
 
