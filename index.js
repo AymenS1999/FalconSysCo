@@ -1,6 +1,6 @@
 //To SHRINK NAVBAR on SCROLL
  $(document).on("scroll", function(){
- 	if ($(document).scrollTop() > 100){
+ 	if ($(document).scrollTop() > 400){
  		$(".primary-nav").addClass("shrink");
  	} 
  	else {
