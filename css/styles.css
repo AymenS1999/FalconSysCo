@@ -349,13 +349,13 @@ button.navbar-toggler:focus{
 /*Our Products*/
 #our-products{
 	background-color: #bbbbbb;
-	height: 52rem;
+	height: 40rem;
 }
 
 
 .carousel-item{
 	padding: 3rem 7rem;
-	height: 52rem;
+	height: 40rem;
 }
 
 
@@ -367,6 +367,79 @@ button.navbar-toggler:focus{
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+
+/*View Products Button in the carousel*/
+/*Since we are alternating DARK - LIGHT theme in the CAROUSEL*/
+.product-carousel-button-dark{
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+	top: 47.5%;
+	left: 15%;
+	transform: translateY(-60%);
+	transition: .5s;
+	opacity: 0.9;
+}
+.product-carousel-button-light{
+	color: #000;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+	top: 47.5%;
+	left: 15%;
+	transform: translateY(-60%);
+	transition: .5s;
+	opacity: 0.9;
+}
+
+.product-carousel-button-dark:hover{
+	color: #fff;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: .5s;
+	opacity: 1;
+	box-shadow: 0px 0px 5px 5px #bb8c00;
+}
+
+.product-carousel-button-light:hover{
+	color: #000;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .5s;
+	opacity: 1;
+	box-shadow: 0px 0px 5px 5px #bb8c00;
+}
+
+
+/*Each Button will be of a different Color*/
+#view-mechanical-products, #view-mechanical-services{
+	background-color: rgba(11,27,63,1);
+}
+#view-electrical-products, #view-electrical-services{
+	background-color: rgba(187,187,187,1);
+}
+#view-civil-products, #view-civil-services{
+	background-color: rgba(11,27,23,1);
+}
+#view-instrumentation-products, #view-instrumentation-services{
+	background-color: rgba(187,187,187,1);
+}
+#view-fire-and-safety-products, #view-fire-and-safety-services{
+	background-color: rgba(221,221,221,1);
+}
+#view-automation-products, #view-automation-services{
+	background-color: rgba(52,38,52,1);
+}
+#view-equipment-rental-products, #view-equipment-rental-services{
+	background-color: rgba(210,200,255,1);
+}
+
 
 .carousel .table{
 	position: relative;
@@ -394,40 +467,44 @@ th,td:hover{
 
 /*Electrical Products*/
 .electrical-products{
-	background: linear-gradient(to left, rgba(11,11,1,0), rgba(11,11,11,1)), url("../images/electrical_products.jpg");
+	background: linear-gradient(to left, rgba(187,187,187,0), rgba(187,187,187,1)), url("../images/electrical_products.jpg");
 	background-size: cover;
-	color: #fff; 
+	background-position: center;
+	color: #000; 
 }
 
 .electrical-products-table{
 	background: rgba(11,11,11,0.8);
 }
 
-/*Industrial Automation Products*/
-.industrial-automation-products{
-	background: linear-gradient(to left, rgba(221,200,200,0), rgba(221,200,200,0.8)), url("../images/industrial_automation_product.jpg");
-	background-size: cover; 
+/*Equipment Rental Products*/
+.equipment-rental-products{
+	background: linear-gradient(to left, rgba(255,103,0,0), rgba(210,200,255,1)), url("../images/industrial_automation_product.jpg");
+	background-size: cover;
+	background-position: center;
 	color: #000;
 }
-.industrial-automation-products-table{
+.equipment-rental-products-table{
 	background-color: rgba(221,200,200,0.7);
 }
 
-/*Industrial Automation Solution*/
-.industrial-automation-solution{
-	background: linear-gradient(to left, rgba(0,0,0,0.0), rgba(0,0,0,1)), url("../images/industrial_automation.jpg");
+/*Civil Products*/
+.civil-products{
+	background: linear-gradient(to left, rgba(0,0,0,0.0), rgba(0,0,0,1)), url("../images/civil_products.jpg");
 	background-size: cover;
+	background-position: center;
 	color: #fff;
 }
-.industrial-automation-solution-table{
+.civil-products-table{
 	background: rgba(0,0,0,0.6);
 }
 
 
 /*Instrumentation Products*/
 .instrumentation-products{
-	background: linear-gradient(to left, rgba(187,187,187,0), rgba(187,187,187,0.8)), url("../images/instrumentation_products.jpg");
+	background: linear-gradient(to left, rgba(187,187,187,0), rgba(117,117,117,1)), url("../images/instrumentation_products.jpg");
 	background-size: cover;
+	background-position: center;
 	color: #000;
 }
 .instrumentation-products-table{
@@ -438,8 +515,9 @@ th,td:hover{
 /*Mechanical Products*/
 .mechanical-products{
 	/*background-color: #0b1b3f;*/
-	background: linear-gradient(to left, rgba(11,27,63,0.2), rgba(11,27,63,1)), url("../images/civil_sector.jpg");
+	background: linear-gradient(to left, rgba(11,27,63,0.2), rgba(11,27,63,1)), url("../images/mechanical_products.jpg");
 	background-size: cover;
+	background-position: center;
 	color: #fff;
 }
 .mechanical-products-table{
@@ -449,22 +527,24 @@ th,td:hover{
 
 /*Fire and Safety*/
 .fire-and-safety-products{
-	background: linear-gradient(to left, rgba(210,210,210,0.2), rgba(210,210,210,1)), url("../images/fire_and_safety.jpg");
-	background-size: cover; 
+	background: linear-gradient(to left, rgba(221,221,221,0), rgba(221,221,221,1)), url("../images/fire_and_safety.jpg");
+	background-size: cover;
+	background-position: center;
 	color: #000;
 }
 .fire-and-safety-products-table{
 	background: rgba(210,210,210,0.8);
 }
 
-/*IT and Networking*/
-.it-and-networking-solutions{
-	background: linear-gradient(to left, rgba(11,27,23,0.2), rgba(11,27,23,1)), url("../images/it_and_networking_solution.jpg");
+/*Automation and Communication*/
+.automation-products{
+	background: linear-gradient(to left, rgba(52,38,52,0), rgba(52,38,52,1)), url("../images/automation_and_communication.jpg");
 	background-size: cover;
+	background-position: center;
 	color: #fff;
 }
-.it-and-networking-solutions-table{
-	background: rgba(11,27,23,0.9);
+.automation-products-table{
+	background: rgba(52,38,52,0.9);
 }
 
 /*Mechanical Services and Spares*/
@@ -1146,7 +1226,7 @@ footer{
 	align-items: center;
 	margin-right: 1rem;
 	text-decoration: none;
-	border-radius: 0.5rem;
+	border-radius: 1.5rem;
 }
 
 .sci .contact-us-icon{
