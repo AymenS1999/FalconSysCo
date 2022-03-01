@@ -55,27 +55,28 @@
 							
 
 							<li class="nav-item dropdown">
-								<a class="nav-link" href="products_and_services.html" title="">Products</a>
+								<a class="nav-link" href="" title="">Products</a>
 								<div class="dropdown-menu products_dropdown">
 									<!-- NOTE - We are DELIBERATELY REFERENCING the PREVIOUS ELEMENT (in href="link_to_prev_element") because we want the CARD-HEADER to also be visible. Else the CARD-HEADER of the ACCORDION will GO BEHIND the FLOATING NAVBAR -->
 									<a id="goto-mechanical-products" class="dropdown-item" href="products_and_services.html#our-products-accordion">Mechanical Products</a>
+									<a id="goto-mechanical-products" class="dropdown-item" href="products_and_services.html#instrumentation-products">Electrical Products</a>
+									<a id="goto-electrical-products" class="dropdown-item" href="products_and_services.html#equipment-rental-products">Civil Products</a>
 									<a id="goto-instrumentation-products" class="dropdown-item" href="products_and_services.html#mechanical-products">Instrumentation Products</a>
-									<a id="goto-electrical-products" class="dropdown-item" href="products_and_services.html#instrumentation-products">Electrical Products</a>
-									<a id="goto-industrial-automation-products" class="dropdown-item" href="products_and_services.html#electrical-products">Industrial Automation Products</a>
-									<a id="goto-industrial-automation-solution" class="dropdown-item" href="products_and_services.html#industrial-automation-products">Industrial Automation Solution</a>
-									<a id="goto-fire-and-safety" class="dropdown-item" href="products_and_services.html#industrial-automation-solution">Fire and Safety Products</a>
-									<a id="goto-it-and-networking" class="dropdown-item" href="products_and_services.html#fire-and-safety">IT and Networking Solutions</a>
-									<a id="goto-machinery_rentals" class="dropdown-item" href="products_and_services.html">Rentals of Heavy Equipments & Machinery</a>
+									<a id="goto-fire-and-safety" class="dropdown-item" href="products_and_services.html#instrumentation-products">Fire and Safety Products</a>
+									<a id="goto-automation-and-communication" class="dropdown-item" href="products_and_services.html#fire-and-safety">Automation and Communication</a>
+									<a id="goto-equipment-rental-products" class="dropdown-item" href="products_and_services.html#automation-products">Equipment Rental Products</a>
 								</div>
 							</li>
 
 							<li class="nav-item dropdown">
-								<a class="nav-link" href="products_and_services.html" title="">Services</a>
+								<a class="nav-link" href="" title="">Services</a>
 								<div class="dropdown-menu services_dropdown">
-									<a id="goto-mechanical-services" class="dropdown-item" href="#our-services-accordion">Mechanical Services</a>
-									<a id="goto-electrical-services" class="dropdown-item" href="#mechanical-services">Electrical Services</a>
-									<a id="goto-power-and-fuel-services" class="dropdown-item" href="#electrical-services">Power and Fuel Services</a>
-									<a id="goto-it-and-networking-services" class="dropdown-item" href="#power-and-fuel-services">IT and Networking Services</a>
+									<a id="goto-mechanical-services" class="dropdown-item" href="products_and_services.html#our-services-accordion">Mechanical Services</a>
+									<a id="goto-electrical-services" class="dropdown-item" href="products_and_services.html#mechanical-services">Electrical Services</a>
+									<a id="goto-civil-services" class="dropdown-item" href="products_and_services.html#electrical-services">Civil Services</a>
+									<a id="goto-instrumentation-services" class="dropdown-item" href="products_and_services.html#civil-services">Instrumentation Services</a>
+									<a id="goto-fire-and-safety-services" class="dropdown-item" href="products_and_services.html#instrumentation-services">Fire & Safety Services</a>
+									<a id="goto-automation-services" class="dropdown-item" href="products_and_services.html#fire-and-safety-services">Automation and Communication</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -209,204 +210,90 @@
 	      			<div class="carousel-item active mechanical-products">
 	        			<div class="row">
 	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Mechanical Products</h2>		
+	        					<h2 class="product-carousel-text">Mechanical</h2>		
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-dark table-hover table-sm mechanical-products-table">
-									<tr><td class="first-cell">Pipes</td></tr>
-									<tr><td>Hoses</td></tr>
-									<tr><td>Mechanical Seals</td></tr>
-									<tr><td>Couplings Strainers</td></tr>
-									<tr><td>Fittings (Flanges Tees Elbows,Reducers)</td></tr>
-									<tr><td>Pipe Closures Saddles</td></tr>
-									<tr><td>Pumps - Centrifugal & Rotary</td></tr>
-									<tr><td>Gaskets Seals & Belts</td></tr>
-									<tr><td>Valves - Gate Globe Check Plug including MOV’s</td></tr>
-									<tr><td>Butterfly Valves & Control Valves</td></tr>
-									<tr><td>Filters – Air & Oil</td></tr>
-									<tr><td>Workshop Machinery</td></tr>
-									<tr><td>Cutting Tools</td></tr>
-								</table>
+								<a id="view-mechanical-products" class="product-carousel-button-dark" href="products_and_services.html#our-products-accordion">View Products <i class="fas fa-arrow-right"></i></a>
+								<a id="view-mechanical-services" class="product-carousel-button-dark" href="products_and_services.html#our-services-accordion">View Services <i class="fas fa-arrow-right"></i></a>
 	        				</div>
 	        			</div>	
+	        		</div>
+	        		<div class="carousel-item electrical-products">
+	        			<div class="row">
+	        				<div class="col-lg-6">
+	        					<h2 class="product-carousel-text">Electrical</h2>		
+	        				</div>
+	        				<div class="col-lg-6">
+	        					<a id="view-electrical-products" class="product-carousel-button-light" href="products_and_services.html#mechanical-products">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-electrical-services" class="product-carousel-button-light" href="products_and_services.html#mechanical-services">View Services <i class="fas fa-arrow-right"></i></a>
+	        				</div>
+	        			</div>	
+	        		</div>
+	        		<div class="carousel-item civil-products">
+	          			<div class="row">
+	          				<div class="col-lg-6">
+	        					<h2 class="product-carousel-text">Civil</h2>
+	        				</div>
+	        				<div class="col-lg-6">
+	        					<a id="view-civil-products" class="product-carousel-button-dark" href="products_and_services.html#electrical-products">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-civil-services" class="product-carousel-button-dark" href="products_and_services.html#electrical-services">View Services <i class="fas fa-arrow-right"></i></a>
+	        				</div>
+	        			</div>	          			  
 	        		</div>
 	        		<div class="carousel-item instrumentation-products">
 	          			<div class="row">
 	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Instrumentation Products</h2>
+	        					<h2 class="product-carousel-text">Instrumentation</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm instrumentation-products-table">
-									<tr><td class="first-cell">Stainless Steel Tubing & Quick connect fittings</td></tr>
-									<tr><td>Compression Fittings Manifolds</td></tr>
-									<tr><td>Flow – Indicators / Transmitters / Switches</td></tr>
-									<tr><td>RTD & Thermowells</td></tr>
-									<tr><td>Level–Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermostats</td></tr>
-									<tr><td>Analyzers</td></tr>
-									<tr><td>Pressure – Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Thermocouples</td></tr>
-									<tr><td>Temperature– Gauges / Indicators / Transmitters / Switches</td></tr>
-									<tr><td>Valves – Solenoid / Block & Bleed</td></tr>
-									<tr><td>Flow Meters Density Meters</td></tr>
-									<tr><td>Regulators</td></tr>
-									<tr><td>Junction Boxes (Control Instrumentation)</td></tr>
-									<tr><td>Test & Calibration Instruments</td></tr>
-								</table>
-	        							
+	        					<a id="view-instrumentation-products" class="product-carousel-button-light" href="products_and_services.html#civil-products">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-instrumentation-services" class="product-carousel-button-light" href="products_and_services.html#civil-services">View Services <i class="fas fa-arrow-right"></i></a>
 	        				</div>
 	        			</div>	          			  
 	        		</div>
-
-	        		<div class="carousel-item electrical-products">
-	        			<div class="row">
-	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Electrical Products</h2>		
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-dark table-hover table-sm electrical-products-table">
-									<tr><td class="first-cell">Conduits (PVC Rigid PVC coated EMT & Aluminum)</td></tr>
-									<tr><td>Fittings (Hazardous & Explosion Proof)</td></tr>
-									<tr><td>Wires & cables (LV & MV) Wiring devices</td></tr>
-									<tr><td>Splicing & Termination Kits</td></tr>
-									<tr><td>Industrial Battery & Battery Chargers</td></tr>
-									<tr><td>Generators Switch Racks Lightning Protection</td></tr>
-									<tr><td>Cable Trays / Raceways / Trunking</td></tr>
-									<tr><td>Channels Clamps Threaded rods</td></tr>
-									<tr><td>Cable Ladders & accessories</td></tr>
-									<tr><td>Circuit breakers Relays Transformers ATS</td></tr>
-									<tr><td>Panel Boards & Load Centers</td></tr>
-									<tr><td>Bus Ducts Bus Bar Chambers Ring Main Units</td></tr>
-									<tr><td>Fuses Testing & Measuring Equipment</td></tr>
-									<tr><td>Junction Boxes (Indoor Outdoor & Explosion Proof)</td></tr>
-									<tr><td>Pull Boxes Overhead Line Accessories</td></tr>
-									<tr><td>Switches</td></tr>
-									<tr><td>Lighting Poles (Steel Al & FRP)</td></tr>
-									<tr><td>Ballasts Lamps</td></tr>
-									<tr><td>Motors VFD’S & Starters</td></tr>
-									<tr><td>Rectifiers / Inverters & UPS</td></tr>
-									<tr><td>Welding Equipment & Accessories</td></tr>
-									<tr><td>Industrial SMPS Power Supply</td></tr>
-								</table>
-	        				</div>
-	        			</div>	
-	        		</div>
-	        		<div class="carousel-item industrial-automation-products">
-	          			<div class="row">
-	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Industrial Automation Products</h2>
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm industrial-automation-products-table">
-									<tr><td class="first-cell">Industrial Signal Conditioners</td></tr>
-									<tr><td>HMIs</td></tr>
-									<tr><td>Data Loggers</td></tr>
-									<tr><td>Flow meters</td></tr>
-									<tr><td>Load Cells</td></tr>
-									<tr><td>Solid State Relays</td></tr>
-									<tr><td>Pipeline monitors</td></tr>
-									<tr><td>Pressure Sensors</td></tr>
-									<tr><td>Industrial Computers</td></tr>
-									<tr><td>Intelligent I/O controllers</td></tr>
-									<tr><td>PLC controllers</td></tr>
-									<tr><td>Industrial Device Servers</td></tr>
-									<tr><td>Industrial Event Counting</td></tr>
-									<tr><td>Temperature Controllers</td></tr>
-									<tr><td>Industrial Controllers</td></tr>
-									<tr><td>Field Bus CAN Profibus Gateways</td></tr>
-									<tr><td>PC-Based Measurement Devices</td></tr>
-									<tr><td>Wireless Industrial I/O</td></tr>
-									<tr><td>Incremental & Fiber Optics</td></tr>
-									<tr><td>Encoders</td></tr>
-									<tr><td>Industrial Data Communicators</td></tr>
-								</table>		
-	        				</div>
-	        			</div>	          			  
-	        		</div>
-
-	        		<div class="carousel-item industrial-automation-solution">
-	          			<div class="row">
-	          				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Industrial Automation Solution</h2>
-	        				</div>
-	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-dark table-sm industrial-automation-solution-table">
-									<tr><td class="first-cell">Vibration Monitoring</td></tr>
-									<tr><td>PC-Based Preventive Maintenance Systems</td></tr>
-									<tr><td>Customized Quality Control Reporting Systems</td></tr>
-									<tr><td>Environmental Monitoring Systems</td></tr>
-									<tr><td>Engine Monitoring</td></tr>
-									<tr><td>OEM/ODM Solutions</td></tr>
-									<tr><td>Compliance Certifications</td></tr>
-									<tr><td>Test & Measurement Consultations</td></tr>
-									<tr><td>TQM Systems Development</td></tr>
-									<tr><td>Machine to Machine (M2M)</td></tr>
-									<tr><td>Industrial Computers</td></tr>
-								</table>
-	        				</div>
-	        				
-	        			</div>	          			  
-	        		</div>
-	        		
 	        		<div class="carousel-item fire-and-safety-products">
 	          			<div class="row">
 	          				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">Fire and Safety Products</h2>
+	        					<h2 class="product-carousel-text">Fire and Safety</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-sm fire-and-safety-products-table">
-									<tr><td class="first-cell">Gas & Flame Detectors</td></tr>
-									<tr><td>Environmental Control System</td></tr>
-									<tr><td>Industrial Systems</td></tr>
-									<tr><td>Shopping Centres</td></tr>
-									<tr><td>Electrical IT and Server Rooms</td></tr>
-									<tr><td>Parking Areas</td></tr>
-									<tr><td>Power Plants</td></tr>
-									<tr><td>Oil Tank Protection</td></tr>
-									<tr><td>Refuelling Stations</td></tr>
-									<tr><td>Repair / Modernisation</td></tr>
-									<tr><td>Office Buildings</td></tr>
-									<tr><td>Cable Tunnels</td></tr>
-									<tr><td>Warehouses</td></tr>
-									<tr><td>Transformer Protection</td></tr>
-									<tr><td>Archives & Museums</td></tr>
-									<tr><td>Hangars</td></tr>
-									<tr><td>Special Extinguishing Systems</td></tr>
-								</table>
+	        					<a id="view-fire-and-safety-products" class="product-carousel-button-light" href="products_and_services.html#instrumentation-products">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-fire-and-safety-services" class="product-carousel-button-light" href="products_and_services.html#instrumentation-services">View Services <i class="fas fa-arrow-right"></i></a>
 	        				</div>
 	        			</div>
 	        		</div>
-	        		 <div class="carousel-item it-and-networking-solutions">
+	        		 <div class="carousel-item automation-products">
 	          			<div class="row">
 	        				<div class="col-lg-6">
-	        					<h2 class="product-carousel-text">IT and Networking Solutions</h2>
+	        					<h2 class="product-carousel-text">Automation & Communication</h2>
 	        				</div>
 	        				<div class="col-lg-6">
-	        					<table class="table table-hover table-dark table-sm it-and-networking-solutions-table">
-									<tr><td class="first-cell">Networking Solutions</td></tr>
-									<tr><td>Structured Cabling</td></tr>
-									<tr><td>IT Management and Software Development</td></tr>
-									<tr><td>Security Systems</td></tr>
-									<tr><td>Data Centre Solutions</td></tr>
-									<tr><td>Audio Video Systems</td></tr>
-									<tr><td>Telephone Systems</td></tr>
-									<tr><td>Digitalization and Automation</td></tr>
-									<tr><td>Internet of Things (IoT)</td></tr>
-									<tr><td>Artificial Intelligence (AI) Products</td></tr>
-								</table>
-	        					</div>
+	        					<a id="view-automation-products" class="product-carousel-button-dark" href="products_and_services.html#fire-and-safety-products">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-automation-services" class="product-carousel-button-dark" href="products_and_services.html#fire-and-safety-services">View Services <i class="fas fa-arrow-right"></i></a>
 	        				</div>
 	        			</div>
-	      			</div>	
-	      			<a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
-	        			<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
-	        			<span class="sr-only">Previous</span>
-	      			</a>
-	      			<a class="carousel-control-next" href="#product-carousel" data-slide="next">
-	        			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	        			<span class="sr-only">Next</span>
-	      			</a>
-	    		</div>
+	        		</div>
+	        		<div class="carousel-item equipment-rental-products">
+	          			<div class="row">
+	        				<div class="col-lg-6">
+	        					<h2 class="product-carousel-text">Equipment Rentals</h2>
+	        				</div>
+	        				<div class="col-lg-6">
+	        					<a id="view-equipment-rental-products" class="product-carousel-button-light" href="products_and_services.html#automation-and-communication">View Products <i class="fas fa-arrow-right"></i></a>
+	        					<a id="view-equipment-rental-services" class="product-carousel-button-light" href="products_and_services.html#automation-and-communication">View Services <i class="fas fa-arrow-right"></i></a>
+	        				</div>
+	        			</div>	          			  
+	        		</div>
+	      		</div>	
+	      		<a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+	        		<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
+	        		<span class="sr-only">Previous</span>
+	      		</a>
+	      		<a class="carousel-control-next" href="#product-carousel" data-slide="next">
+	        		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        		<span class="sr-only">Next</span>
+	      		</a>
+	    	</div>
 		</section>
 
 		<section id="partners" class="fade">
