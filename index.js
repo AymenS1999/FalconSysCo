@@ -34,57 +34,141 @@ $("#goto-mechanical-products").click(function(event) {
 	if($("#collapseMechanicalProducts").css("display")==="none")
 		$("#mechanical-products").trigger("click");
 });
-$("#goto-instrumentation-products").click(function(event) {
-	/* Act on the event */
-	if($("#collapseInstrumentationProducts").css("display")==="none")
-		$("#instrumentation-products").trigger("click");
-});
 $("#goto-electrical-products").click(function(event) {
 	/* Act on the event */
 	if($("#collapseElectricalProducts").css("display")==="none")
 		$("#electrical-products").trigger("click");
 });
-$("#goto-industrial-automation-products").click(function(event) {
+$("#goto-civil-products").click(function(event) {
 	/* Act on the event */
-	if($("#collapseIndustrialAutomationProducts").css("display")==="none")
-		$("#industrial-automation-products").trigger("click");
+	if($("#collapseCivilProducts").css("display")==="none")
+		$("#civil-products").trigger("click");
 });
-$("#goto-industrial-automation-solution").click(function(event) {
+$("#goto-instrumentation-products").click(function(event) {
 	/* Act on the event */
-	if($("#collapseIndustrialAutomationSolution").css("display")==="none")
-		$("#industrial-automation-solution").trigger("click");
+	if($("#collapseInstrumentationProducts").css("display")==="none")
+		$("#instrumentation-products").trigger("click");
 });
 $("#goto-fire-and-safety").click(function(event) {
 	/* Act on the event */
 	if($("#collapseFireAndSafetyProducts").css("display")==="none")
-		$("#fire-and-safety").trigger("click");
+		$("#fire-and-safety-products").trigger("click");
 });
-$("#goto-it-and-networking").click(function(event) {
+$("#goto-automation-and-communication").click(function(event) {
 	/* Act on the event */
-	if($("#collapseItNetworkingSolutions").css("display")==="none")
-		$("#it-and-networking").trigger("click");
+	if($("#collapseAutomationProducts").css("display")==="none")
+		$("#automation-and-communication").trigger("click");
+});
+$("#goto-equipment-rental-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseEquipmentRentalProducts").css("display")==="none")
+		$("#equipment-rental-products").trigger("click");
 });
 
-// SERVICES
-$("#goto-electrical-services").click(function(event) {
+
+//Achieving the ABOVE effect when Clicking View Product button in the Product Carousel
+$("#view-mechanical-products").click(function(event) {
 	/* Act on the event */
-	if($("#collapseElectricalServices").css("display")==="none")
-		$("#electrical-services").trigger("click");
+	if($("#collapseMechanicalProducts").css("display")==="none")
+		$("#mechanical-products").trigger("click");
 });
+$("#view-electrical-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseElectricalProducts").css("display")==="none")
+		$("#electrical-products").trigger("click");
+});
+$("#view-civil-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseCivilProducts").css("display")==="none")
+		$("#civil-products").trigger("click");
+});
+$("#view-instrumentation-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseInstrumentationProducts").css("display")==="none")
+		$("#instrumentation-products").trigger("click");
+});
+$("#view-fire-and-safety-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseFireAndSafetyProducts").css("display")==="none")
+		$("#fire-and-safety-products").trigger("click");
+});
+$("#view-automation-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseAutomationProducts").css("display")==="none")
+		$("#automation-and-communication").trigger("click");
+});
+$("#view-equipment-rental-products").click(function(event) {
+	/* Act on the event */
+	if($("#collapseEquipmentRentalProducts").css("display")==="none")
+		$("#equipment-rental-products").trigger("click");
+});
+
+
+
+
+// SERVICES
 $("#goto-mechanical-services").click(function(event) {
 	/* Act on the event */
 	if($("#collapseMechanicalServices").css("display")==="none")
 		$("#mechanical-services").trigger("click");
 });
-$("#goto-power-and-fuel-services").click(function(event) {
+$("#goto-electrical-services").click(function(event) {
 	/* Act on the event */
-	if($("#collapsePowerAndFuelServices").css("display")==="none")
-		$("#power-and-fuel-services").trigger("click");
+	if($("#collapseElectricalServices").css("display")==="none")
+		$("#electrical-services").trigger("click");
 });
-$("#goto-it-and-networking-services").click(function(event) {
+$("#goto-civil-services").click(function(event) {
 	/* Act on the event */
-	if($("#collapseItServices").css("display")==="none")
-		$("#it-and-networking-services").trigger("click");
+	if($("#collapseCivilServices").css("display")==="none")
+		$("#civil-services").trigger("click");
+});
+$("#goto-instrumentation-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseInstrumentationServices").css("display")==="none")
+		$("#instrumentation-services").trigger("click");
+});
+$("#goto-fire-and-safety-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseFireAndSafetyServices").css("display")==="none")
+		$("#fire-and-safety-services").trigger("click");
+});
+$("#goto-automation-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseAutomationServices").css("display")==="none")
+		$("#automation-services").trigger("click");
+});
+
+
+//Achieving the ABOVE effect when Clicking View Product button in the Product Carousel
+$("#view-mechanical-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseMechanicalServices").css("display")==="none")
+		$("#mechanical-services").trigger("click");
+});
+$("#view-electrical-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseElectricalServices").css("display")==="none")
+		$("#electrical-services").trigger("click");
+});
+$("#view-civil-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseCivilServices").css("display")==="none")
+		$("#civil-services").trigger("click");
+});
+$("#view-instrumentation-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseInstrumentationServices").css("display")==="none")
+		$("#instrumentation-services").trigger("click");
+});
+$("#view-fire-and-safety-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseFireAndSafetyServices").css("display")==="none")
+		$("#fire-and-safety-services").trigger("click");
+});
+$("#view-automation-services").click(function(event) {
+	/* Act on the event */
+	if($("#collapseAutomationServices").css("display")==="none")
+		$("#automation-services").trigger("click");
 });
 
 
